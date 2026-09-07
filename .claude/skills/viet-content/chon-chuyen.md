@@ -56,4 +56,4 @@ Kho có thể chứa cả chuyện sưu tầm: case của người khác, chuy�
 
 Trả về *"không có chuyện nào"* là **một câu trả lời đúng và hay gặp**. Vơ đại thì người dùng không bao giờ biết lần nào là đoán, và sẽ tin kho đã hết trong khi thật ra là **chưa có**.
 
-Nói xong thì đưa việc tiếp theo: *"kho chưa có chuyện nào chứng minh được ý này — kể cho tôi một lần bạn đã trải qua nó, tôi nạp vào rồi viết."* Đó là `/nap-kho`, và nó biến một lượt hụt thành một tài sản mới.
+Nói xong thì đưa việc tiếp theo: *"kho chưa có chuyện nào chứng minh được ý này — kể cho tôi một lần bạn đã trải qua nó, tôi dùng luôn rồi viết."* Nghe xong thì **dùng ngay trong lượt này**, đừng bắt họ đi nạp rồi quay lại. Lưu lại thì theo luật chung ở `SKILL.md`: có nền → mời `/nap-kho`; chưa có nền → ghi vào `de-nap-vao-nao.md`. Một lượt hụt thành một tài sản mới.

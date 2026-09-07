@@ -122,6 +122,18 @@ Rút xong thì **dùng luôn trong lượt này**, rồi mời chạy `/nap-kho`
 
 🚫 **Skill này KHÔNG tự ghi vào `wiki/`** — luật cũ, không có ngoại lệ. Bản rút ở đây sống trong lượt chạy; muốn nó thành tài sản thì phải qua `/nap-kho`.
 
+### ⚠️ Luật chung: `/nap-kho` chỉ tồn tại khi có nền
+
+Nhiều chỗ trong gói này — `chon-chuyen.md`, `ke-hoach-content.md`, `kich-ban-video.md`, `khuon/audience-insights.md` — kết bằng câu *"rồi chạy `/nap-kho`"*. Câu đó **đúng khi có nền, và vô nghĩa khi không**: lệnh đi kèm nền, chưa cài nền thì gõ vào không có gì.
+
+**Luật áp cho MỌI chỗ như vậy trong gói, kể cả file thêm về sau:**
+
+| Có nền | Chưa có nền |
+|---|---|
+| mời chạy `/nap-kho` như đã ghi | **ghi vào `de-nap-vao-nao.md`**, rồi nói *"cài nền xong đưa file này cho `/nap-kho`"* |
+
+🚫 **Đừng bảo họ gõ một lệnh không có trong máy.** Đó là kiểu hỏng làm người mới kết luận gói này lỗi — họ gõ, không thấy gì, và không có cách nào biết là do thiếu nền chứ không phải do hỏng.
+
 ⚡ Nhờ vậy lần dùng đầu tiên đổi từ *bị từ chối* thành *có bài dùng được, cộng thêm một tài sản mới trong não*.
 
 ### 🆘 Hai trang NỀN mà cửa này đếm — thiếu thì cứu, đừng đá sang chỗ khác
