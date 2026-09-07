@@ -86,7 +86,7 @@ Nhắn vào nhóm kèm **ảnh chụp màn hình chỗ kẹt**. Đây là việc
 3. Mở công cụ, đặt thư mục này làm workspace (Cowork: kéo cả thư mục vào cửa sổ).
 4. Nhắn: **"bắt đầu"**.
 
-Xong đúng thì AI tự tạo ra `SecondBrain/` với `wiki/`, `raw/`, `index.md`, `log.md`, rồi bắt đầu hỏi bạn.
+Xong đúng thì AI dựng `wiki/`, `raw/`, `index.md`, `log.md` **ngay trong thư mục đó**, cạnh `CLAUDE.md`, rồi bắt đầu hỏi bạn.
 
 **Không thấy gì xảy ra?** Kiểm tra AI có nhìn thấy file `CLAUDE.md` không — nếu không, workspace đang trỏ sai thư mục.
 
@@ -107,7 +107,7 @@ Obsidian **miễn phí** cho dùng cá nhân, và **không đẩy dữ liệu l�
 ### Ba bước
 
 1. Tải ở `obsidian.md` → cài như phần mềm bình thường.
-2. Mở lên → **Open folder as vault** → trỏ vào thư mục **`SecondBrain`** *(trỏ vào đúng thư mục này, không phải thư mục `nhan-su-thu-thu` bên ngoài)*.
+2. Mở lên → **Open folder as vault** → trỏ vào thư mục **`nhan-su-thu-thu`** *(chính thư mục có `wiki/` và `CLAUDE.md`)*.
 3. Bấm thử một `[[liên kết]]` bất kỳ — nhảy được sang trang khác là xong.
 
 ### Đáng bật ngay
@@ -123,8 +123,8 @@ Obsidian **miễn phí** cho dùng cá nhân, và **không đẩy dữ liệu l�
 
 | Triệu chứng | Nguyên nhân thường gặp |
 |---|---|
-| AI không tạo thư mục `SecondBrain/` | Workspace trỏ sai chỗ — AI không thấy `CLAUDE.md` |
+| AI không tạo thư mục `wiki/` | Workspace trỏ sai chỗ — AI không thấy `CLAUDE.md` |
 | AI trả lời chung chung, không biết gì về bạn | Đang dùng bậc 1 (chatbot), hoặc chưa cắm thư mục vào phiên |
-| Obsidian mở ra trống trơn | Trỏ nhầm vào thư mục ngoài — phải trỏ vào `SecondBrain` |
+| Obsidian mở ra trống trơn | Trỏ nhầm vào thư mục cha — phải trỏ đúng thư mục có `wiki/` |
 | Hôm sau mở lại AI không nhớ gì | **Đây chính là thứ Việc 6 kiểm.** Rất có thể dữ liệu chưa được ghi ra file, chỉ nằm trong trí nhớ phiên trước → chạy `/kiem-chung` để biết chắc |
 | Hết lượt giữa chừng | Chưa đăng ký gói trả phí |

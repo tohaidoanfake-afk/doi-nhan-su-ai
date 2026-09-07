@@ -41,7 +41,7 @@ Muốn cài lẻ từng vai thì xem `creator-ceo/nhan-su-thu-thu` và các kho 
 
 ## Cập nhật mà không mất bộ não
 
-Bộ não của bạn nằm ở thư mục `SecondBrain/` do AI tạo ra, **không nằm trong kho này** — nên `git pull` không bao giờ đụng vào nó. Luật đầy đủ ở `README` gốc của nền, mục *Cập nhật bộ khung mà không mất bộ não*.
+Bộ não của bạn — `wiki/` `raw/` `index.md` `log.md` — nằm **thẳng trong kho này**, nhưng `.gitignore` chặn cả bốn, nên `git pull` không bao giờ đụng vào nó. Luật đầy đủ ở `README` gốc của nền, mục *Cập nhật bộ khung mà không mất bộ não*.
 
 ---
 

@@ -1,12 +1,24 @@
 # ══════════════════════════════════════════════════════════════════
 # BỘ NÃO CỦA BẠN — KHÔNG BAO GIỜ ĐẨY LÊN
 # ══════════════════════════════════════════════════════════════════
-# Thư mục SecondBrain/ chứa dữ liệu riêng của bạn: tên khách hàng thật,
-# doanh thu, chuyện cá nhân. Repo này chỉ chứa BỘ KHUNG.
+# Bộ não của bạn nằm THẲNG trong thư mục này: wiki/ raw/ index.md log.md.
+# Chúng chứa tên khách hàng thật, doanh thu, chuyện cá nhân.
+# Repo này chỉ chứa BỘ KHUNG.
 #
-# Đừng gỡ dòng dưới đây. Gỡ ra là một lần `git push` nhầm đủ để
+# Đừng gỡ bốn dòng dưới đây. Gỡ ra là một lần `git push` nhầm đủ để
 # đưa toàn bộ dữ liệu khách hàng của bạn lên mạng — và xoá file sau đó
 # KHÔNG đủ, vì lịch sử git vẫn còn.
+#
+# ⚠️ Dấu `/` đứng đầu là CỐ Ý: nó neo ở gốc repo. Bỏ dấu đó ra thì
+# `index.md` cũng khớp luôn `templates/index.md` — tức là chặn nhầm
+# chính cái khuôn phải giữ.
+/wiki/
+/raw/
+/index.md
+/log.md
+
+# Bố cục cũ (bộ não nằm trong thư mục con) — giữ để ai lỡ dựng kiểu đó
+# vẫn được chặn
 SecondBrain/
 
 # Phòng trường hợp bạn đặt bộ não ở tên khác

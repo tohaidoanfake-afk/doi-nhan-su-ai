@@ -7,6 +7,10 @@ description: Dựng bộ não thứ 2 lần đầu — thu tài liệu có sẵn
 
 > Luật chi tiết nằm ở `CLAUDE.md` gốc. Skill này là bản hành động từng bước.
 
+🔴 **Bộ não dựng THẲNG vào thư mục đang mở, không bọc thêm lớp nào.** `wiki/` · `raw/` · `index.md` · `log.md` nằm cùng tầng với `CLAUDE.md` và `.claude/skills/`.
+
+Mọi đường dẫn trong skill này và trong mọi vai đều tính từ đó: `wiki/about-me.md` nghĩa là `<thư mục đang mở>/wiki/about-me.md`. Dựng vào một thư mục con (kiểu `SecondBrain/wiki/`) là **mọi vai sau này tìm hụt lên một tầng** — và hụt im lặng: vai Content sẽ báo *"kho trống, không viết"* trong khi kho đầy, nằm thấp hơn một bậc. Người dùng làm đúng hết mà công cụ nói chưa có gì.
+
 ## Nguyên tắc quan trọng nhất
 
 Một bộ não thứ 2 tốt **không đến từ một buổi hỏi-đáp suông**. Phần lớn giá trị thật — giọng văn đúng, câu chuyện thật, framework đã đúc kết, bằng chứng khách hàng — nằm trong **tài liệu người dùng đã có sẵn**. Phỏng vấn chỉ để lấp phần không lấy được từ tài liệu.

@@ -4,6 +4,48 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v4.0 — 2026-09-07 · ĐỔI BỐ CỤC, đọc trước khi `git pull`
+
+**Bộ não nay dựng THẲNG vào thư mục bộ khung, không còn lớp `SecondBrain/`.**
+
+### 🔴 Vì sao phải đổi: ba thành phần nói ba chỗ khác nhau
+
+Không thành phần nào khai gốc tính từ đâu, và chúng bất đồng:
+
+| Thành phần | Bộ não ở đâu |
+|---|---|
+| `CLAUDE.md` mục *Lần chạy đầu* | `./SecondBrain/wiki/` |
+| `/onboard` — thứ **thật sự dựng** | `wiki/` trần, ngay chỗ mở |
+| `/kiem-chung` — thứ **nghiệm thu** | `SecondBrain/wiki/` |
+| mọi vai *(`/viet-content`, `/ban-hang`, `/dieu-hanh`)* | `wiki/` trần |
+
+Bộ khung bắt mở Claude Code tại thư mục gốc *(chỗ có `CLAUDE.md` và `.claude/skills/`)*, nhưng bộ não lại nằm ở `SecondBrain/` — **thấp hơn một tầng**. Nên `wiki/` trần trỏ vào `<gốc>/wiki/`, chỗ không có gì.
+
+**Hệ quả:** member điền đủ 11 trang, `/kiem-chung` báo đạt, rồi `/viet-content` nói *"kho trống, không viết"*. Họ làm đúng hết. Và kết quả **không xác định** — tuỳ model nghiêng theo `CLAUDE.md` hay theo đường trần mà người này ra `SecondBrain/wiki/`, người kia ra `wiki/`; ai ra kiểu nào thì hỏng phần nấy.
+
+Bố cục phẳng là bố cục đã chạy thật nhiều tháng trong kho nội bộ: `CLAUDE.md`, `.claude/skills/` và `wiki/` **cùng một tầng**. Đó là lý do lỗi này chưa bao giờ lộ ra khi tự dùng.
+
+### Đổi những gì
+
+- `CLAUDE.md` · `/onboard` · `/kiem-chung` · `README` · `AGENTS.md` · checklist · `templates/README` · hướng dẫn cài đặt — bỏ hết tiền tố `SecondBrain/`.
+- `/onboard` và `CLAUDE.md` nay **khai gốc dứt khoát** ngay đầu file, kèm cảnh báo cấm bọc thêm lớp thư mục.
+- `CLAUDE.md` bỏ lệnh *"tạo cả 4 thư mục con dù còn rỗng"* — nó mâu thuẫn với luật *"tuyệt đối không tạo file rỗng"* của `/onboard` từ v3.x. `models/` `people/` `projects/` `learnings/` mọc lên lúc `/nap-kho` ghi file đầu.
+- `.gitignore`: `SecondBrain/` → **`/wiki/` `/raw/` `/index.md` `/log.md`**. Dấu `/` đầu dòng là bắt buộc — thiếu nó thì `index.md` chặn nhầm luôn `templates/index.md`, tức xoá đúng cái khuôn phải giữ. Đã thử bằng `git check-ignore`: bốn thứ của bộ não bị chặn, ba khuôn trong `templates/` được giữ.
+- Dòng `SecondBrain/` vẫn nằm lại trong `.gitignore` để ai lỡ dựng bố cục cũ vẫn được chặn.
+
+### 🟡 Đang dùng bản cũ thì làm gì
+
+Bộ não ở `SecondBrain/` vẫn chạy được với nền, nhưng **các vai sẽ không thấy nó**. Sau khi `git pull`:
+
+```
+mv SecondBrain/wiki SecondBrain/raw SecondBrain/index.md SecondBrain/log.md .
+rmdir SecondBrain
+```
+
+Rồi mở Claude Code tại thư mục gốc và chạy `/kiem-chung` để xác nhận.
+
+---
+
 ## v3.8 — 2026-09-07
 
 **`/onboard` chạy lần hai thì xoá mất lần một.**

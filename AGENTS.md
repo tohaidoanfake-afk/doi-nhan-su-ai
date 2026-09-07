@@ -32,11 +32,11 @@ Codex tìm skill ở `.codex/skills/`, còn bộ này để skill ở `.claude/s
 
 Nếu vì lý do gì đó bạn chưa đọc được `CLAUDE.md`, năm điều dưới đây vẫn có hiệu lực:
 
-1. **Không bao giờ sửa bất cứ thứ gì trong `SecondBrain/raw/`.** Đó là nguồn gốc bất biến — nó cho phép mọi thứ trong `wiki/` sai rồi sửa được.
-2. **Chỉ có MỘT đường ghi vào `SecondBrain/wiki/`: skill `nap-kho`.** Không sửa thẳng file `.md`, kể cả sửa một lỗi chính tả.
+1. **Không bao giờ sửa bất cứ thứ gì trong `raw/`.** Đó là nguồn gốc bất biến — nó cho phép mọi thứ trong `wiki/` sai rồi sửa được.
+2. **Chỉ có MỘT đường ghi vào `wiki/`: skill `nap-kho`.** Không sửa thẳng file `.md`, kể cả sửa một lỗi chính tả.
 3. **Không bịa.** Không tự nghĩ ra số liệu, tên khách, câu chuyện, kết quả. Thiếu dữ liệu thì để `[trong ngoặc vuông]` hoặc dừng lại hỏi. Bộ não có chỗ trống thì sửa được; có chỗ bịa thì hỏng mà không ai biết.
-4. **Luôn ghi thêm vào `SecondBrain/log.md`, không bao giờ viết đè lịch sử.**
-5. **Luôn đọc `SecondBrain/wiki/ai-operating-preferences.md` ở đầu mỗi phiên** và làm theo — đó là nơi người dùng khai cách xưng hô, khi nào phải hỏi trước, và những việc tuyệt đối cấm.
+4. **Luôn ghi thêm vào `log.md`, không bao giờ viết đè lịch sử.**
+5. **Luôn đọc `wiki/ai-operating-preferences.md` ở đầu mỗi phiên** và làm theo — đó là nơi người dùng khai cách xưng hô, khi nào phải hỏi trước, và những việc tuyệt đối cấm.
 
 ---
 

@@ -26,12 +26,16 @@ Không phải chatbot. Phải là công cụ **đọc và ghi được file trê
 
 - [ ] Đã giải nén thư mục `nhan-su-thu-thu`
 - [ ] Đã đặt thư mục này làm workspace (hoặc kéo cả thư mục vào cửa sổ công cụ)
-- [ ] Đã nhắn *"bắt đầu"* và AI đã tự tạo thư mục `SecondBrain/`
+- [ ] Đã nhắn *"bắt đầu"* và AI đã dựng `wiki/` **ngay trong thư mục này**, cùng tầng với `CLAUDE.md`
 - [ ] AI đã **in ra đường dẫn thật** của thư mục đó — chép vào đây, Việc 5 sẽ cần:
 
   📍 `.................................................................................`
 
-Nhìn thấy `SecondBrain/` có đủ `raw/` · `wiki/` (kèm 4 thư mục con `models` `people` `projects` `learnings`) · `index.md` · `log.md` là xong việc này.
+Nhìn thấy trong thư mục có đủ `raw/` · `wiki/` · `index.md` · `log.md` — nằm cạnh `CLAUDE.md` — là xong việc này.
+
+*(Chưa thấy `wiki/models` `people` `projects` `learnings` là **đúng**. Chúng mọc lên lúc `/nap-kho` ghi file đầu tiên, không tạo rỗng chờ sẵn.)*
+
+🔴 **AI dựng vào một thư mục con — kiểu `SecondBrain/wiki/` — thì bảo nó chuyển lên, đừng để vậy.** Mọi vai đọc kho bằng `wiki/...` tính từ thư mục bạn mở; thấp hơn một tầng là chúng tìm hụt và báo *"kho trống"* trong khi kho đầy.
 
 *(AI không in đường dẫn ra thì hỏi thẳng: "bộ não của tôi đang nằm ở đường dẫn nào trên máy?")*
 
@@ -91,7 +95,7 @@ Tick khi trang tương ứng đã có nội dung thật, không còn `[ngoặc v
 ## Việc 5 — Mở kho bằng Obsidian
 
 - [ ] Đã cài Obsidian (miễn phí)
-- [ ] Open folder → trỏ vào thư mục `SecondBrain`
+- [ ] Open folder → trỏ vào chính thư mục `nhan-su-thu-thu` *(chỗ có `wiki/` và `CLAUDE.md`)*
 - [ ] Nhìn thấy toàn bộ khung, bấm được vào `[[liên kết]]` để nhảy trang
 
 📖 Chi tiết: `reference/huong-dan-cai-dat.md`.

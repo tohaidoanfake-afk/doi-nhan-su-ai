@@ -28,7 +28,7 @@ Nguy hiểm ở chỗ **hai trường hợp trông giống hệt nhau từ phía
 Các bước:
 
 1. Mở project mới / đoạn chat mới trong công cụ AI.
-2. Cắm thư mục `SecondBrain` vào làm ngữ cảnh.
+2. Cắm **thư mục chứa bộ não** vào làm ngữ cảnh — chính thư mục có `wiki/`, `CLAUDE.md` và `.claude/`, cả ba nằm cùng tầng.
 3. Hỏi lần lượt 5 câu dưới đây.
 4. Đối chiếu câu trả lời với tiêu chí đạt.
 
@@ -36,7 +36,7 @@ Các bước:
 
 ## Câu 0 — hỏi TRƯỚC, để biết trượt là lỗi gì
 
-> *"Đọc file `SecondBrain/wiki/goals.md` và cho tôi biết dòng đầu tiên của nó."*
+> *"Đọc file `wiki/goals.md` và cho tôi biết dòng đầu tiên của nó."*
 
 Câu này không kiểm nội dung bộ não. Nó kiểm **công cụ có đọc được thư mục không** — và nó chia toàn bộ bài test thành hai nhánh chữa hoàn toàn khác nhau:
 
@@ -121,7 +121,7 @@ Tự chọn một chi tiết **cụ thể, không đoán được từ ngoài**.
 
 Dừng bài test, **không cần hỏi 5 câu kia** — chúng sẽ trượt hết vì cùng một nguyên nhân. Kiểm theo thứ tự:
 
-1. Thư mục `SecondBrain/wiki/` có file `.md` thật không? *(mở bằng trình quản lý file, nhìn bằng mắt)*
+1. Thư mục `wiki/` có file `.md` thật không? *(mở bằng trình quản lý file, nhìn bằng mắt)*
 2. Có file mà AI không đọc được → **lỗi cắm ngữ cảnh**: workspace đang trỏ sai thư mục.
 3. Không có file nào → bộ não **chưa bao giờ được ghi ra đĩa**. Đây mới đúng là cái bẫy mà bài test này sinh ra để bắt: buổi phỏng vấn hôm trước chỉ nằm trong trí nhớ đoạn chat. Quay lại **Việc 2 và Việc 3**, làm lại trên công cụ bậc 2.
 

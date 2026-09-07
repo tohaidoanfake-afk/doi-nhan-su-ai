@@ -1,13 +1,13 @@
 # Khung các trang — dùng thế nào
 
-> Đây là **khuôn**, không phải nội dung. AI sẽ dùng chúng khi dựng `SecondBrain/wiki/`.
+> Đây là **khuôn**, không phải nội dung. AI sẽ dùng chúng khi dựng `wiki/`.
 > Giữ nguyên cấu trúc heading, chỉ thay `[...]` bằng nội dung thật. **Thiếu thì để nguyên placeholder — không bịa.**
 
 ---
 
 ## Hai file gốc — dựng trước tiên
 
-`index.md` và `log.md` nằm ở gốc `SecondBrain/`, không nằm trong `wiki/`. Dựng từ `index.md` và `log.md` trong thư mục này — **đừng tạo rỗng**: mỗi người một định dạng thì skill `nap-kho` về sau ghi thêm vào một cấu trúc không tồn tại.
+`index.md` và `log.md` nằm ở **gốc thư mục bộ não**, cùng tầng với `wiki/` chứ không nằm trong `wiki/`. Dựng từ `index.md` và `log.md` trong thư mục này — **đừng tạo rỗng**: mỗi người một định dạng thì skill `nap-kho` về sau ghi thêm vào một cấu trúc không tồn tại.
 
 ---
 
