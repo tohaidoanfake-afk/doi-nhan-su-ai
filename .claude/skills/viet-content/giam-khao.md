@@ -49,6 +49,17 @@ Chỉ mở tầng này sau khi đã sửa hết mục ● CHẮC của tầng 1.
 
 🚫 **Đừng đưa thêm gì nữa** — không `experiences-library`, không `teachings/`, không `raw/`. Đưa vào là tái tạo đúng cái bộ nhớ làm con vừa viết chấm sai: nó sẽ *nhớ* chi tiết nào có thật rồi chấm bài là đầy chất riêng, trong khi người đọc trên Facebook không có bộ nhớ đó.
 
+⚠️ **Hai thứ lọt dễ nhất KHÔNG nằm trong danh sách kho trên** — vì chúng không cần ai cố ý đưa vào, chúng **tự trôi tới** trong hội thoại:
+
+| Lọt qua đường nào | Ví dụ |
+|---|---|
+| **Bản nháp đã bỏ** | *"lúc đầu tôi viết mở bài kiểu này nhưng thấy chưa ổn"* |
+| **Lời kể về quá trình viết** | *"bài này tôi muốn nhấn vào chuyện thất bại"* · *"chỗ này tôi cố ý để lửng"* |
+
+Nghe xong hai câu đó là giám khảo **biết ý đồ**, và nó sẽ chấm bài theo ý đồ chứ không theo chữ trên trang. Người đọc trên Facebook không nghe được câu nào trong hai câu đó.
+
+🔴 **Chỉ đưa BÀI. Không đưa lý do viết thế, không đưa thứ đã bỏ đi.** Đây là toàn bộ lý do bước này tồn tại — bỏ nó thì giám khảo chỉ là con vừa viết đọc lại bài của chính nó.
+
 📌 **Giám khảo trả về chỗ hỏng và cách sửa, KHÔNG chấm điểm.** Lý do ở `luat/hook.md` mục *"Vì sao KHÔNG chấm điểm hook bằng AI"* — điểm số do AI đặt cho bài của chính hệ thống mình là con số tự khen. Mỗi lỗi phải **trích đúng câu bị lỗi**.
 
 Chạy ở môi trường không có Agent tool thì làm bước này thành một lượt riêng: gạt hết ngữ cảnh viết sang một bên, chỉ đọc lại đúng bài và bộ luật bốn file luật đi kèm gói in ra. Cách này **kém hơn hẳn** vì không xoá được trí nhớ — ghi rõ trong `ket-qua.md` là đã chạy bằng cách thay thế, đừng để nó trông như bản đầy đủ.
