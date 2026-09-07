@@ -37,6 +37,32 @@ description: Dùng khi bạn nhờ viết hoặc xử lý nội dung đăng ra n
 >
 > Nền (`nhan-su-thu-thu`) **cố ý không tạo sẵn** mấy trang này, kể cả file rỗng — vì nó không dựng nổi chúng, và một vỏ rỗng thì vai này vẫn phải mở ra đọc mới biết có gì bên trong. Nên việc dựng là của vai này.
 
+### 📂 NGÓ `raw/` TRƯỚC KHI HỎI — nền đã để sẵn đồ cho vai này
+
+🔴 **Bước này chạy trước mọi câu hỏi.** `/onboard` **cố ý không rút** `voice-profile`, `experiences-library`, `customer-wins` — nó để dành cho vai này, và nó nói với người dùng đúng như vậy. Nguyên văn hai dòng trong `/onboard`:
+
+> *"Người dùng chủ động đưa sẵn thì **vẫn nhận** — lưu vào `raw/`, nói rõ là để dành cho vai content."*
+> *"Gặp câu chuyện hay trong ghi chép thì cứ để nguyên trong `raw/`; **vai content sẽ lấy**."*
+
+**Vai này LÀ chỗ đến lấy.** Không ngó `raw/` mà hỏi luôn *"dán 5–10 bài cũ vào đây"* là bắt họ nộp lại thứ họ đã nộp — và người dùng có lý do chính đáng để nghĩ hệ thống không nhớ gì cả.
+
+**Làm:** liệt kê `raw/`, đọc thứ có vẻ dùng được, rồi báo lại trước khi hỏi.
+
+| Thấy gì trong `raw/` | Rút được |
+|---|---|
+| bài đã đăng, export Facebook, file bài viết | `voice-profile` |
+| transcript buổi chia sẻ / coaching, ghi chép họp | `experiences-library` · `quoted-authority` |
+| feedback, tin nhắn khách, testimonial | `customer-wins` · `audience-insights` |
+| bản ghi buổi tư vấn có con số | `so-lieu-chuan` *(hỏi lại nhãn sở hữu, đừng tự gán)* |
+
+Rồi nói một dòng, kèm **cái còn thiếu**:
+
+> *"Trong `raw/` có 14 bài bạn đã nộp lúc dựng nền — tôi rút hồ sơ giọng từ đó luôn, không phải dán lại. Chưa thấy testimonial nào, nên `customer-wins` để trống; có thì đưa tôi."*
+
+⚠️ **`raw/` trống hoặc chỉ có bản ghi phỏng vấn onboarding thì nói thẳng rồi hỏi bình thường** — đừng nặn `voice-profile` từ bản ghi một buổi phỏng vấn. Đó là **lời nói**, không phải **văn viết**, và giọng viết mới là thứ trang này cần.
+
+🚫 **Ngó `raw/` không có nghĩa được sửa `raw/`.** Chỉ đọc. Và rút xong vẫn không tự ghi vào `wiki/` — vẫn qua `/nap-kho`.
+
 ### Nói trước bạn sắp mất bao lâu, rồi mới hỏi
 
 > *"Tôi cần dựng kho riêng cho việc viết. Có hai tầng: một tầng làm một lần rồi dùng mãi, một tầng bạn nạp thêm dần. Tầng một mất khoảng 20–30 phút nếu bạn có sẵn bài cũ. Bắt đầu luôn, hay để lát nữa?"*
@@ -126,7 +152,10 @@ Thu xong thì **viết luôn**. Đứng im chờ họ đi cài thứ khác rồi
 
 **🟡 Kho mỏng — 2 hoặc 3 trên 4. Viết được, nhưng nói trước cái gì sẽ yếu.**
 
-Nêu ngay đầu câu trả lời, một dòng, không vòng vo. Ví dụ: *"Có giọng rồi nhưng kho chuyện còn trống, nên bài này đi bằng quan điểm chứ chưa kể được chuyện thật của bạn."*
+Nêu ngay đầu câu trả lời, một dòng, không vòng vo. Nói đúng thứ **đang thiếu**, đừng đọc một câu mẫu:
+
+- Vừa cài vai trên nền đã chạy *(thiếu giọng + chuyện — cảnh phổ biến nhất)* → *"Có khách và quan điểm rồi, nhưng chưa có hồ sơ giọng nên bài này chưa nghe ra bạn. Dán 5–10 bài cũ là tôi rút được ngay."*
+- Có giọng, thiếu chuyện → *"Có giọng rồi nhưng kho chuyện còn trống, nên bài này đi bằng quan điểm chứ chưa kể được chuyện thật của bạn."*
 
 Rồi viết. Chỗ nào cần chất liệu chưa có thì để `[cần chuyện thật của bạn về X]` — đúng luật cấm bịa ở Bước 1, và người đọc thấy ngay phải lấp gì.
 
@@ -163,7 +192,14 @@ Bốn file cửa vào đếm **không cùng một chủ**. Hai cái là kho củ
 | `voice-profile` · `experiences-library` | **vai này** | rút trong lượt, theo bảng ở mục 🏗 |
 | `target-customer` · `contrarian-beliefs` | **nền** | 🆘 xem dưới |
 
-⚠️ **Vì thế người mới cài mỗi vai này, chưa chạy `/onboard`, cao nhất chỉ đạt 2/4 — mãi mãi.** Hai trang nền kia không có đường nào tự lấp từ trong đây, nên họ kẹt ở mức 🟡 và không hiểu vì sao. Đó là lý do mục này tồn tại.
+⚠️ **Điểm 2/4 xuất hiện ở hai cảnh ngược nhau — đọc nhầm cảnh là chữa nhầm bệnh.**
+
+| Thiếu cặp nào | Nghĩa là | Gỡ bằng |
+|---|---|---|
+| thiếu `voice-profile` + `experiences-library` | **bình thường và đúng.** Vừa cài vai trên một cái nền đã chạy — kho của vai chưa dựng | mục **🏗 Lần đầu chạy** phía trên |
+| thiếu `target-customer` + `contrarian-beliefs` | `/onboard` đã chạy nhưng **để trống hai trang đó** | mục 🆘 này |
+
+**Nhìn xem THIẾU cái nào, đừng nhìn con số.** Cùng ra 2/4, một cảnh chỉ cần 20 phút dựng kho của vai, cảnh kia cần ba câu lấp trang nền. Chữa nhầm là mất thời gian của họ vào đúng thứ đang không thiếu.
 
 #### Có nền, nhưng hai trang đó trống → hỏi ba câu, rút, rồi giao cho `/nap-kho`
 
