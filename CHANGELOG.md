@@ -4,6 +4,20 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v4.1 — 2026-09-07
+
+**`/nap-kho` nay nhận được file bàn giao `de-nap-vao-nao.md` từ các vai.**
+
+Một vai có thể chạy **trước khi người dùng có bộ não** — cài mỗi `/viet-content`, chưa clone nền. Trước đây chất liệu họ kể trong lượt đó chết theo đoạn chat: lần sau phải kể lại từ đầu, và đó là lý do người mới bỏ giữa chừng.
+
+Từ Content `1.9.0`, vai ghi chất liệu ra `content/<ngày>-<slug>/de-nap-vao-nao.md`, mỗi khối gắn sẵn đích `## → wiki/<trang>.md`. Nó **không** tự tạo `wiki/` — đường ghi vẫn chỉ có một.
+
+`/nap-kho` nay biết nhận loại file đó: lưu nguyên bản vào `raw/` trước, tách theo từng mục đích, **soi trùng từng khối** chứ không đổ thẳng, rồi báo lại theo từng trang.
+
+⚠️ Kèm một luật riêng cho loại này: **chất liệu trong file bàn giao thường CŨ hơn kho** — nó thu từ một lượt viết có thể đã lâu. Trùng thì bổ sung chi tiết còn thiếu, **đừng thay bản mới bằng bản cũ**.
+
+---
+
 ## v4.0 — 2026-09-07 · ĐỔI BỐ CỤC, đọc trước khi `git pull`
 
 **Bộ não nay dựng THẲNG vào thư mục bộ khung, không còn lớp `SecondBrain/`.**

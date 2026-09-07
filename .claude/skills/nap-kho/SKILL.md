@@ -30,6 +30,7 @@ Sửa thẳng file `.md` thì nhanh hơn — và đó chính là vấn đề. Sa
 | **Hình mẫu** | một người/thương hiệu đang học theo | `models/<tên>.md` | vai Content |
 | **Tài liệu dài** | transcript, bài viết, khoá học | lưu `raw/` trước, rồi rút ra các trang trên | — |
 | 🔧 **Sửa hoặc xoá thứ ĐÃ CÓ** | *"chỗ này sai rồi"* · *"bỏ mục kia đi"* · *"có bản mới hơn"* | **đọc `sua-kho.md` trước, đọc trọn** | nền |
+| 📦 **File bàn giao từ một vai** | tên `de-nap-vao-nao.md`, các mục `## → wiki/<trang>.md` | **nhiều trang cùng lúc** — xem mục 📦 dưới | nhiều chủ |
 
 Không rõ loại → **hỏi người dùng**, đừng đoán rồi đặt bừa.
 
@@ -46,6 +47,19 @@ Luật sắt cấm sửa tay file `.md`. Nhưng bộ não nào rồi cũng có t
 | *"tôi có bản mới hơn rồi"* | **XOAY** | Bước 0 đối chiếu hai bản — bản đúng là bản **GỘP**, không phải bản mới chép đè |
 
 🔴 **Luồng XOAY là chỗ dễ mất dữ liệu nhất.** Bản mới thường chỉ đụng vài mục của bản cũ; ném cả bản cũ đi là mất những mục **không ai định thay**. Đọc trọn `sua-kho.md` trước khi chạy nó — đừng chạy theo trí nhớ.
+
+### 📦 File bàn giao `de-nap-vao-nao.md` — một file, nhiều đích
+
+Vai có thể chạy **trước khi người dùng có bộ não**. Gặp cảnh đó, nó thu chất liệu trong lượt rồi ghi ra `content/<ngày>-<slug>/de-nap-vao-nao.md` thay vì để chết theo đoạn chat — nó **không** tự ghi vào `wiki/`, vì đường ghi là đây.
+
+Nhận file đó thì:
+
+1. **Lưu nguyên bản vào `raw/` trước** *(Bước 2)*. Đây là lời người dùng tự kể, nó là nguồn.
+2. **Tách theo từng mục `## → wiki/<trang>.md`.** File này cố ý ghi sẵn đích cho từng khối — **tin đích đó**, nhưng vẫn chạy đủ Bước 3 soi trùng cho mỗi khối, đừng đổ thẳng.
+3. **Đích thuộc vai chưa cài thì theo luật ngay dưới** — vẫn ghi, và nói rõ vai nào sẽ dựng nó tử tế hơn.
+4. **Báo lại theo từng trang**, không gộp một dòng: người dùng cần biết bốn thứ họ kể hôm đó đã vào bốn chỗ nào.
+
+⚠️ **Chất liệu trong file này thường CŨ hơn kho.** Nó được thu từ một lượt viết bài có thể đã lâu, còn kho thì đã lớn lên từ đó. Nên khối nào trùng với thứ đang có thì **bổ sung chi tiết còn thiếu**, đừng thay bản mới bằng bản cũ — đúng luật ba cách xử ở Bước 3.
 
 ### Ba thư mục của nền — dựng khi có file đầu tiên, không dựng rỗng
 

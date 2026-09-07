@@ -143,7 +143,7 @@ Không có rào cản năng lực nào ở đây: vai này hỏi được ba câ
 2. *"Trước khi mua, họ hay phản đối điều gì?"*
 3. *"Có niềm tin nào về ngành của bạn mà số đông không đồng ý, nhưng bạn thấy đúng?"*
 
-Câu 1–2 → `target-customer`. Câu 3 → `contrarian-beliefs`. Rút xong **dùng luôn trong lượt này**, rồi mời `/nap-kho` lưu thật.
+Câu 1–2 → `target-customer`. Câu 3 → `contrarian-beliefs`. Rút xong **dùng luôn trong lượt này**, rồi mời `/nap-kho` lưu thật. Họ nói *"để sau"* thì ghi vào `de-nap-vao-nao.md` như ở nhánh không-nền bên dưới — đừng để chất liệu chết theo đoạn chat chỉ vì họ chưa muốn chạy thêm một lệnh.
 
 ⚡ **Nói rõ đây là bản rút TỐI THIỂU, không phải bản đầy đủ.** `/onboard` hỏi sâu hơn nhiều và dựng đủ 11 trang; ba câu này chỉ đủ để gỡ cửa vào cho lượt hôm nay. Không nói ra thì họ tưởng xong nền rồi, và chín trang kia không bao giờ được dựng.
 
@@ -177,11 +177,49 @@ Ca này khác ở một điểm, và phải nói cho **đúng** điểm đó:
 
 🚫 **Đừng hỏi cả bốn câu một lượt.** Dán bốn câu ra là nhận về bốn câu trả lời qua loa, hoặc không câu nào. Một câu, chờ trả lời, rồi câu tiếp.
 
-**Bước 3 — viết bài, rồi đóng lại bằng một câu về cái đã mất:**
+**Bước 3 — viết bài, VÀ ghi lại chất liệu vào một file bàn giao.**
 
-> *"Bài nằm ở `content/<ngày>-<slug>/`, mở lại lúc nào cũng được. Nhưng bốn thứ bạn vừa kể thì chỉ sống trong đoạn chat này — lần sau bạn sẽ phải kể lại. Cài nền một lần là chúng thành file, và mọi bài sau đều tự đọc chúng."*
+Bốn thứ họ vừa kể **không được để chết theo đoạn chat**. Ghi thêm một file cạnh bài, trong đúng thư mục run:
 
-📌 **Đây là chỗ bán cái nền tốt nhất trong cả skill, và bán bằng thứ họ vừa tự trải qua** — không phải bằng lời hứa. Họ vừa thấy bài ra thế nào khi có chất liệu, và vừa nghe rằng chất liệu đó sắp bốc hơi.
+```
+content/<ngày>-<slug>/
+├── brief.md
+├── ket-qua.md
+└── de-nap-vao-nao.md   ← chất liệu thô, chờ ngày có nền
+```
+
+Khuôn `de-nap-vao-nao.md` — mỗi mục ghi rõ **nó sẽ vào trang nào**:
+
+```markdown
+# Chất liệu chờ nạp — <ngày>
+
+> Thu trong lượt viết bài, lúc máy chưa có bộ não thứ 2.
+> Cài nền xong thì mở Claude Code tại thư mục nền và gõ `/nap-kho`,
+> đưa file này cho nó. Nó sẽ soi trùng, chuẩn hoá, nối link rồi ghi vào `wiki/`.
+> 🚫 Đừng tự chép tay vào `wiki/` — đó là đường ghi duy nhất, đi vòng là mất soi trùng và mất `log.md`.
+
+## → wiki/voice-profile.md
+<bài họ đã dán, nguyên văn, kèm nhận xét giọng đã rút>
+
+## → wiki/experiences-library.md
+<chuyện họ kể, nguyên văn>
+
+## → wiki/target-customer.md
+<khách là ai · sợ gì · muốn gì · phản đối gì>
+
+## → wiki/contrarian-beliefs.md
+<niềm tin ngược số đông>
+```
+
+🚫 **TUYỆT ĐỐI không tự tạo `wiki/` rồi ghi thẳng vào đó.** Nghe như đang giúp, nhưng nó đẻ ra một bộ não **không có `/nap-kho` canh cửa**: chạy hai lượt là hai bản `voice-profile` khác nhau, không soi trùng, không `log.md`, không nối link. Và khi họ clone nền vào thư mục khác thì có **hai** `wiki/`, không ai biết cái nào thật.
+
+⚡ **Khác biệt cốt lõi: file bàn giao là NGUYÊN LIỆU chờ cửa, không phải KHO.** Nó không giả vờ là bộ não, nên không ai nhầm. Đúng hình dáng cả hệ thống đang chạy — mọi kênh nạp đều dừng ở nguyên liệu, chỉ `/nap-kho` mới bước qua cửa.
+
+**Rồi đóng lại:**
+
+> *"Bài nằm ở `content/<ngày>-<slug>/ket-qua.md`. Bốn thứ bạn vừa kể tôi đã ghi riêng ra `de-nap-vao-nao.md` cùng thư mục — chưa vào bộ não được vì bạn chưa có, nhưng **không mất**. Cài nền xong thì gõ `/nap-kho` và đưa file đó, một lần là xong, khỏi kể lại."*
+
+📌 **Đây là chỗ bán cái nền tốt nhất trong cả skill, và bán bằng thứ họ vừa tự trải qua** — không phải bằng lời hứa. Họ vừa thấy bài ra thế nào khi có chất liệu, thấy chất liệu đó đã nằm sẵn trên đĩa, và chỉ còn thiếu đúng cái cửa để đưa nó vào.
 
 🚫 **Đừng tự tạo thư mục `wiki/` rồi ghi file vào đó.** Nghe có vẻ giúp được, nhưng nó đẻ ra một bộ não **không có `/nap-kho` canh cửa** — không soi trùng, không nối link, không `log.md`. Ba tháng sau đó là một đống file không ai biết vì sao có, và đúng thứ luật một-đường-ghi sinh ra để chặn.
 
