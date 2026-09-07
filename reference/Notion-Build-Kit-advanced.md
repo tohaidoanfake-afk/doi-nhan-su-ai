@@ -185,7 +185,7 @@ Quick-add to Inbox without ingesting: create a Sources row Status=Inbox, fetch+s
 
 Nếu user không dùng Notion, dựng y hệt bằng thư mục:
 ```
-SecondBrain/
+<thư mục bộ khung>/     # KHÔNG bọc thêm lớp con nào
   raw/        # nguồn bất biến (1 file / nguồn)
   wiki/       # trang AI tổng hợp (.md), wikilink [[...]]
   index.md    # mục lục theo category

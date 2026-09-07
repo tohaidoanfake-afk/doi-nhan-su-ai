@@ -56,7 +56,7 @@ markmap:
 
 ```bash
 npx --yes markmap-cli mindmap-nguon.md -o <ten-file>.html --offline --no-open
-node ../../va-mindmap.mjs <ten-file>.html
+node ".claude/skills/viet-content/may/va-mindmap.mjs" <ten-file>.html
 ```
 
 5. **Mở `<ten-file>.html` kiểm bằng mắt** trước khi bàn giao. Đếm số nhánh cấp 1 khớp số mục lớn đã định chưa.
@@ -82,4 +82,4 @@ Trong `ket-qua.md`, mục `## Mindmap` ghi: đường dẫn `<ten-file>.html`, d
 
 Giữ luôn `mindmap-nguon.md` trong thư mục run — lần sau sửa nội dung thì sửa file đó rồi chạy lại **hai lệnh** ở bước 4, không phải dựng lại từ đầu. **Sinh lại là mất bản vá**, nên đừng chỉ chạy lệnh đầu. `mindmap-nguon.md` giữ nguyên tên (nguồn nội bộ, không gửi ra ngoài) — chỉ file `.html` giao ra mới cần tên ngắn gọn.
 
-Không cần dặn bạn tự mở file: thư viện tự mọc nút **🗺️ Mở `<ten-file>.html`** cho mọi run có file xem được (`scan.mjs` → `fileXem`) — nút tự đọc đúng tên file thật, không hardcode.
+Xong thì **đưa đường dẫn file `.html` cho người dùng tự mở**. File chạy offline, gửi Zalo/Messenger được, mở bằng trình duyệt nào cũng xem được.

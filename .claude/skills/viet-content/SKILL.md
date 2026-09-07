@@ -149,15 +149,20 @@ Câu 1–2 → `target-customer`. Câu 3 → `contrarian-beliefs`. Rút xong **d
 
 🚫 **Chỉ cứu ĐÚNG hai trang này, không cứu thêm trang nền nào khác.** Vai này còn đọc `offer-ladder` · `values-and-principles` · `goals` · `network` — thiếu chúng thì **nói một dòng là bài yếu ở đâu, rồi viết tiếp**, đừng mở phỏng vấn. Cứu hết mọi trang là biến vai này thành một bản `/onboard` thứ hai, mà bản thứ hai luôn cạn hơn bản thật và không ai biết mình đang dùng bản nào.
 
-#### Không có nền gì cả → THU TRONG LƯỢT, rồi viết. Nói rõ là không lưu được.
+#### Không có nền gì cả → THU TRONG LƯỢT, rồi viết
 
-Ca này khác ở một điểm quyết định: **`/nap-kho` đi kèm nền.** Không có nền thì không có đường ghi nào — mọi thứ rút ra chết theo đoạn chat.
+Ca này khác ở một điểm, và phải nói cho **đúng** điểm đó:
 
-Nhưng *không lưu được* **không phải** *không làm được*. Làm đủ ba bước, đừng dừng ở bước 1.
+| | Không có nền thì sao |
+|---|---|
+| **Bài viết ra** | ✅ **vẫn lưu bình thường.** Bước 7 ghi vào `content/<ngày>-<slug>/`, file thường trong thư mục làm việc — nó **không** đi qua `/nap-kho` |
+| **Chất liệu họ vừa kể** | ❌ mất. Giọng, chuyện, chân dung khách — bốn thứ đó vào `wiki/`, mà `/nap-kho` thì đi kèm nền |
+
+🚫 **Đừng nói "không lưu được gì".** Sai, và sai theo hướng làm người ta bỏ cuộc: họ tưởng công cụ này không đẻ ra thứ gì cầm được. Cái mất là **nguyên liệu**, không phải **thành phẩm** — lần sau họ phải kể lại từ đầu, chứ bài hôm nay vẫn nằm nguyên trên máy.
 
 **Bước 1 — nói đúng cái giá, một lần, ngắn:**
 
-> *"Bạn chưa có bộ não thứ 2 nên tôi không lưu được gì — đóng đoạn chat này là mất hết, lần sau phải kể lại từ đầu. Nhưng bài hôm nay thì viết được ngay: cho tôi xin bốn thứ, mỗi lần một thứ. Muốn giữ lại về sau thì cài nền: `git clone https://github.com/creator-ceo/nhan-su-thu-thu.git`"*
+> *"Bạn chưa có bộ não thứ 2. Bài viết ra tôi vẫn lưu vào thư mục `content/` bình thường — nhưng chất liệu bạn sắp kể thì không giữ được, nên lần sau bạn phải kể lại từ đầu. Bài hôm nay viết được ngay: cho tôi xin bốn thứ, mỗi lần một thứ. Muốn khỏi kể lại thì cài nền: `git clone https://github.com/creator-ceo/nhan-su-thu-thu.git`"*
 
 **Bước 2 — thu đúng bốn thứ cửa vào đếm, HỎI MỘT CÂU MỘT LƯỢT:**
 
@@ -174,7 +179,7 @@ Nhưng *không lưu được* **không phải** *không làm được*. Làm đ�
 
 **Bước 3 — viết bài, rồi đóng lại bằng một câu về cái đã mất:**
 
-> *"Bài ở trên dùng được. Nhưng bốn thứ bạn vừa kể chỉ sống trong đoạn chat này — lần sau bạn sẽ phải kể lại. Cài nền một lần là chúng thành file, và mọi bài sau đều tự đọc chúng."*
+> *"Bài nằm ở `content/<ngày>-<slug>/`, mở lại lúc nào cũng được. Nhưng bốn thứ bạn vừa kể thì chỉ sống trong đoạn chat này — lần sau bạn sẽ phải kể lại. Cài nền một lần là chúng thành file, và mọi bài sau đều tự đọc chúng."*
 
 📌 **Đây là chỗ bán cái nền tốt nhất trong cả skill, và bán bằng thứ họ vừa tự trải qua** — không phải bằng lời hứa. Họ vừa thấy bài ra thế nào khi có chất liệu, và vừa nghe rằng chất liệu đó sắp bốc hơi.
 
