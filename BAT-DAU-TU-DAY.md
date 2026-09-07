@@ -1,4 +1,4 @@
-# BẮT ĐẦU TỪ ĐÂY — 7 việc, 5–10 tiếng
+# BẮT ĐẦU TỪ ĐÂY — 8 việc, 5–10 tiếng
 
 **Tên bạn:** ............................................ **Ngày bắt đầu:** ...... / ...... / ............
 
@@ -6,7 +6,9 @@
 >
 > ⏱ Tổng công sức phần cơ bản: **5–10 tiếng tập trung**, chia được ra nhiều buổi. Không phải làm một mạch.
 >
-> 🎯 Xong 7 việc = bạn có một bộ não thứ 2 **chạy được thật** và đã dùng nó làm xong một việc thật.
+> 🎯 Xong 8 việc = bạn có một bộ não thứ 2 **chạy được thật**, đã dùng nó làm xong một việc thật, và đã có **vai A.I đầu tiên** chạy trên nó.
+>
+> 📌 Việc 1–7 là **cái nền**. Việc 8 là **vai đầu tiên**. Thứ tự này không đảo được: vai đọc bộ não, nó không dựng ra bộ não.
 
 ---
 
@@ -111,7 +113,7 @@ Gõ: `/kiem-chung`. Hoặc tự làm theo `.claude/skills/kiem-chung/SKILL.md`.
 - [ ] Đã hỏi đủ **5 câu kiểm chứng** và **tất cả đều trả lời đúng**
   - *(Mới cài nền, chưa cài vai Content thì **Câu 5 — giọng văn — bỏ qua**, chấm trên 4 câu. `voice-profile` là kho của vai Content, nền cố ý không dựng.)*
 
-> ⚠️ **Đây là việc quan trọng nhất trong cả 7 việc.** Nó bắt đúng cái bẫy phổ biến nhất: *tưởng đã lưu vào bộ não, thật ra chỉ nằm trong trí nhớ của đoạn chat — hết phiên là mất sạch.*
+> ⚠️ **Đây là việc quan trọng nhất trong cả lộ trình.** Nó bắt đúng cái bẫy phổ biến nhất: *tưởng đã lưu vào bộ não, thật ra chỉ nằm trong trí nhớ của đoạn chat — hết phiên là mất sạch.*
 >
 > Trả lời đúng = đã lưu thật. Trả lời sai = đang thiết kế sai, phải quay lại sửa chứ không đi tiếp.
 
@@ -119,7 +121,9 @@ Gõ: `/kiem-chung`. Hoặc tự làm theo `.claude/skills/kiem-chung/SKILL.md`.
 
 ## Việc 7 — Dùng bộ não làm xong một việc thật
 
-Chọn **một** việc thật bạn đang cần làm (viết một bài, soạn một email, dựng một quy trình, chuẩn bị một buổi tư vấn).
+Chọn **một** việc thật bạn đang cần làm — soạn một email, dựng một quy trình, chuẩn bị một buổi tư vấn, trả lời một câu hỏi khó về chính công việc của bạn.
+
+⚠️ **Đừng chọn "viết một bài đăng" ở việc này.** Viết content là việc của **vai Content**, và bạn chưa cài nó *(Việc 8)*. Làm bằng AI thường thì bài ra không mang giọng bạn — mà đó lại đúng thứ cả bộ này sinh ra để tránh. Việc 7 chứng minh **cái nền** chạy được; bài đăng để Việc 8.
 
 - [ ] **Đọc** — bảo AI đọc bộ não trước khi làm
 - [ ] **Làm theo** — AI làm dựa trên bộ não, không làm dựa trên kiến thức chung chung
@@ -130,9 +134,39 @@ Chọn **một** việc thật bạn đang cần làm (viết một bài, soạn
 
 ---
 
+## Việc 8 — Cài vai A.I đầu tiên
+
+Nền xong rồi thì nó **biết về bạn**, nhưng chưa **làm hộ** việc gì. Vai mới là thứ làm việc.
+
+Bắt đầu bằng vai Content nếu bạn làm nội dung — **hai lệnh, hai bước riêng**:
+
+- [ ] `claude plugin marketplace add creator-ceo/nhan-su-content`
+- [ ] `claude plugin install content`
+- [ ] Gõ `/` thấy `/viet-content`
+
+> ⚠️ **Lệnh đầu chỉ thêm nguồn, chưa cài gì.** Dừng ở đó rồi gõ `/viet-content` là không thấy lệnh nào — đây là chỗ hay tưởng hỏng nhất.
+
+**Lượt chạy đầu tiên, vai tự dựng kho của nó** — hai tầng:
+
+- [ ] **Tầng 1, làm một lần dùng mãi:** `voice-profile` *(rút từ 5–10 bài bạn đã đăng thật)* · `video-production-setup` *(chỉ khi bạn làm video)*
+- [ ] **Tầng 2, nạp thêm mãi:** `experiences-library` · `customer-wins` · `quoted-authority` · `models/` · `hook-library` · `content-library` · `audience-insights` · `so-lieu-chuan`
+
+⏱ Tầng 1 mất **20–30 phút** nếu bạn có sẵn bài cũ. Chưa muốn làm thì bỏ qua được — vai vẫn viết, chỉ là nói trước bài sẽ yếu chỗ nào.
+
+⚡ **Bài cũ bạn đã nộp ở Việc 3 nằm trong `raw/` — vai tự vào đó lấy, bạn không phải dán lại.** Nó báo lấy được gì và còn thiếu gì trước khi hỏi thêm.
+
+> 📌 **Vai chỉ dựng trang nào CÓ CHẤT LIỆU THẬT.** Chưa có lời chứng thực nào thì `customer-wins` **chưa tồn tại** — chứ không phải tồn tại mà rỗng. Trang rỗng làm cửa vào đếm nhầm là *"đã có"*, rồi bài ra nhạt mà không có cảnh báo nào.
+
+- [ ] Đã viết thử **một bài thật** bằng `/viet-content`
+- [ ] Đã chạy `/nap-kho` lưu lại thứ mới rút được
+
+*(Các vai khác — Điều phối, Bán hàng — cài y hệt, đổi tên kho. Cần vai nào lấy vai đó, không phải cài hết.)*
+
+---
+
 ## ✅ Xong
 
-- [ ] Cả 7 việc đã tick
+- [ ] Cả 8 việc đã tick
 - [ ] `log.md` có ít nhất 2 dòng (một lúc dựng, một lúc update ngược)
 
 **Ngày hoàn thành:** ...... / ...... / ............

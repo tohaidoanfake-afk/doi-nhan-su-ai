@@ -4,6 +4,18 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v4.2 — 2026-09-07
+
+**Lộ trình chưa bao giờ bảo người ta cài một vai — thêm Việc 8.**
+
+- 🔴 **`BAT-DAU-TU-DAY.md` là bản đồ duy nhất của member, và nó không có bước cài vai.** Nó nhắc *"cần chúng thì cài vai"* ba lần như một khái niệm, nhưng không có việc nào, không có lệnh nào, không có chỗ nào để tick. Người đi hết bảy việc xong vẫn **chưa có `/viet-content`**.
+  - Nặng hơn: **Việc 7 gợi ý đầu tiên là *"viết một bài"*** — đúng việc của vai Content. Họ sẽ làm bằng AI thường, bài ra không mang giọng họ, và đó là **đúng thứ cả bộ này sinh ra để tránh**. Nay Việc 7 nói thẳng đừng chọn bài đăng ở bước này, để dành Việc 8.
+- **Việc 8 mới:** hai lệnh cài *(kèm cảnh báo lệnh đầu chỉ thêm nguồn, chưa cài gì)* · hai tầng kho của vai · mốc thời gian 20–30 phút · và dòng nhắc **bài cũ nộp ở Việc 3 nằm sẵn trong `raw/`, vai tự vào lấy, không phải dán lại**.
+- **Không đánh số lại Việc 1–7** — giữ đúng luật đã chốt ở v3.x: *"đánh số lại cho đẹp là làm gãy hết chỗ trỏ chéo mà không đổi được gì."* Sáu chỗ trỏ tới *"Việc 5"* và *"Việc 6"* vẫn đúng nguyên.
+- `CLAUDE.md` còn ghi **`Phiên bản khung: v3.6`** — lệch bốn bản. Nay `v4.2`.
+
+---
+
 ## v4.1 — 2026-09-07
 
 **`/nap-kho` nay nhận được file bàn giao `de-nap-vao-nao.md` từ các vai.**
