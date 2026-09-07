@@ -67,6 +67,7 @@ Bộ câu hỏi đầy đủ nằm ở `CLAUDE.md`. Bản sâu 48 câu ở `refe
 Luật:
 - **Một câu một lượt.** Chờ trả lời rồi mới hỏi tiếp.
 - Câu nào Giai đoạn 1 đã có đủ → **bỏ qua và nói rõ vì sao bỏ**. Hỏi lại thứ họ vừa nộp là cách nhanh nhất làm người ta bỏ dở.
+- 🔴 **Trang đó đã có nội dung thật trong `wiki/` rồi → cũng bỏ qua.** Đọc `wiki/` **trước khi hỏi câu nào**, không phải chỉ đọc tài liệu họ vừa nộp. Xem mục ⚠️ ngay dưới Giai đoạn 3.
 - Trả lời chung chung → xin **ví dụ cụ thể, số liệu, tên riêng** trước khi đi tiếp.
 - Giữ nguyên chữ của họ.
 
@@ -77,6 +78,23 @@ Luật:
 ## GIAI ĐOẠN 3 — Dựng 11 trang, và KHÔNG dựng gì khác
 
 Dùng khung trong `templates/`, giữ nguyên heading, chỉ thay `[...]`. **Không bịa** — thiếu thì để nguyên placeholder hoặc ghi *"chưa có thông tin"*.
+
+### ⚠️ Trang đã có nội dung thật thì BỔ SUNG, không dựng đè
+
+`/onboard` không phải lúc nào cũng là thứ chạy đầu tiên. Hai đường đã có thật:
+
+- Một **vai** cứu trước. Vai Content, khi cửa vào đang kẹt, hỏi ba câu tối thiểu rồi giao `/nap-kho` ghi `target-customer` và `contrarian-beliefs` — bản **rút tối thiểu**, cố ý cạn hơn bản ở đây.
+- Người dùng **chạy lại `/onboard`** sau vài tuần để lấp nốt trang còn trống.
+
+Cả hai ca đều dẫn tới cùng một tình huống: **file đã có, và có nội dung thật.** Ghi đè là xoá thứ họ đã ngồi trả lời, mà xoá xong không có gì báo — `log.md` chỉ ghi *"dựng wiki"*, không ghi *"đã mất một bản"*.
+
+**Luật:**
+
+1. **Đọc file trước khi định ghi.** Có nội dung thật (không còn `[ngoặc vuông]`, không phải dòng *"chưa có thông tin"*) thì **không ghi đè**.
+2. **Bổ sung vào chỗ còn trống**, giữ nguyên chữ họ đã viết. Câu phỏng vấn ứng với phần đã đầy thì **bỏ và nói rõ vì sao bỏ**.
+3. **Mâu thuẫn thì hỏi, đừng chọn hộ.** Bản cũ nói khách sợ A, họ vừa nói sợ B → đưa cả hai ra, hỏi cái nào đúng hơn bây giờ. Đây thường là **thay đổi thật theo thời gian**, không phải lỗi.
+
+📌 Bản rút tối thiểu do vai cứu là **hạt giống, không phải bản chính thức**. Gặp nó thì nói thẳng: *"target-customer đang là bản rút nhanh từ ba câu, tôi hỏi sâu thêm để dựng bản đủ."* Rồi hỏi — nhưng hỏi để **đắp dày**, không hỏi lại từ đầu.
 
 ### 11 trang, hai việc khác nhau
 

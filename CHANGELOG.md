@@ -4,6 +4,17 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v3.8 — 2026-09-07
+
+**`/onboard` chạy lần hai thì xoá mất lần một.**
+
+- 🔴 **Không có bước nào kiểm trang đã tồn tại.** Luật bỏ-câu duy nhất là *"câu nào Giai đoạn 1 đã có đủ thì bỏ"* — mà Giai đoạn 1 chỉ đọc **tài liệu vừa nộp trong lượt này**, không đọc `wiki/`. Nên chạy lại lần hai là hỏi lại từ đầu rồi dựng đè, xoá đúng thứ người dùng đã ngồi trả lời. Và xoá xong **không có gì báo**: `log.md` ghi *"dựng wiki"*, không ghi *"đã mất một bản"*.
+  - Chưa gãy vì tới giờ `/onboard` gần như luôn chạy đúng một lần, đầu tiên. Nay có hai đường phá giả định đó: người dùng chạy lại sau vài tuần để lấp trang còn trống, và **vai cứu trước nền** *(vai Content 1.7.0 hỏi ba câu tối thiểu rồi giao `/nap-kho` ghi `target-customer` + `contrarian-beliefs` khi cửa vào đang kẹt)*.
+  - Nay: đọc `wiki/` **trước khi hỏi câu nào** · trang có nội dung thật thì **bổ sung vào chỗ trống**, không ghi đè · mâu thuẫn thì **hỏi, đừng chọn hộ** — bản cũ nói khách sợ A, nay nói sợ B, đó thường là thay đổi thật theo thời gian.
+  - Bản rút tối thiểu do vai cứu được coi là **hạt giống**: `/onboard` nói rõ nó là bản rút nhanh, rồi hỏi để **đắp dày**, không hỏi lại từ đầu.
+
+---
+
 ## v3.7 — 2026-09-07
 
 **Bốn con số tự cãi nhau, và một bài test không bao giờ đạt được điểm tối đa.**

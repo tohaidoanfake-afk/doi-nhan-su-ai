@@ -98,7 +98,7 @@ Tám kho này **không bao giờ xong** — chúng dày lên theo thời gian. L
 Nói thẳng: chưa viết được bài mang giọng của họ, vì chưa có gì để mang. Rồi đưa đúng **một** việc tiếp theo, không đưa danh sách:
 
 - Chưa có `voice-profile` → *"Dán vào đây 5 tới 10 bài bạn đã đăng thật. Tôi rút hồ sơ giọng, rồi mới viết được bài nghe ra bạn."*
-- Chưa có gì cả, kể cả trang nền → *"Chạy `/onboard` trước đã."*
+- Chưa có gì cả, kể cả trang nền → **xem mục 🆘 ngay dưới**, đừng chỉ nói *"chạy `/onboard` trước đã"* rồi dừng.
 
 ⚡ Đây là **từ chối có đường đi tiếp**, khác hẳn từ chối cụt. Từ chối cụt làm người mới kết luận công cụ này vô dụng; câu trên làm họ biết phải làm gì trong mười phút tới.
 
@@ -119,6 +119,41 @@ Rút xong thì **dùng luôn trong lượt này**, rồi mời chạy `/nap-kho`
 🚫 **Skill này KHÔNG tự ghi vào `wiki/`** — luật cũ, không có ngoại lệ. Bản rút ở đây sống trong lượt chạy; muốn nó thành tài sản thì phải qua `/nap-kho`.
 
 ⚡ Nhờ vậy lần dùng đầu tiên đổi từ *bị từ chối* thành *có bài dùng được, cộng thêm một tài sản mới trong não*.
+
+### 🆘 Hai trang NỀN mà cửa này đếm — thiếu thì cứu, đừng đá sang chỗ khác
+
+Bốn file cửa vào đếm **không cùng một chủ**. Hai cái là kho của vai này, hai cái là **trang nền**:
+
+| File | Chủ | Thiếu thì làm gì |
+|---|---|---|
+| `voice-profile` · `experiences-library` | **vai này** | rút trong lượt, theo bảng ở mục 🏗 |
+| `target-customer` · `contrarian-beliefs` | **nền** | 🆘 xem dưới |
+
+⚠️ **Vì thế người mới cài mỗi vai này, chưa chạy `/onboard`, cao nhất chỉ đạt 2/4 — mãi mãi.** Hai trang nền kia không có đường nào tự lấp từ trong đây, nên họ kẹt ở mức 🟡 và không hiểu vì sao. Đó là lý do mục này tồn tại.
+
+#### Có nền, nhưng hai trang đó trống → hỏi ba câu, rút, rồi giao cho `/nap-kho`
+
+Không có rào cản năng lực nào ở đây: vai này hỏi được ba câu đó tử tế như nền hỏi. Hỏi **một câu một lượt**, đúng luật phỏng vấn của nền:
+
+1. *"Khách lý tưởng của bạn là ai — họ đang sợ điều gì, và khao khát điều gì?"*
+2. *"Trước khi mua, họ hay phản đối điều gì?"*
+3. *"Có niềm tin nào về ngành của bạn mà số đông không đồng ý, nhưng bạn thấy đúng?"*
+
+Câu 1–2 → `target-customer`. Câu 3 → `contrarian-beliefs`. Rút xong **dùng luôn trong lượt này**, rồi mời `/nap-kho` lưu thật.
+
+⚡ **Nói rõ đây là bản rút TỐI THIỂU, không phải bản đầy đủ.** `/onboard` hỏi sâu hơn nhiều và dựng đủ 11 trang; ba câu này chỉ đủ để gỡ cửa vào cho lượt hôm nay. Không nói ra thì họ tưởng xong nền rồi, và chín trang kia không bao giờ được dựng.
+
+🚫 **Chỉ cứu ĐÚNG hai trang này, không cứu thêm trang nền nào khác.** Vai này còn đọc `offer-ladder` · `values-and-principles` · `goals` · `network` — thiếu chúng thì **nói một dòng là bài yếu ở đâu, rồi viết tiếp**, đừng mở phỏng vấn. Cứu hết mọi trang là biến vai này thành một bản `/onboard` thứ hai, mà bản thứ hai luôn cạn hơn bản thật và không ai biết mình đang dùng bản nào.
+
+#### Không có nền gì cả → nói thẳng là KHÔNG có gì được lưu lại
+
+Đây là ca khác hẳn, và khác ở một điểm quyết định: **`/nap-kho` đi kèm nền.** Không có nền thì không có đường ghi nào cả — mọi thứ rút ra trong lượt này chết theo đoạn chat.
+
+Nên vẫn làm được việc, nhưng phải nói đúng cái giá:
+
+> *"Bạn chưa có bộ não thứ 2 nên tôi không lưu được gì — dán bài cũ và trả lời vài câu thì tôi viết được ngay bài hôm nay, nhưng đóng đoạn chat này là mất hết, lần sau phải kể lại từ đầu. Muốn giữ lại thì cài nền trước: `git clone https://github.com/creator-ceo/nhan-su-thu-thu.git`"*
+
+🚫 **Đừng tự tạo thư mục `wiki/` rồi ghi file vào đó.** Nghe có vẻ giúp được, nhưng nó đẻ ra một bộ não **không có `/nap-kho` canh cửa** — không soi trùng, không nối link, không `log.md`. Ba tháng sau đó là một đống file không ai biết vì sao có, và đúng thứ luật một-đường-ghi sinh ra để chặn.
 
 ### Vì sao có cửa này
 
