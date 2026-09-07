@@ -438,6 +438,7 @@ trang-thai: nhap            # nhap | da-soi | da-dang
 - **`soi`** — chỉ ra **chỗ hỏng và cách sửa**, tuyệt đối **không chấm điểm**. Mỗi lỗi trích đúng câu bị lỗi. Lý do không chấm điểm nằm ở `luat/hook.md` mục *"Vì sao KHÔNG chấm điểm hook bằng AI"* — AI chấm bài của chính nó là con số tự khen.
 - **`y-tuong`** — ý viết được ngay, không phải chủ đề chung chung. Bám quan điểm cốt lõi ở `wiki/contrarian-beliefs.md`; **không** gợi ý theo trending.
 - **`viet-lai` · `tai-su-dung`** — đổi **cách kể** cho hợp định dạng đích, không phải cắt ngắn bài cũ.
+- **`trang-ban-hang`** — **có file riêng: `trang-ban-hang.md`, đọc trước khi viết.** Khác `email-ban-hang` đúng một điểm nhưng điểm đó quyết định cả cách viết: **thư đọc tuyến tính, trang thì người ta LƯỚT** — nên nội dung phải chia thành khối rõ ràng để người dựng giao diện cắt đúng chỗ. Viết một bài văn xuôi liền mạch rồi giao là **sai định dạng**, dù câu chữ hay tới đâu.
 
 ---
 
