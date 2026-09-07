@@ -46,19 +46,19 @@ Ba câu này không lưu, vì mỗi lần một khác:
 
 ### Lớp 3 — Vai này làm gì, và KHÔNG làm gì
 
-⚡ **Đọc kỹ mục này trước khi hứa bất cứ điều gì.** Vai Bán hàng **không tự đẻ ra tài sản**. Nó làm bốn việc, và cả bốn đều là việc nghĩ:
+⚡ **Đọc kỹ mục này trước khi hứa bất cứ điều gì.** Vai Bán hàng đẻ ra đúng **một** loại tài sản — cái offer. Bốn việc còn lại đều là việc nghĩ:
 
 | Nó làm | Nó KHÔNG làm |
 |---|---|
 | Hỏi **cửa phễu** trước, vì cửa quyết định bán gì *(Bước 0)* | Tự viết trang bán — đó là vai Content, `/viet-content` việc `trang-ban-hang` |
-| **Soi phễu**: từng chặng trỏ vào tài sản có hay trống | Tự thiết kế offer — chưa có skill, làm tay theo hướng dẫn |
-| **Chẩn chỗ đứt**: người rơi ở chặng nào, vì sao | Tự viết chuỗi email, kịch bản gọi |
+| **Soi phễu**: từng chặng trỏ vào tài sản có hay trống | Tự viết chuỗi email bán, kịch bản gọi 1-1 — chưa có skill |
+| **Chẩn chỗ đứt**: người rơi ở chặng nào, vì sao | Dựng lại offer cho một thị trường khác — chưa có skill |
 | Giữ **bốn luật cứng** ở dưới, cái nào cũng đã có người trả giá | |
 | **Dựng offer** — 12 bước, đọc `thiet-ke-offer.md` | |
 
 🚫 **Đừng nhận việc rồi làm nửa vời.** Được nhờ *"viết trang bán Owner OS"* thì trả lời hai phần: **phần này làm được ngay** — cửa phễu nào, trang đó là trang bán hay trang case study, khối nào phải có, chỗ nào trong kho còn trống; và **phần phải giao đi** — chữ nghĩa thật thì gọi `/viet-content`.
 
-📌 **Vai không đẻ tài sản mà vẫn đáng cài, vì nó chặn đúng thứ đắt nhất.** Viết một trang bán rất hay cho sai cửa phễu thì công viết đổ sông — mà lỗi đó chỉ lộ ra sau khi đã đăng. Bước 0 mất một câu hỏi.
+📌 **Bốn việc nghĩ kia mới là chỗ vai này đáng tiền, vì chúng chặn đúng thứ đắt nhất.** Viết một trang bán rất hay cho sai cửa phễu thì công viết đổ sông — mà lỗi đó chỉ lộ ra sau khi đã đăng. Bước 0 mất một câu hỏi.
 
 ## Bước 0 — Hỏi phễu trước, hỏi sản phẩm sau
 
