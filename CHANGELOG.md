@@ -4,6 +4,24 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v3.5 — 2026-09-07
+
+**Thêm `/nap-kho` luồng SỬA KHO — lấp chỗ hở lớn nhất của bản phát.**
+
+- 🔴 **Người nhận ghi được vào bộ não nhưng không sửa được.** Luật sắt cấm sửa tay file `.md`, mà bản phát chỉ có `/nap-kho` để **ghi thêm** và `/kiem-chung` để **soi** — không có đường nào chữa một trang đã sai.
+
+  Gặp trang sai thì họ chỉ còn hai lựa chọn, cả hai đều hỏng: **sửa tay** *(phá luật, mất soi trùng, mất `log.md`)* hoặc **để nguyên cái sai** *(bộ não tích mâu thuẫn cho tới lúc không ai tin nó nữa)*. `sua-kho.md` là đường thứ ba.
+
+- **Ba luồng, và chọn nhầm luồng là hỏng:** SỬA *(giữ nguyên mọi thứ họ không nhắc tới)* · XOÁ *(kiểm ai đang trỏ tới nó trước khi xoá)* · **XOAY** *(có bản mới hơn)*.
+
+  🔴 **XOAY là chỗ dễ mất dữ liệu nhất.** Bản mới thường chỉ đụng vài mục của bản cũ; ném cả bản cũ đi là mất những mục **không ai định thay**. Nên Bước 0 bắt lập bảng đối chiếu và gán nhãn từng mục — 🔄 bị thay *(phải nêu tên mục thay nó)* · ✅ giữ · ⛔ bỏ hẳn *(phải nêu lý do)*. **Bản đúng là bản GỘP**, không phải bản mới chép đè.
+
+- Thêm luật **trang "kết luận duy nhất"**: trang chỉ giữ MỘT câu trả lời cho mỗi thứ, lịch sử tách hẳn sang `<slug>-lich-su.md`, và mỗi lần sửa phải **xác nhận rõ với người dùng** đây là THAY hay BỔ SUNG — không chỉ ghi âm thầm trong `log.md`.
+
+- Gỡ mọi tham chiếu tới kit Owner OS trong file gốc: `owner-os/runs/`, `os-map.json`, bốn phép kiểm của `kiem.mjs` — thay bằng `/kiem-chung` và `index.md`, những thứ người nhận thật sự có.
+
+---
+
 ## v3.4 — 2026-09-07
 
 **Đổi tên kho: `second-brain-file-ai` → `nhan-su-thu-thu`.**

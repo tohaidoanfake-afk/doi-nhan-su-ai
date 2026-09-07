@@ -29,8 +29,23 @@ Sửa thẳng file `.md` thì nhanh hơn — và đó chính là vấn đề. Sa
 | **Kết quả khách** | có con số, có bằng chứng | `customer-wins.md` | vai Content |
 | **Hình mẫu** | một người/thương hiệu đang học theo | `models/<tên>.md` | vai Content |
 | **Tài liệu dài** | transcript, bài viết, khoá học | lưu `raw/` trước, rồi rút ra các trang trên | — |
+| 🔧 **Sửa hoặc xoá thứ ĐÃ CÓ** | *"chỗ này sai rồi"* · *"bỏ mục kia đi"* · *"có bản mới hơn"* | **đọc `sua-kho.md` trước, đọc trọn** | nền |
 
 Không rõ loại → **hỏi người dùng**, đừng đoán rồi đặt bừa.
+
+### 🔧 Sửa kho — đây là nửa còn lại của "một đường ghi duy nhất"
+
+Luật sắt cấm sửa tay file `.md`. Nhưng bộ não nào rồi cũng có trang sai — nhớ nhầm một con số, đổi ý về một quyết định, có bản mới hơn thay bản cũ. **Không có đường sửa thì người dùng chỉ còn hai lựa chọn, và cả hai đều hỏng:** sửa tay *(phá luật, mất soi trùng và mất `log.md`)*, hoặc để nguyên cái sai *(bộ não tích mâu thuẫn cho tới lúc không ai tin nó nữa)*.
+
+`sua-kho.md` là đường thứ ba. Nó có ba luồng, và chọn nhầm luồng là hỏng:
+
+| Nghe như | Luồng | Điểm chết |
+|---|---|---|
+| *"chỗ này ghi sai, sửa lại"* | **SỬA** | giữ nguyên mọi thứ họ không nhắc tới |
+| *"bỏ mục này đi"* | **XOÁ** | kiểm ai đang trỏ tới nó **trước** khi xoá |
+| *"tôi có bản mới hơn rồi"* | **XOAY** | Bước 0 đối chiếu hai bản — bản đúng là bản **GỘP**, không phải bản mới chép đè |
+
+🔴 **Luồng XOAY là chỗ dễ mất dữ liệu nhất.** Bản mới thường chỉ đụng vài mục của bản cũ; ném cả bản cũ đi là mất những mục **không ai định thay**. Đọc trọn `sua-kho.md` trước khi chạy nó — đừng chạy theo trí nhớ.
 
 ### Ba thư mục của nền — dựng khi có file đầu tiên, không dựng rỗng
 

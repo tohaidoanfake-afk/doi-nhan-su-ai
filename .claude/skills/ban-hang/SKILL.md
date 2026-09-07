@@ -52,6 +52,7 @@ Ba câu này không lưu, vì mỗi lần một khác:
 | **Soi phễu**: từng chặng trỏ vào tài sản có hay trống | Tự thiết kế offer — chưa có skill, làm tay theo hướng dẫn |
 | **Chẩn chỗ đứt**: người rơi ở chặng nào, vì sao | Tự viết chuỗi email, kịch bản gọi |
 | Giữ **bốn luật cứng** ở dưới, cái nào cũng đã có người trả giá | |
+| **Dựng offer** — 12 bước, đọc `thiet-ke-offer.md` | |
 
 🚫 **Đừng nhận việc rồi làm nửa vời.** Được nhờ *"viết trang bán Owner OS"* thì trả lời hai phần: **phần này làm được ngay** — cửa phễu nào, trang đó là trang bán hay trang case study, khối nào phải có, chỗ nào trong kho còn trống; và **phần phải giao đi** — chữ nghĩa thật thì gọi `/viet-content`.
 
@@ -80,7 +81,7 @@ Câu đầu tiên vai này hỏi: *"Người này tới từ cửa nào?"* Chưa
 | "viết trang bán" | vai **Content** → `/viet-content`, việc `trang-ban-hang` | ✅ kho `nhan-su-content` |
 | "phễu cho sản phẩm này ra sao", "đứt ở đâu" | **vai này** — soi phễu, chẩn chỗ đứt | ✅ ngay đây |
 | "người này tới từ cửa nào, nên bán gì" | **vai này** — Bước 0 | ✅ ngay đây |
-| "bán cái này thế nào", "chưa gói được thành thứ có tên có giá" | thiết kế offer | ⬜ chưa có skill |
+| "bán cái này thế nào", "chưa gói được thành thứ có tên có giá" | **vai này** — 12 bước, file riêng `thiet-ke-offer.md` | ✅ ngay đây |
 | "email bán", "chuỗi thư" | chuỗi email bán | ⬜ chưa có skill |
 | "kịch bản gọi", "nói gì trong buổi 1-1" | kịch bản 1-1 | ⬜ chưa có skill |
 | "sản phẩm này cho thị trường khác" | offer cho tệp mới | ⬜ chưa có skill |
