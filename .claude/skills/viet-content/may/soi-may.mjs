@@ -93,7 +93,7 @@ if (khung === 'costly_mistake') {
     const truoc = i, sau = doan.length - i - 1;
     if (sau > truoc) bao('lech_can_nang', 'chac',
       `phần giải pháp ${sau} đoạn > phần sai lầm ${truoc} đoạn`,
-      'Kể giải pháp dài hơn kể sai lầm là bài trượt thành quảng cáo cho giải pháp — writing-craft-core, khung "Một sai lầm đắt giá"');
+      'Kể giải pháp dài hơn kể sai lầm là bài trượt thành quảng cáo cho giải pháp — khung "Một sai lầm đắt giá"');
   }
 }
 
@@ -118,7 +118,7 @@ const trung = (w) => new RegExp(`(?<!\\p{L})(?:${w})(?!\\p{L})`, 'iu').test(van)
 const neo = GIAC_QUAN.filter(trung);
 if (KHUNG_CHUYEN.includes(khung) && neo.length === 0)
   bao('thieu_giac_quan', 'de_y', `khung ${khung} mà không có neo giác quan nào`,
-    'writing-craft-core: 4 neo — HÌNH (động tác thấy được) · TIẾNG · CẢM XÚC gọi thẳng tên · CẢM GIÁC CƠ THỂ. Cắm ở đoạn cao trào, không rải đều.');
+    '4 neo chi tiết — HÌNH (động tác thấy được) · TIẾNG · CẢM XÚC gọi thẳng tên · CẢM GIÁC CƠ THỂ. Cắm ở đoạn cao trào, không rải đều.');
 
 /* Mặt trái của chính luật trên: viết quá tay thành giọng brochure = W4 ở dau-hieu-ai-viet */
 const BROCHURE = ['nắng vàng','trải dài','không gian ấm cúng','bầu không khí','sôi động','nép mình','giàu bản sắc','đa dạng và phong phú','trọn vẹn','êm đềm','thơ mộng','bình yên đến lạ'];
@@ -137,7 +137,7 @@ const TUYET_DOI = [
 ];
 const td = TUYET_DOI.filter((w) => new RegExp(w, 'i').test(van));
 if (td.length) bao('phu_dinh_tuyet_doi', 'de_y', `${td.length} cụm phủ định tuyệt đối: ${td.join(' · ')}`,
-  'writing-craft-core §NÓI CHÍNH XÁC — đổi sang SO SÁNH ("không ... BẰNG ..."), người đọc luôn tìm được một phản ví dụ');
+  'nói chính xác — đổi sang SO SÁNH ("không ... BẰNG ..."), người đọc luôn tìm được một phản ví dụ');
 
 /* ── Khớp giọng đã chốt ── */
 const NGONG = ['hem','thui','tui','rùi','nắm','ló','mí'];

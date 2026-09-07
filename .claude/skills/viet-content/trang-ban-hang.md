@@ -24,7 +24,7 @@ Ghi trong `## Bài viết`, đánh dấu từng khối bằng heading `###` đ�
 
 ## Chốt chặn
 
-- **Đọc `wiki/dau-hieu-ai-viet.md` trước khi viết khối Thesis và CTA** — đây là hai chỗ dễ rơi vào "chiêu bán hàng sáo mòn" nhất (mục cùng tên trong trang đó, nạp 2026-09-02): tránh twist tự-phủ-nhận kiểu *"tôi không mời bạn mua gì cả hôm nay"*, tránh liệt kê nhánh phòng thủ *"có thể bạn... có thể bạn... hoặc bạn..."*.
+- **Đọc `luat/dau-hieu-ai-viet.md` *(đi kèm gói này)* trước khi viết khối Thesis và CTA** — đây là hai chỗ dễ rơi vào "chiêu bán hàng sáo mòn" nhất (mục cùng tên trong trang đó, nạp 2026-09-02): tránh twist tự-phủ-nhận kiểu *"tôi không mời bạn mua gì cả hôm nay"*, tránh liệt kê nhánh phòng thủ *"có thể bạn... có thể bạn... hoặc bạn..."*.
 - **Không nhồi chi tiết vận hành (số ngày lộ trình, điều khoản hoàn tiền) vào khối Thân chuyện hoặc Thesis.** Chi tiết vận hành đặt ở khối Cơ chế, tách khỏi mạch cảm xúc — trộn vào là làm loãng đúng chỗ cần đặc nhất.
 - **Bàn giao kèm mô tả cấu trúc, không chỉ giao chữ.** Trong `ket-qua.md`, liệt kê rõ khối nào ứng với đoạn nào, khối nào cần nổi bật hơn (đổi nền/màu), để người dựng giao diện — `thiet-ke-web`, hoặc một phiên Claude Code khác đang build code thật — cắt đúng chỗ mà không phải đoán lại từ đầu.
 - **Đây là NỘI DUNG, không phải giao diện.** Không đề xuất màu sắc/font/CSS cụ thể trong bài — việc đó của `thiet-ke-web`. Chỉ đánh dấu khối và nói khối nào cần nổi bật hơn khối nào.

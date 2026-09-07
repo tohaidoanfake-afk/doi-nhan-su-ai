@@ -222,7 +222,7 @@ Chép vào mã nguồn công cụ viết *(nội bộ)*. Chia hai mức vì lý 
 
 ⚠️ **Nhưng anh KHÔNG để nó tự đăng** — dây chuyền dừng trước cửa xuất bản: *"em chỉ tự động để đưa vào đây và em vẫn sẽ duyệt lại một lần nữa chứ em không muốn tự đăng hết. Tại vì bây giờ **em không theo môn số lượng nữa**, em làm theo kiểu rất chất lượng."* Cùng một hình dáng với luật *"chỉ một đường ghi, có người duyệt"* của `/nap-kho`.
 
-📌 Nối `luat/loi-nghe.md` · [[projects/creator-os]] · [[teachings/ai-framework]] §Bài nói 3h30.
+📌 Nối `luat/loi-nghe.md` — cùng gói này.
 
 ## Links
 

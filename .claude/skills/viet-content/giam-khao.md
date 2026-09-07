@@ -57,8 +57,8 @@ Chạy ở môi trường không có Agent tool thì làm bước này thành m�
 
 1. Giám khảo chỉ ra chỗ hỏng → sửa → gọi một giám khảo **mới** soi lại (không nối tiếp con cũ, nối tiếp là mất tính độc lập).
 2. Còn hỏng → sửa lần hai → soi lần hai.
-3. **Hết 2 vòng là dừng, kể cả còn lỗi.** Giao bài cho Đoàn kèm ghi rõ mục nào chưa đạt và vì sao.
+3. **Hết 2 vòng là dừng, kể cả còn lỗi.** Giao bài cho **người dùng** kèm ghi rõ mục nào chưa đạt và vì sao.
 
-Không có mốc dừng thì hai con chuyền bài qua lại tới hết tiền. Đây là luật *"loop phải có điểm dừng cứng"* ở `wiki/agent-harness-design.md` §1.
+Không có mốc dừng thì hai con chuyền bài qua lại tới hết tiền — **mỗi vòng là tiền thật**, và bài thứ ba hiếm khi hơn bài thứ hai đủ để bù. Luật chung: *một vòng lặp giữa hai con A.I phải có điểm dừng cứng đếm được, không phải điểm dừng "khi nào đạt"*.
 
-⚠️ **Giám khảo không phải chốt chặn cuối. Đoàn mới là.** Nó cùng một model, đọc cùng bộ luật: nó gỡ được cái bẫy *"tôi vừa viết nên tôi thấy hay"*, nhưng chỗ nào model mù thì cả hai con cùng mù. **Không bao giờ ghi "đã qua giám khảo nên bài đạt".**
+⚠️ **Giám khảo không phải chốt chặn cuối. Bạn mới là.** Nó cùng một model, đọc cùng bộ luật: nó gỡ được cái bẫy *"tôi vừa viết nên tôi thấy hay"*, nhưng chỗ nào model mù thì cả hai con cùng mù. **Không bao giờ ghi "đã qua giám khảo nên bài đạt".**
