@@ -1,12 +1,13 @@
 # Bản kê — bản gộp này sinh từ đâu
 
 > ⚙️ **File này do máy sinh.** Chạy `node phat-ban-gop.mjs` để cập nhật.
-> Sinh lúc: 2026-09-07 02:13
+> Sinh lúc: 2026-09-07 02:28
 
 | Phần | Kho lẻ | Phiên bản |
 |---|---|---|
 | 🧑‍🏫 Thủ thư *(nền)* | `creator-ceo/nhan-su-thu-thu` | `v3.4` |
 | ✍️ Content | `creator-ceo/nhan-su-content` | `1.2.0` |
+| 🎛️ Điều phối | `creator-ceo/nhan-su-dieu-phoi` | `1.0.0` |
 
 ## Nghi bản gộp lạc hậu thì làm gì
 
@@ -16,3 +17,4 @@ So phiên bản ở bảng trên với kho lẻ trên GitHub. Lệch thì **ch�
 
 **Nền:** `/kiem-chung` · `/nap-kho` · `/onboard`
 **✍️ Content:** `/viet-content`
+**🎛️ Điều phối:** `/banh-xe-cuoc-doi` · `/kham-benh` · `/tong-giam-doc`

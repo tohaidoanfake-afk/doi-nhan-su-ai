@@ -1,0 +1,1961 @@
+{
+  "_sinhRa": {
+    "tu": "owner-os/os-map.json > nutThat",
+    "boi": "node owner-os/phat-bo-kham.mjs --ghi",
+    "luc": "2026-09-06",
+    "canhBao": "FILE SINH RA — đừng sửa tay. Sửa ở os-map.json của Creator OS rồi chạy lại lệnh trên."
+  },
+  "nutThat": {
+    "nguon": "wiki/nut-that.md",
+    "nhacSauNgay": 30,
+    "donChayNgay": 14,
+    "donChayNote": "Số ngày một đơn cần để chạy xong trước khi soi lại. Soi lại sớm hơn thì trang CHỈ NHẮC, không chặn — quyền soi vẫn ở Đoàn. Vì sao có: 08-22 và 08-23 soi cách nhau ĐÚNG MỘT NGÀY, ra y hệt nút thắt (Thu hút 1/10), vì đơn 08-22 (12 bài/14 ngày) chưa kịp chạy — lượt 08-23 gần như là bản sao. Con số 14 là ĐỀ XUẤT của Claude lấy theo đơn 08-22, ĐOÀN CHƯA CHỐT (câu hỏi số 3 trong ket-qua.md lượt 08-23). Sửa ở đây, đừng sửa trong code.",
+    "note": "Bản soi nút thắt định kỳ, cùng cơ chế với banhXe: form ở tab Kế hoạch ghi đề xuất ra owner-os/nap/, skill nap-kho đọc-phân tích-ghi, mỗi lượt là một mục '## Lần soi — <ngày>' MỚI trong nguon, không ghi đè. ⚡ NÂNG 5 KHÂU → 8 KHÂU ngày 2026-08-20 (Đoàn: 'oke 8 khâu đi' · 'sửa cái cũ thành bản mới này'). Bản 5 khâu cũ: Thu hút / Chuyển đổi / Chuyển giao / Thiết kế sản phẩm / Người vận hành — bốn khâu đầu chép từ bảng nút thắt trong wiki/goals.md. Tám khâu nay chạy chung một trục với bộ chẩn đoán cho KHÁCH ở wiki/chan-doan-cua-vao.md — cùng máy, khác chủ thể: ở đây soi chính Đoàn, ở đó soi khách/học viên. Đừng để hai chỗ đếm ra hai số khâu khác nhau. Đổi khâu thì sửa ở đây, đừng sửa trong code.",
+    "khau": [
+      {
+        "id": "dinh-huong",
+        "icon": "🧭",
+        "ten": "Định hướng",
+        "mo": "Biết bán cho AI, họ đau chuyện gì, mình giải bằng cách nào, và các món nối nhau ra sao.",
+        "canCu": "positioning",
+        "hoi": "Mình đang bán cho ai — nói ra được một nhóm cụ thể không? Khách đó đang khổ chuyện gì? Mình giải bằng cách nào? Các món mình bán có nối nhau thành một đường không?",
+        "cauSang": [
+          {
+            "hoi": "Mình biết rõ khách của mình là ai chưa?",
+            "phu": "Nghĩ tới: mình giúp ai, họ đang khổ chuyện gì, và mình kiếm tiền bằng cách nào.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Chưa rõ",
+                "mo": "Ai hỏi mua mình cũng nhận, chưa từ chối ai vì thấy không đúng người"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nghĩ tới nhưng chưa chốt",
+                "mo": "Biết mình làm được gì, nhưng khách là ai thì còn đổi ý"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Khá rõ",
+                "mo": "Biết là nhóm nào rồi, nhưng chưa rõ họ cần gì nhất"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Rõ và đang đi một hướng",
+                "mo": "Biết họ là ai, cần gì, và mình bán đúng thứ đó"
+              }
+            ],
+            "id": "dinh-huong-1",
+            "daoSau": [
+              "Lần gần nhất có người hỏi 'anh/chị làm về gì' — mình đã trả lời bằng câu gì?",
+              "Ba tháng qua đã thử nhắm vào những nhóm khách nào? Bỏ nhóm nào, vì sao bỏ?",
+              "Theo mình, vì sao tới giờ vẫn chưa chốt được là mình dành cho ai?",
+              "Nếu bắt buộc chỉ được phục vụ MỘT nhóm trong 6 tháng tới, mình chọn nhóm nào? Vì sao nhóm đó?"
+            ]
+          },
+          {
+            "id": "dinh-huong-2",
+            "hoi": "Mình có bằng chứng là khách thật sự đang khổ vì chuyện đó không?",
+            "phu": "Bằng chứng thật là: đã ngồi nghe họ kể, hoặc đã có người bỏ tiền ra để giải quyết nó.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Chưa, mình đang đoán",
+                "mo": "Tự nghĩ ra khách cần gì, chưa hỏi ai cho ra ngô ra khoai"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nghe loáng thoáng",
+                "mo": "Vài người có than, nhưng chưa thấy họ sốt ruột tới mức phải giải quyết"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Khá rõ",
+                "mo": "Nhiều người kể cùng một chuyện, và họ đã tự đi tìm cách gỡ"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Đã có người trả tiền cho nó",
+                "mo": "Có khách bỏ tiền ra giải quyết đúng chuyện đó, mình biết vì sao họ mua"
+              }
+            ],
+            "daoSau": [
+              "Lần gần nhất mình ngồi nghe một khách kể chuyện của họ là khi nào? Họ kể gì?",
+              "Từ trước tới giờ mình biết khách cần gì bằng cách nào — nghe họ nói ra, hay tự mình suy?",
+              "Theo mình, vì sao tới giờ vẫn chưa đi hỏi thẳng họ?",
+              "Nếu tuần sau ngồi nghe được 5 khách, mình sẽ hỏi họ câu gì đầu tiên?"
+            ]
+          }
+        ],
+        "canCuVi": "giữ nguyên"
+      },
+      {
+        "id": "thu-hut",
+        "icon": "🧲",
+        "ten": "Thu hút",
+        "mo": "Người lạ biết tới mình đều đặn, không phụ thuộc lượt hiển thị của nền tảng.",
+        "canCu": "tuyen-noi-dung",
+        "hoi": "30 ngày qua đăng bao nhiêu bài/video? Người mới biết tới mình chủ yếu từ đâu? Nghỉ đăng 2 tuần thì người hỏi mua có tụt không?",
+        "cauHoi": [
+          {
+            "id": "t1",
+            "hoi": "30 ngày qua đăng được bao nhiêu bài/video?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "0–1 bài"
+              },
+              {
+                "mau": "vang",
+                "chu": "2–8 bài"
+              },
+              {
+                "mau": "xanh",
+                "chu": "trên 8 bài"
+              }
+            ]
+          },
+          {
+            "id": "t2",
+            "hoi": "Người mới biết tới mình chủ yếu từ đâu?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "chưa có ai mới · hoặc hên xui bài nào viral thì có"
+              },
+              {
+                "mau": "vang",
+                "chu": "một kênh duy nhất"
+              },
+              {
+                "mau": "xanh",
+                "chu": "2 kênh trở lên đều đặn · hoặc khách cũ giới thiệu"
+              }
+            ]
+          },
+          {
+            "id": "t3",
+            "hoi": "Nghỉ đăng 2 tuần thì lượng người hỏi mua có tụt không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "tụt về gần 0 · hoặc chưa từng dám nghỉ nên không biết"
+              },
+              {
+                "mau": "vang",
+                "chu": "tụt mạnh"
+              },
+              {
+                "mau": "xanh",
+                "chu": "gần như không đổi"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Có người mới biết tới mình không?",
+            "phu": "Nguồn có thể là Facebook, TikTok, YouTube, quảng cáo, hoặc người quen giới thiệu.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Gần như chưa có",
+                "mo": "Mình ít đăng, người mới đến chủ yếu là tình cờ"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nhưng thất thường",
+                "mo": "Lúc có lúc không, mà nghĩ nội dung thì rất mệt"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Có một kênh chạy được",
+                "mo": "Đăng đều, thỉnh thoảng có người lạ nhắn tin"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Khá đều",
+                "mo": "Tuần nào cũng có người mới tìm tới, không phải chờ bài nào viral"
+              }
+            ],
+            "id": "thu-hut-1",
+            "daoSau": [
+              "Bài gần nhất có người lạ nhắn tin cho mình — bài đó nói về chuyện gì?",
+              "Ba tháng qua đã thử những cách nào để có người mới biết tới? Cách nào bỏ giữa chừng, vì sao bỏ?",
+              "Theo mình, vì sao người ta lướt qua mà không dừng lại?",
+              "Nếu tháng sau tự nhiên gấp đôi người lạ biết tới mình, mình đoán là nhờ điều gì?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: trước trỏ goals#nut-that-hien-tai, đó là nút thắt của Đoàn chứ không phải khung của khâu"
+      },
+      {
+        "id": "niem-tin",
+        "icon": "🤝",
+        "ten": "Niềm tin",
+        "mo": "Người lạ tin đủ để để lại liên lạc. Danh sách MÌNH SỞ HỮU, không đi thuê.",
+        "canCu": "noi-khach-tu-tap",
+        "hoi": "Bao nhiêu người trong danh sách mình sở hữu (email/Zalo/nhóm kín/CRM)? Bằng chứng kết quả có được bày ra chỗ người lạ thấy không? Người lạ vào trang, 1 phút có biết mình giúp ai làm được gì không?",
+        "cauHoi": [
+          {
+            "id": "n1",
+            "hoi": "Có bao nhiêu người trong danh sách MÌNH SỞ HỮU (email · Zalo · nhóm kín · CRM)?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "chưa có danh sách nào"
+              },
+              {
+                "mau": "vang",
+                "chu": "dưới 100 người"
+              },
+              {
+                "mau": "xanh",
+                "chu": "từ 100 người trở lên"
+              }
+            ]
+          },
+          {
+            "id": "n2",
+            "hoi": "Bằng chứng kết quả của khách có được bày ra chỗ người lạ nhìn thấy không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không có chỗ nào"
+              },
+              {
+                "mau": "vang",
+                "chu": "có nhưng nằm rải rác"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có, gom một chỗ dễ thấy"
+              }
+            ]
+          },
+          {
+            "id": "n3",
+            "hoi": "Người lạ vào trang mình, trong 1 phút có biết mình giúp ai làm được gì không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không có chỗ nào nói rõ"
+              },
+              {
+                "mau": "vang",
+                "chu": "có nhưng chung chung"
+              },
+              {
+                "mau": "xanh",
+                "chu": "một câu rõ + có bằng chứng kèm"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Ai quan tâm mình, mình có giữ được liên lạc không?",
+            "phu": "Ví dụ: nhóm Zalo, danh sách email, form đăng ký, nhóm kín — chỗ nào mình chủ động nhắn được.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Chưa giữ được ai",
+                "mo": "Người xem xong là đi, mình cũng không biết họ là ai"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nhưng rời rạc",
+                "mo": "Vài người nằm rải trong tin nhắn, chưa gom lại"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Đã gom về một chỗ",
+                "mo": "Có danh sách rồi, nhưng ít khi nhắn lại"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Giữ được và có chăm",
+                "mo": "Có danh sách riêng, muốn nhắn lúc nào cũng được"
+              }
+            ],
+            "id": "niem-tin-1",
+            "daoSau": [
+              "Lần gần nhất một người lạ chủ động để lại liên lạc — lúc đó họ vừa đọc hoặc xem cái gì của mình?",
+              "Đã thử cách nào để giữ liên lạc với người quan tâm? Cách nào không duy trì được, vì sao?",
+              "Theo mình, người lạ còn thiếu tin điều gì ở mình?",
+              "Nếu có MỘT thứ chứng minh được mình làm thật, mình nghĩ thứ đó là gì?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: trước trỏ vào chính chan-doan-cua-vao"
+      },
+      {
+        "id": "offer",
+        "icon": "🎁",
+        "ten": "Offer",
+        "mo": "Thứ mình bán có tên, có giá, đúng thứ thị trường cần. (Khâu 'Thiết kế sản phẩm' cũ.)",
+        "canCu": "offer-design-protocol",
+        "hoi": "Thứ mình bán có tên riêng và giá nói ra được không? 3 tháng qua bán được bao nhiêu đơn món chính? Có ai chê giá, hỏi thứ mình không có?",
+        "cauHoi": [
+          {
+            "id": "o1",
+            "hoi": "Thứ mình bán có tên riêng và giá nói ra được không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "chưa gói được — tuỳ khách mà báo"
+              },
+              {
+                "mau": "vang",
+                "chu": "có tên, chưa có giá cố định"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có tên + có giá"
+              }
+            ]
+          },
+          {
+            "id": "o2",
+            "hoi": "3 tháng qua bán được bao nhiêu đơn của món chính?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "0 đơn"
+              },
+              {
+                "mau": "vang",
+                "chu": "1–3 đơn"
+              },
+              {
+                "mau": "xanh",
+                "chu": "từ 4 đơn trở lên"
+              }
+            ]
+          },
+          {
+            "id": "o3",
+            "hoi": "Bán cho ai — nói ra được một nhóm cụ thể không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "ai mua cũng bán"
+              },
+              {
+                "mau": "vang",
+                "chu": "mơ hồ một nhóm"
+              },
+              {
+                "mau": "xanh",
+                "chu": "một nhóm gọi tên được"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Ai hỏi mình bán gì, giá bao nhiêu — mình trả lời ngay được không?",
+            "phu": "Một món dễ bán là món khách nghe xong hiểu ngay: dành cho ai, giúp được gì, giá bao nhiêu.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Chưa gói được",
+                "mo": "Tuỳ người mà báo, mỗi lần một kiểu"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nhưng còn chung chung",
+                "mo": "Khách thường phải hỏi thêm mới hiểu mình bán gì"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Có tên có giá rõ",
+                "mo": "Nói được ngay, nhưng chưa chắc đúng thứ khách cần nhất"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Đã có người trả tiền",
+                "mo": "Nói một câu là hiểu, và có khách mua thật rồi"
+              }
+            ],
+            "id": "offer-1",
+            "daoSau": [
+              "Lần gần nhất có người hỏi mua — mình đã mô tả thứ mình bán bằng câu gì?",
+              "Đã đổi giá hoặc đổi gói mấy lần rồi? Mỗi lần đổi vì lý do gì?",
+              "Theo mình, khách phân vân nhất ở chỗ nào khi nghe mình chào?",
+              "Nếu chỉ được bán MỘT thứ duy nhất trong 6 tháng tới, mình chọn thứ gì? Vì sao thứ đó?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: offer-ladder là bậc giá, offer-design-protocol mới là khung dựng offer"
+      },
+      {
+        "id": "chuyen-doi",
+        "icon": "🎣",
+        "ten": "Chuyển đổi",
+        "mo": "Người quan tâm → người trả tiền. Call, webinar, follow-up.",
+        "canCu": "sales-call-script",
+        "hoi": "30 ngày qua bao nhiêu người hỏi mua, bao nhiêu người chốt? Người chưa mua thì theo đuổi thế nào? Có chỗ nào ghi lại người đã hỏi mua không?",
+        "cauHoi": [
+          {
+            "id": "c1",
+            "hoi": "30 ngày qua bao nhiêu người hỏi mua, bao nhiêu người chốt?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "có người hỏi mà chốt 0"
+              },
+              {
+                "mau": "vang",
+                "chu": "chốt dưới 1/5 số người hỏi"
+              },
+              {
+                "mau": "xanh",
+                "chu": "chốt từ 1/5 trở lên"
+              }
+            ]
+          },
+          {
+            "id": "c2",
+            "hoi": "Người quan tâm mà chưa mua thì mình theo đuổi thế nào?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "thôi luôn"
+              },
+              {
+                "mau": "vang",
+                "chu": "nhớ thì nhắn"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có kịch bản + có lịch nhắc"
+              }
+            ]
+          },
+          {
+            "id": "c3",
+            "hoi": "Có chỗ nào ghi lại người đã hỏi mua không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không ghi"
+              },
+              {
+                "mau": "vang",
+                "chu": "nằm rải trong inbox"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có file/CRM tra ra được"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Có người hỏi mua rồi, mình làm gì tiếp?",
+            "phu": "Nghĩ tới: mình có nhắn lại không, có ghi lại ai đã hỏi không, bao lâu thì thôi.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Để trôi",
+                "mo": "Họ hỏi xong là im, mình cũng không nhắn lại"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nhắn nhưng tuỳ hứng",
+                "mo": "Nhớ thì nhắn, hay quên, mỗi người một kiểu"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Có cách theo dõi",
+                "mo": "Ghi lại được ai đã hỏi, chốt được một ít"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Chốt khá đều",
+                "mo": "Có chỗ theo dõi, nhắn lại đều, biết vì sao người ta không mua"
+              }
+            ],
+            "id": "chuyen-doi-1",
+            "daoSau": [
+              "Kể lại một ca gần nhất: người ta hỏi mua rồi không mua — diễn ra thế nào, dừng lại ở đâu?",
+              "Sau khi người ta im, mình làm gì tiếp? Bao lâu thì mình thôi?",
+              "Theo mình, lý do THẬT khiến họ không chốt là gì — khác gì với lý do họ nói ra?",
+              "Người ĐÃ mua gần nhất — điều gì làm họ quyết định?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: trước trỏ goals#nut-that-hien-tai"
+      },
+      {
+        "id": "chuyen-giao",
+        "icon": "🎓",
+        "ten": "Chuyển giao",
+        "mo": "Người đã trả tiền NHẬN ĐƯỢC kết quả thật. Lộ trình có mốc, có tiêu chuẩn 'thế nào là xong'.",
+        "canCu": "fulfillment-system",
+        "hoi": "Khách/member đã mua có ai đạt kết quả rõ? Bao nhiêu % ra được kết quả họ mong? Có lộ trình cố định mọi người đi qua không? Bao nhiêu người nói/viết ra được kết quả của họ?",
+        "cauHoi": [
+          {
+            "id": "g1",
+            "hoi": "Khách đã mua 6 tháng qua, bao nhiêu % ra được kết quả họ mong?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không biết · hoặc dưới 30%"
+              },
+              {
+                "mau": "vang",
+                "chu": "30–70%"
+              },
+              {
+                "mau": "xanh",
+                "chu": "trên 70%"
+              }
+            ]
+          },
+          {
+            "id": "g2",
+            "hoi": "Có lộ trình cố định mà mọi khách đều đi qua không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không, tuỳ khách"
+              },
+              {
+                "mau": "vang",
+                "chu": "có khung chung, khách tự chạy"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có mốc + có người nghiệm thu"
+              }
+            ]
+          },
+          {
+            "id": "g3",
+            "hoi": "Bao nhiêu khách nói/viết ra được kết quả của họ?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "chưa ai"
+              },
+              {
+                "mau": "vang",
+                "chu": "1–2 người"
+              },
+              {
+                "mau": "xanh",
+                "chu": "từ 3 người trở lên"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Khách trả tiền rồi, họ có làm được không?",
+            "phu": "Nhìn vào: bao nhiêu người thật sự ra kết quả, và mình có biết ai đang kẹt không.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Phần lớn để đó",
+                "mo": "Nhiều người mua xong không làm, mình cũng không biết"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Được một nửa",
+                "mo": "Một số làm được, số còn lại bỏ giữa chừng"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Phần lớn làm được",
+                "mo": "Nhưng phải mình nhắc mới chạy"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Chạy khá ổn",
+                "mo": "Có đường đi rõ, khách tự làm được, mình biết ai đang tới đâu"
+              }
+            ],
+            "id": "chuyen-giao-1",
+            "daoSau": [
+              "Kể một người mua rồi mà không ra kết quả — họ dừng lại ở bước nào?",
+              "Sau khi khách trả tiền, việc đầu tiên mình làm cho họ là gì?",
+              "Theo mình, khách bỏ giữa chừng vì thiếu cái gì — thời gian, hiểu biết, người kèm, hay động lực?",
+              "Người ra kết quả tốt nhất từ trước tới nay — họ khác những người kia ở chỗ nào?"
+            ]
+          }
+        ],
+        "canCuVi": "giữ nguyên — wiki đã tự nêu đây là ví dụ mẫu cho cách ②"
+      },
+      {
+        "id": "cham-soc",
+        "icon": "💌",
+        "ten": "Chăm sóc",
+        "mo": "Ở lại, mua tiếp, giới thiệu người mới. Tách khỏi Chuyển giao từ 2026-08-20.",
+        "canCu": "teachings/community-building",
+        "hoi": "Bao nhiêu % người đã mua quay lại mua tiếp? 3 tháng qua bao nhiêu người mới đến từ giới thiệu? Giao xong còn nhịp liên lạc cố định không?",
+        "cauHoi": [
+          {
+            "id": "s1",
+            "hoi": "Bao nhiêu % khách đã mua quay lại mua tiếp lần 2?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không biết · hoặc gần 0"
+              },
+              {
+                "mau": "vang",
+                "chu": "dưới 20%"
+              },
+              {
+                "mau": "xanh",
+                "chu": "từ 20% trở lên"
+              }
+            ]
+          },
+          {
+            "id": "s2",
+            "hoi": "3 tháng qua có bao nhiêu khách mới đến từ giới thiệu?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không có ai · hoặc không biết"
+              },
+              {
+                "mau": "vang",
+                "chu": "1–2 người"
+              },
+              {
+                "mau": "xanh",
+                "chu": "từ 3 người trở lên"
+              }
+            ]
+          },
+          {
+            "id": "s3",
+            "hoi": "Giao xong rồi còn nhịp liên lạc cố định với khách cũ không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không"
+              },
+              {
+                "mau": "vang",
+                "chu": "thỉnh thoảng nhớ ra thì nhắn"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có lịch cố định"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Khách cũ có mua lại không?",
+            "phu": "Đừng nhìn 'khách có hài lòng không' — nhìn hành vi: họ có quay lại mua, và có tự nói chuyện với nhau không.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Rất ít",
+                "mo": "Bán xong là hết, phần lớn mất liên lạc luôn"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có nhưng tự phát",
+                "mo": "Thỉnh thoảng có người quay lại, mình không chủ động gì"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Có người mua tiếp",
+                "mo": "Nhưng phải mình nhắc mới quay lại, và họ cũng chưa nói chuyện với nhau"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Quay lại đều, tự giúp nhau",
+                "mo": "Khách cũ mua tiếp đều, và bắt đầu tự kết nối giúp nhau mà không cần mình đứng giữa"
+              }
+            ],
+            "id": "cham-soc-1",
+            "daoSau": [
+              "Lần gần nhất một khách cũ quay lại — vì sao họ quay lại?",
+              "Sau khi giao xong, mình còn liên lạc gì với khách? Ai làm việc đó, bao lâu một lần?",
+              "Theo mình, vì sao khách xong rồi là thôi, không mua tiếp?",
+              "Nếu một khách cũ giới thiệu mình cho bạn họ, mình đoán họ sẽ giới thiệu bằng câu gì?"
+            ]
+          },
+          {
+            "id": "cham-soc-2",
+            "hoi": "Khách cũ có giới thiệu người mới cho mình không?",
+            "phu": "Nhìn 3 tháng gần nhất: có ai tự nhắc tên mình với bạn bè, hay dẫn người tới không.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Chưa có ai",
+                "mo": "Khách mới toàn do mình tự đi tìm, chưa ai được ai giới thiệu tới"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có một hai lần, tình cờ",
+                "mo": "Thỉnh thoảng có, nhưng mình không biết vì sao và cũng không lặp lại được"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Có đều nhưng mình bị động",
+                "mo": "Vẫn có người được giới thiệu tới, nhưng mình chưa làm gì để chuyện đó xảy ra"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Có và mình chủ động tạo ra",
+                "mo": "Biết ai hay giới thiệu, có cách để họ dễ giới thiệu, và đếm được mỗi tháng bao nhiêu người"
+              }
+            ],
+            "daoSau": [
+              "Người gần nhất được ai đó giới thiệu tới mình — chuyện đó xảy ra thế nào?",
+              "Từ trước tới giờ mình có làm gì để khách dễ giới thiệu không? Cái nào từng thử rồi bỏ?",
+              "Theo mình, vì sao khách hài lòng mà vẫn không giới thiệu ai?",
+              "Nếu tháng sau có 5 người được giới thiệu tới, mình đoán là nhờ điều gì?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: trước trỏ vào chính chan-doan-cua-vao"
+      },
+      {
+        "id": "van-hanh",
+        "icon": "🗂️",
+        "ten": "Vận hành",
+        "mo": "Biết tiền vào ra ở đâu, việc nằm ở đâu. Dữ liệu gom một chỗ.",
+        "canCu": "data-sources",
+        "hoi": "Dữ liệu khách + nội dung + tài liệu đang nằm ở mấy chỗ? Tháng rồi lãi hay lỗ, tiền đi đâu — có biết không? Việc lặp lại hằng tuần có quy trình viết ra không?",
+        "cauHoi": [
+          {
+            "id": "v1",
+            "hoi": "Dữ liệu khách + nội dung + tài liệu đang nằm ở mấy chỗ?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "từ 5 chỗ trở lên, rời rạc"
+              },
+              {
+                "mau": "vang",
+                "chu": "3–4 chỗ"
+              },
+              {
+                "mau": "xanh",
+                "chu": "1–2 chỗ, có quy tắc"
+              }
+            ]
+          },
+          {
+            "id": "v2",
+            "hoi": "Tháng rồi lãi hay lỗ, tiền đi đâu — có biết không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không biết"
+              },
+              {
+                "mau": "vang",
+                "chu": "ước chừng trong đầu"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có bảng tra ra được"
+              }
+            ]
+          },
+          {
+            "id": "v3",
+            "hoi": "Việc lặp lại hằng tuần có quy trình viết ra không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không, nhớ tới đâu làm tới đó"
+              },
+              {
+                "mau": "vang",
+                "chu": "vài việc có"
+              },
+              {
+                "mau": "xanh",
+                "chu": "phần lớn có"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Thông tin khách và tiền bạc — mình có nắm được không?",
+            "phu": "Thử nghĩ: cần tìm lại một khách cũ thì mất bao lâu, và tháng rồi lãi bao nhiêu.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Đang rối",
+                "mo": "Tìm một khách phải mở mấy chỗ, cũng không biết tháng rồi lãi hay lỗ"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có ghi nhưng tản mát",
+                "mo": "Mỗi thứ một nơi, phải nhớ nhiều"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Đã gom một chỗ",
+                "mo": "Nhưng làm tới đâu nhớ tới đó, chưa có cách làm cố định"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Gọn và tra được",
+                "mo": "Một chỗ duy nhất, mở ra là thấy khách nào, tiền vào ra bao nhiêu"
+              }
+            ],
+            "id": "van-hanh-1",
+            "daoSau": [
+              "Việc gì tuần nào cũng phải làm mà mỗi lần làm lại thấy mệt hoặc lộn xộn?",
+              "Lần gần nhất cần tra lại thông tin một khách cũ — mất bao lâu, phải mở mấy chỗ?",
+              "Theo mình, chỗ rối nhất là do thiếu công cụ, thiếu quy trình, hay do chưa ai chịu trách nhiệm?",
+              "Nếu mai mình nghỉ một tuần không đụng vào, cái gì sẽ đổ trước tiên?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: business-metrics là SỐ, data-sources mới là khung \"biết tiền vào ra ở đâu\""
+      },
+      {
+        "id": "nhan-ban",
+        "icon": "⏳",
+        "ten": "Nhân bản",
+        "mo": "Đòn bẩy: doanh thu tăng mà giờ của mình KHÔNG tăng theo. Ràng buộc gốc trong goals.md: 'build hệ thống mà không tốn thêm thời gian của sếp'. (Khâu 'Người vận hành' cũ.)",
+        "canCu": "offer-owner-os",
+        "hoi": "Doanh thu tăng thì giờ làm của mình có tăng theo không? Có kênh/người/hệ thống nào mang khách về mà không cần mình xuất hiện? Việc gì chỉ mình làm được, mình nghỉ là đứt?",
+        "cauHoi": [
+          {
+            "id": "x1",
+            "hoi": "Doanh thu tăng thì giờ làm của mình có tăng theo không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "tăng y hệt"
+              },
+              {
+                "mau": "vang",
+                "chu": "tăng nhưng ít hơn"
+              },
+              {
+                "mau": "xanh",
+                "chu": "gần như không tăng"
+              }
+            ]
+          },
+          {
+            "id": "x2",
+            "hoi": "Có kênh/người/hệ thống nào mang khách về mà KHÔNG cần mình xuất hiện không?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "không có"
+              },
+              {
+                "mau": "vang",
+                "chu": "có nhưng nhỏ"
+              },
+              {
+                "mau": "xanh",
+                "chu": "có, chạy đều"
+              }
+            ]
+          },
+          {
+            "id": "x3",
+            "hoi": "Việc gì chỉ mình làm được, mình nghỉ là đứt?",
+            "dap": [
+              {
+                "mau": "do",
+                "chu": "gần như mọi việc"
+              },
+              {
+                "mau": "vang",
+                "chu": "vài việc lõi"
+              },
+              {
+                "mau": "xanh",
+                "chu": "phần lớn đã có người/máy thay được"
+              }
+            ]
+          }
+        ],
+        "cauSang": [
+          {
+            "hoi": "Muốn doanh thu tăng thì mình có phải làm nhiều giờ hơn không?",
+            "phu": "Nhìn vào: việc nào bắt buộc phải là mình, và mình nghỉ một tuần thì cái gì đứng.",
+            "dap": [
+              {
+                "mau": "do",
+                "nhan": "Có, mà tăng cũng không ăn thua",
+                "mo": "Làm nhiều hơn hẳn rồi doanh thu vẫn gần như cũ"
+              },
+              {
+                "mau": "vang",
+                "nhan": "Có, tăng y hệt nhau",
+                "mo": "Doanh thu lên thì giờ làm cũng lên đúng bấy nhiêu"
+              },
+              {
+                "mau": "nhe",
+                "nhan": "Đỡ hơn một chút",
+                "mo": "Giao được vài việc, còn lại vẫn phải mình"
+              },
+              {
+                "mau": "xanh",
+                "nhan": "Không còn phụ thuộc mình",
+                "mo": "Có người và công cụ chạy thay, mình nghỉ vẫn ổn"
+              }
+            ],
+            "id": "nhan-ban-1",
+            "daoSau": [
+              "Việc nào đang ngốn nhiều giờ nhất của mình trong một tuần?",
+              "Đã thử giao việc đó cho ai hoặc cho máy chưa? Kết quả thế nào, vì sao phải làm lại?",
+              "Theo mình, việc gì BẮT BUỘC phải là mình làm, không giao được?",
+              "Nếu doanh thu gấp 3 mà không được thuê thêm người, chỗ nào vỡ trước?"
+            ]
+          }
+        ],
+        "canCuVi": "sửa: trước trỏ goals#. Đoàn chốt 06/09 \"nhân bản thì vào owner os thôi\" — khâu này không học bằng đọc, cần giờ và công cụ"
+      }
+    ],
+    "chieuQuet": {
+      "thuTu": [
+        "nhan-ban",
+        "van-hanh",
+        "cham-soc",
+        "chuyen-giao",
+        "chuyen-doi",
+        "offer",
+        "niem-tin",
+        "thu-hut",
+        "dinh-huong"
+      ],
+      "luat": "Quét từ TẦNG CUỐI ngược về đầu, lấy khâu đỏ đầu tiên gặp. Đoàn chốt 2026-08-20: 'càng tầng cuối thì càng được ưu tiên hơn, nghĩa là chuyển giao tốt thì chuyển đổi tốt, chuyển đổi tốt thì thu hút tốt'. Đây là ĐẢO NGƯỢC so với cách đọc 3COS kiểu 'về đầu phễu' — gốc nằm ở cuối, vì kết quả chảy ngược lên làm nhẹ mọi khâu trước nó."
+    },
+    "doiNguyenLieu": {
+      "luat": "TRƯỚC khi quét: loại các khâu đỏ vì ĐÓI NGUYÊN LIỆU — nguyên liệu đầu vào = 0 thì cái đỏ đó không phải bệnh của khâu đó, mà là hệ quả của khâu trên. Đây là chữ 'VÌ' trong nguyên văn 3COS ('yếu VÌ phần phía trước chưa vững'). Không có luật này thì luật tầng-cuối-ưu-tiên trả về 'đi mở rộng quy mô' cho cả người mới tinh.",
+      "vao": {
+        "dinh-huong": "— (nền, không đói được)",
+        "thu-hut": "biết bán cho ai",
+        "niem-tin": "người lạ mới",
+        "offer": "biết khách đau chuyện gì",
+        "chuyen-doi": "người hỏi mua + offer có giá",
+        "chuyen-giao": "khách đã mua",
+        "cham-soc": "khách đã ra kết quả",
+        "van-hanh": "doanh thu đều + giờ làm lặp lại",
+        "nhan-ban": "cả 8 khâu trên chạy được"
+      }
+    },
+    "chamMau": {
+      "luat": "Màu của một khâu: ĐỎ nếu từ 2 câu đỏ trở lên; VÀNG nếu 1 câu đỏ hoặc từ 2 câu vàng; còn lại XANH. KHÔNG cộng điểm ra tổng — tổng trung bình hoá một khâu đỏ vào bảy khâu xanh, mà mắt xích đứt thì cả dây đứt. Con số X/10 trong bảng CHỈ để vẽ biểu đồ xu hướng qua các lượt soi, tuyệt đối không dùng để chọn nút thắt.",
+      "diem": {
+        "do": 1,
+        "vang": 2,
+        "xanh": 3
+      },
+      "quyDoi10": "diem10 = 1 + (tổng 3 câu − 3) × 1,5  →  3 câu đỏ = 1/10, 3 câu xanh = 10/10"
+    },
+    "haiVong": {
+      "luat": "Đoàn chốt 2026-08-20: 'cần gì phải khảo sát ra toàn bộ bằng chứng ở toàn bộ khía cạnh… nhìn ra được khía cạnh nút thắt lớn nhất của họ, rồi tiếp tục phỏng vấn để đào sâu vào khía cạnh đấy thôi'. VÒNG 1 sàng rộng bằng 24 câu bấm chọn → ra MỘT khâu. VÒNG 2 phỏng vấn sâu CHỈ khâu đó, để tìm NGUYÊN NHÂN. ⛔ KHÔNG hỏi bằng chứng cho cả 8 khâu — đó là thu hồ sơ tình trạng, phục vụ người hỏi. Mục tiêu của bài khảo sát là TÌM RA ĐIỀU HỌ CẦN GIẢI QUYẾT, không phải để mình nắm tình trạng của họ.",
+      "aiChon": "Giao diện quét ra khâu để đào sâu — quét CƠ HỌC theo chieuQuet + doiNguyenLieu đã khai, không suy luận. Skill vẫn là chỗ GỌI TÊN nút thắt cuối cùng, và ĐƯỢC PHÉP chốt khác khâu máy đã quét sau khi đọc 4 câu đào sâu — khác thì phải nói thẳng là khác và vì sao, cùng luật với ô 'linh cảm'."
+    },
+    "trieuChung": {
+      "luat": "Vòng S: MỖI KHÂU MỘT CÂU HỎI, bốn đáp án viết bằng lời thường — Đoàn chốt 2026-08-23: 'làm câu hỏi và câu trả lời rõ ràng, dễ hiểu với ngôn ngữ bình thường'. Đáp án đã xếp sẵn từ tệ tới ổn và MANG LUÔN MÀU, nên không phải chấm điểm gì thêm. ⚠️ Luật viết: cả câu hỏi lẫn đáp án phải là VIỆC QUAN SÁT ĐƯỢC, không phải trạng thái trong đầu — 'chưa rõ, ai hỏi mua cũng nhận' thì nhớ ra là chọn được; 'không chắc mình định vị đúng chưa' thì bắt người ta tự đánh giá mình, mà tự đánh giá sai chính là bệnh cần chữa. Không dùng chữ nghề (định vị, phễu, chuyển đổi, tệp) trong câu hỏi và đáp án. ⚠️ KHÔNG hiện tên khâu — tab đặt theo 'lúc nào trong ngày'. Thấy chữ 'Thu hút' là người ta tự chẩn thay vì kể. 🔻 Bản 23/08 sáng dùng 39 ô tích rời; bỏ vì Đoàn báo mơ hồ và vì tích không cho biết NẶNG TỚI ĐÂU. Cột B cuộc sống vẫn giữ dạng tích nhiều ô: nó hỏi ĐAU Ở ĐÂU, không hỏi nặng tới đâu, và không dùng để chấm khâu. ⚠️ SỬA 23/08 lượt ba, Đoàn: 'câu Việc và sổ sách của mình gọn tới đâu — ko hiểu là gì luôn' và 'thu tăng thì ghi là doanh thu cho dễ hiểu'. Luật thêm: dùng chữ NGƯỜI TA HAY DÙNG (doanh thu, không dùng 'thu'; thông tin khách và tiền bạc, không dùng 'sổ sách'); câu hỏi phải hỏi thẳng một chuyện, không hỏi 'tới đâu' hay 'thế nào' vì đó là hỏi mức độ trừu tượng; đọc to lên nghe như đang hỏi chuyện thì được, nghe như đề bài thì viết lại. ⚠️ KHUÔN CÂU (lấy cách bày của 3COS, soi 23/08): mỗi câu gồm (1) câu hỏi hỏi thẳng một chuyện, (2) MỘT DÒNG PHỤ nói rõ xét cái gì thì tính, (3) bốn đáp án, mỗi đáp án có NHÃN NGẮN 2-5 chữ + DÒNG MÔ TẢ cụ thể bên dưới. Đọc lướt nhãn là chọn được ngay, đọc dòng dưới để chắc — một câu dài không có nhãn thì phải đọc trọn mới hiểu. ⚠️ MỘT KHÂU CÓ THỂ CÓ NHIỀU CÂU (từ 23/08): `cauSang` là MẢNG. Màu khâu = câu TỆ NHẤT trong các câu của nó. Khâu ⓪ có hai câu vì 'biết khách là ai' và 'có bằng chứng họ thật sự khổ vì chuyện đó' là hai chuyện khác nhau — câu thứ hai là câu phân biệt ĐOÁN với ĐÃ ĐI HỎI, và hai câu này cần hai việc gỡ khác nhau (chọn một nhóm ≠ đi hỏi 5 khách thật). Đoàn chốt 23/08: tách riêng câu bằng chứng vấn đề. Còn CỘNG ĐỒNG thì Đoàn chốt để trong khâu ⑥ chăm sóc, không tách khâu riêng. ⚠️ ĐÀO SÂU GẮN THEO CÂU, KHÔNG THEO KHÂU (sửa 23/08). Lúc tách câu ⓪-2 đã suýt lọt lỗi: 4 câu đào sâu của ⓪ đều hỏi 'khách là ai', nên nếu máy chốt ⓪ vì câu ⓪-2 đỏ (đang đoán) thì vòng khám hỏi lạc đề — bắt người ta chọn lại nhóm khách trong khi vấn đề là chưa đi hỏi ai. Nay mỗi câu sàng mang bộ 4 câu đào sâu của riêng nó, và vòng khám lấy bộ của CÂU TỆ NHẤT. ⚠️ Thêm câu ⑥-2 GIỚI THIỆU ngày 23/08 (Đoàn: 'thiếu phần khách giới thiệu khách mới'). Nó là BẬC RIÊNG trong khung 5 cấp độ quan hệ của Đoàn (Traffic → List → Tin & mua → Ở lại & mua tiếp → GIỚI THIỆU), trước đó bị gộp thành một vế phụ trong câu ⑥-1. Khác chăm sóc ở chỗ: giới thiệu là một NGUỒN KHÁCH MỚI, không phải chỉ là dấu hiệu khách hài lòng — nên nó nối ngược lên khâu ① thu hút.",
+      "chamMau": "Màu khâu = ĐẾM SỐ TÍCH, không phải chấm điểm: >=3 đỏ, 2 vàng, 1 nhẹ, 0 xanh. Khác hẳn bản 24 câu: ở đây 0 tích nghĩa là KHÔNG CÓ TRIỆU CHỨNG (khoẻ), không phải 'chưa trả lời' — nên biến mất hẳn trạng thái 'chưa đủ', và lỗi màn-hình-tự-cãi-mình ngày 20/08 không tái phát được.",
+      "cuocSong": [
+        {
+          "id": "b1",
+          "nhan": "Thu nhập tháng có tháng không",
+          "mo": "Không dám tính chuyện dài — mua nhà, lo cho con, hay chỉ là kế hoạch vài tháng tới",
+          "truc": "tien-bac",
+          "tenTruc": "Tiền bạc"
+        },
+        {
+          "id": "b2",
+          "nhan": "Muốn lo cho gia đình mà chưa lo được",
+          "mo": "Có những thứ muốn làm cho bố mẹ, cho vợ con mà cứ phải hoãn lại",
+          "truc": "tien-bac",
+          "tenTruc": "Tiền bạc"
+        },
+        {
+          "id": "b3",
+          "nhan": "Người nhà chưa coi việc mình làm là nghiêm túc",
+          "mo": "Họ hàng hỏi dạo này làm gì mà mình khó trả lời cho gọn, nói ra cũng ít ai hiểu",
+          "truc": "danh-vong",
+          "tenTruc": "Được công nhận"
+        },
+        {
+          "id": "b4",
+          "nhan": "Thấy mình đi chậm hơn bạn bè",
+          "mo": "Nhìn người cùng lứa tiến nhanh thì sốt ruột, tự thấy mình kém",
+          "truc": "danh-vong",
+          "tenTruc": "Được công nhận"
+        },
+        {
+          "id": "b5",
+          "nhan": "Mang bực dọc công việc về nhà",
+          "mo": "Chuyện chưa xong ngoài kia thành cáu gắt với người trong nhà",
+          "truc": "moi-quan-he",
+          "tenTruc": "Người thân"
+        },
+        {
+          "id": "b6",
+          "nhan": "Ít thời gian cho người thân",
+          "mo": "Biết là đang thiếu, mà tuần nào cũng lặp lại y như vậy",
+          "truc": "moi-quan-he",
+          "tenTruc": "Người thân"
+        },
+        {
+          "id": "b7",
+          "nhan": "Bị công việc kéo cả ngày",
+          "mo": "Ăn cơm, đi chơi, nằm ngủ vẫn nghĩ tới việc, không dứt ra được",
+          "truc": "thoi-gian",
+          "tenTruc": "Thời gian"
+        },
+        {
+          "id": "b8",
+          "nhan": "Lâu rồi đầu óc chưa được nghỉ thật sự",
+          "mo": "Có nghỉ nhưng trong đầu vẫn chạy, không thấy nhẹ đi",
+          "truc": "thoi-gian",
+          "tenTruc": "Thời gian"
+        },
+        {
+          "id": "b9",
+          "nhan": "Người xuống thấy rõ",
+          "mo": "Thức khuya, ăn uống thất thường, mệt kéo dài, bắt đầu có bệnh vặt",
+          "truc": "suc-khoe",
+          "tenTruc": "Sức khoẻ"
+        },
+        {
+          "id": "b10",
+          "nhan": "Làm mà không thấy vui nữa",
+          "mo": "Vẫn làm được, vẫn ra việc, nhưng không còn hứng như trước",
+          "truc": "suc-khoe",
+          "tenTruc": "Sức khoẻ"
+        }
+      ],
+      "cauHoiCuocSong": "Ngoài công việc, dạo này mệt nhất ở chỗ nào?",
+      "phuCuocSong": "Chọn bao nhiêu cũng được, không có cũng không sao. Mấy chuyện này thường bắt nguồn từ một chỗ nào đó trong công việc — chọn để lát nữa mình lần ngược lại."
+    },
+    "tiepNhan": {
+      "luat": "TIẾP NHẬN đứng TRƯỚC 11 câu sàng, không chấm màu, không đổi khâu máy chọn. Nó làm ba việc của trạm tiếp nhận ở phòng khám: (1) cấp cứu hay khám thường, (2) giờ đang chảy vào đâu — thay cho câu 'có bận không' vì câu đó ai cũng gật, (3) tiền sử để lát nữa đọc bệnh nền. Đề xuất Claude 2026-09-04 sau khi mô phỏng trọn hành trình bác sĩ đa khoa; Đoàn duyệt bằng lời 'dựng hết những gì có thể'.",
+      "capCuu": {
+        "doanhThu": {
+          "hoi": "Doanh thu tháng gần nhất khoảng bao nhiêu?",
+          "dap": [
+            {
+              "id": "0",
+              "nhan": "Chưa có"
+            },
+            {
+              "id": "d20",
+              "nhan": "Dưới 20 triệu"
+            },
+            {
+              "id": "20-50",
+              "nhan": "20–50 triệu"
+            },
+            {
+              "id": "50-200",
+              "nhan": "50–200 triệu"
+            },
+            {
+              "id": "t200",
+              "nhan": "Trên 200 triệu"
+            }
+          ]
+        },
+        "tienCon": {
+          "hoi": "Nếu tháng này không có thêm đồng nào, tiền còn đủ sống bao lâu?",
+          "dap": [
+            {
+              "id": "d1",
+              "nhan": "Dưới 1 tháng"
+            },
+            {
+              "id": "1-3",
+              "nhan": "1–3 tháng"
+            },
+            {
+              "id": "3-6",
+              "nhan": "3–6 tháng"
+            },
+            {
+              "id": "t6",
+              "nhan": "Trên 6 tháng"
+            }
+          ]
+        },
+        "luat": "CẤP CỨU khi doanhThu = 0 VÀ tienCon < 3 tháng. Cấp cứu thì bác sĩ không gửi đi xét nghiệm — cầm máu trước: đơn CHỈ có ngăn giảm đau, ngăn tận gốc ghi 'chưa phải lúc', và khâu bắt buộc là khâu ra tiền nhanh nhất còn có nguyên liệu (thường là Chuyển đổi — nhặt lại người đã hỏi). Đoàn chốt 26/08: 'người ta mà không hết đau bụng thì không thể đi tập thể dục được'."
+      },
+      "gioChay": {
+        "hoi": "Tuần rồi, giờ làm của mình đổ vào đâu nhiều nhất?",
+        "phu": "Chọn tối đa 2. Không phải việc mình NÊN làm — là việc mình THẬT SỰ đã ngồi làm.",
+        "luat": "Thay cho câu cổng 'có việc biết cần làm mà không có thời gian làm không' — câu đó ai cũng gật nên không lọc được ai, và chị Nga qua cổng chỉ vì tự nói 'mình sắp xếp được', tức lọc bằng tự đánh giá. Hỏi giờ chảy đi đâu thì kiểm chứng được, và cho thêm tín hiệu: so với khâu máy quét ra → cày đúng chỗ / cày sai chỗ / rải đều (xem nguyenNhan).",
+        "nhom": [
+          {
+            "id": "tim-khach",
+            "nhan": "Đi tìm người mới",
+            "mo": "đăng bài, quay video, chạy quảng cáo, đi sự kiện",
+            "khau": "thu-hut"
+          },
+          {
+            "id": "tra-loi",
+            "nhan": "Trả lời người quan tâm",
+            "mo": "inbox, comment, hỏi giá, tư vấn",
+            "khau": "chuyen-doi"
+          },
+          {
+            "id": "chot",
+            "nhan": "Chốt đơn, gặp khách",
+            "mo": "call, gặp trực tiếp, báo giá, đàm phán",
+            "khau": "chuyen-doi"
+          },
+          {
+            "id": "lam-san-pham",
+            "nhan": "Làm sản phẩm, gói dịch vụ",
+            "mo": "soạn khoá, dựng gói, sửa offer",
+            "khau": "offer"
+          },
+          {
+            "id": "phuc-vu",
+            "nhan": "Phục vụ khách đã mua",
+            "mo": "dạy, giao hàng, làm dịch vụ, hỗ trợ",
+            "khau": "chuyen-giao"
+          },
+          {
+            "id": "cham-cu",
+            "nhan": "Chăm khách cũ",
+            "mo": "hỏi thăm, nhắc mua lại, xin giới thiệu",
+            "khau": "cham-soc"
+          },
+          {
+            "id": "so-sach",
+            "nhan": "Sổ sách, dọn dữ liệu, công cụ",
+            "mo": "excel, CRM, thu chi, cài tool",
+            "khau": "van-hanh"
+          },
+          {
+            "id": "hoc",
+            "nhan": "Học, ngồi nghĩ, lên kế hoạch",
+            "mo": "đọc, xem khoá, viết kế hoạch",
+            "khau": "dinh-huong"
+          },
+          {
+            "id": "vat",
+            "nhan": "Việc vặt không tên",
+            "mo": "không nhớ nổi đã làm gì, hết ngày",
+            "khau": null
+          }
+        ]
+      },
+      "tienSu": {
+        "lamBaoLau": {
+          "hoi": "Mình bán thứ này được bao lâu rồi?",
+          "dap": [
+            {
+              "id": "d6",
+              "nhan": "Dưới 6 tháng"
+            },
+            {
+              "id": "6-24",
+              "nhan": "6 tháng – 2 năm"
+            },
+            {
+              "id": "2-5",
+              "nhan": "2–5 năm"
+            },
+            {
+              "id": "t5",
+              "nhan": "Trên 5 năm"
+            }
+          ]
+        },
+        "truocDo": {
+          "hoi": "Trước đó mình làm gì?",
+          "dap": [
+            {
+              "id": "lam-thue",
+              "nhan": "Làm thuê, không dính bán hàng",
+              "mo": "kế toán, kỹ thuật, văn phòng…"
+            },
+            {
+              "id": "lam-thue-ban",
+              "nhan": "Làm thuê nhưng có bán hàng",
+              "mo": "sale, marketing, CSKH"
+            },
+            {
+              "id": "tu-kinh-doanh",
+              "nhan": "Tự kinh doanh thứ khác"
+            },
+            {
+              "id": "chuyen-mon",
+              "nhan": "Hành nghề chuyên môn",
+              "mo": "giáo viên, bác sĩ, HLV, tư vấn"
+            }
+          ]
+        },
+        "ngu": {
+          "hoi": "Dạo này mỗi đêm ngủ khoảng mấy tiếng?",
+          "dap": [
+            {
+              "id": "d5",
+              "nhan": "Dưới 5"
+            },
+            {
+              "id": "5-6",
+              "nhan": "5–6"
+            },
+            {
+              "id": "6-7",
+              "nhan": "6–7"
+            },
+            {
+              "id": "t7",
+              "nhan": "7 trở lên"
+            }
+          ]
+        },
+        "luat": "Tiền sử KHÔNG để chẩn khâu — để đọc bệnh nền (xem benhNen) và để nghi ngờ đúng hướng ở test chức năng: làm thuê không dính bán hàng + mới bán dưới 2 năm thì khả năng thiếu KỸ NĂNG cao hơn thiếu năng lượng. Nghi ngờ, không kết luận — test chức năng mới kết luận."
+      },
+      "nhomKhach": {
+        "hoi": "Mình đang bán cho ai, bằng nghề gì?",
+        "phu": "Chọn cái gần nhất. Không có ô nào khớp hẳn thì chọn ô sát nhất rồi kể thêm ở câu cuối.",
+        "luat": "Câu bối cảnh B1, khai 2026-09-06 — chỗ hở cuối cùng mà `chan-doan-cua-vao` §Còn treo ghi là \"chỉ cần khi mở ra cửa lạnh\". Bảy nhóm chép nguyên từ `target-customer` §Bảy nhóm khách, cột `dau` là GHI CHÚ NGUYÊN VĂN CỦA ĐOÀN, không phải suy diễn.\n⛔ KHÔNG chấm màu khâu từ câu này, và KHÔNG dùng nó để đoán nút thắt. Nó là TIÊN NGHIỆM: cho biết nên NGỜ khâu nào trước, và nói được ngôn ngữ của họ khi kê đơn. Máy vẫn quét ra khâu bằng 11 câu sàng như cũ.\n⚡ Giá trị lớn nhất nằm ở chỗ đối chiếu: nhóm này thường tắc ở `nguDo`, mà máy quét ra khâu KHÁC thì đó là tín hiệu đáng nói ra trong bản soi — hoặc họ là ca lạ, hoặc mình đang chẩn nhầm.\n📌 Thứ tự bảy nhóm là một TRỤC, không phải bảy ô ngang hàng: nhóm 1 Đoàn tự gắn là \"gà nhất, cần học nhiều nhất\", nhóm 7 \"cần học ít hơn nhưng chuyên sâu nhất\".",
+        "dap": [
+          {
+            "id": "n1",
+            "nhan": "Có sẵn khách offline, muốn lên online",
+            "mo": "spa, phòng khám, trung tâm, cửa hàng có khách cũ",
+            "dau": "gà nhất / cần học nhiều nhất — thiếu cả nền tảng online (content, follow-up, CRM, tracking dòng tiền)",
+            "nguDo": [
+              "thu-hut",
+              "van-hanh"
+            ],
+            "tier": "rẻ",
+            "luuY": "Nhóm này KHÔNG chỉ gà hơn, mà còn ÍT GIỜ HƠN — họ phải có mặt ở cơ sở. Việc ③ bảy ngày phải vừa với người chỉ có kẽ hở buổi tối."
+          },
+          {
+            "id": "n2",
+            "nhan": "Khởi nghiệp từ nghề, tay nghề giỏi",
+            "mo": "fitness, yoga, thiền, làm đẹp, dinh dưỡng, trị liệu, thủ công",
+            "dau": "yếu \"đóng gói – kể câu chuyện – định giá\", thiếu hệ thống chốt & chăm sóc",
+            "nguDo": [
+              "offer",
+              "chuyen-doi"
+            ],
+            "tier": "rẻ"
+          },
+          {
+            "id": "n3",
+            "nhan": "Chủ shop hoặc KOL shop, hàng vật lý",
+            "mo": "mỹ phẩm, thời trang, TPCN, gia dụng — livestream, video ngắn",
+            "dau": "đã quen nhịp content và chốt đơn; cần list sở hữu + chăm sóc + tối ưu lợi nhuận",
+            "nguDo": [
+              "niem-tin",
+              "cham-soc"
+            ],
+            "tier": "giữa"
+          },
+          {
+            "id": "n4",
+            "nhan": "Freelancer, dịch vụ sáng tạo",
+            "mo": "designer, editor, chạy ads, photographer, stylist, make-up",
+            "dau": "cần định vị – quy trình bán – pipeline – giữ khách/upsell",
+            "nguDo": [
+              "dinh-huong",
+              "chuyen-doi"
+            ],
+            "tier": "giữa"
+          },
+          {
+            "id": "n5",
+            "nhan": "Chuyên gia hoặc coach, bán tri thức",
+            "mo": "coach, mentor, tư vấn tài chính, trị liệu, HR coach",
+            "dau": "sợ bị giống người khác · sợ bị nói \"lùa gà\" · khó chứng minh năng lực",
+            "nguDo": [
+              "dinh-huong",
+              "niem-tin"
+            ],
+            "tier": "đắt",
+            "luuY": "Nhóm mang nỗi sợ mạnh nhất cả tệp. Đơn cho nhóm này phải TỰ NÓ là bằng chứng năng lực (cách ②), đừng chỉ hứa."
+          },
+          {
+            "id": "n6",
+            "nhan": "Đào tạo, diễn giả, làm cộng đồng",
+            "mo": "trainer nội bộ, giảng viên độc lập, host workshop, admin cộng đồng",
+            "dau": "cần nuôi dưỡng – cộng đồng – chuyển đổi – giữ chân, nhiều điểm chạm",
+            "nguDo": [
+              "chuyen-doi",
+              "cham-soc"
+            ],
+            "tier": "đắt"
+          },
+          {
+            "id": "n7",
+            "nhan": "Bán sản phẩm số",
+            "mo": "khoá học, ebook, membership",
+            "dau": "cần học ít hơn nhưng chuyên sâu/phức tạp nhất — nhiều content mà không ra doanh thu đều",
+            "nguDo": [
+              "offer",
+              "nhan-ban"
+            ],
+            "tier": "đắt"
+          },
+          {
+            "id": "khac",
+            "nhan": "Không nhóm nào khớp",
+            "mo": "kể thêm ở câu cuối buổi khám",
+            "dau": "",
+            "nguDo": [],
+            "tier": ""
+          }
+        ]
+      }
+    },
+    "khoiPhat": {
+      "hoi": "Chỗ này tắc từ bao giờ?",
+      "phu": "Hỏi cho đúng khâu máy vừa quét ra. Bệnh có mốc khởi phát là bệnh có nguyên nhân tìm được — 'từ khi đổi giá' quý hơn mọi bảng triệu chứng.",
+      "dap": [
+        {
+          "id": "tu-dau",
+          "nhan": "Từ đầu, chưa từng ổn",
+          "mo": "chưa bao giờ chạy được chỗ này"
+        },
+        {
+          "id": "co-luc-on",
+          "nhan": "Từng ổn, tụt từ một lúc",
+          "mo": "có mốc — nhớ được đại khái đổi gì thì tụt"
+        },
+        {
+          "id": "moi-day",
+          "nhan": "Mới đây thôi",
+          "mo": "vài tuần đến một hai tháng"
+        },
+        {
+          "id": "khong-nho",
+          "nhan": "Không nhớ, không để ý",
+          "mo": "—"
+        }
+      ],
+      "mocGhi": {
+        "hoi": "Nếu từng ổn — lúc tụt là mình vừa đổi gì?",
+        "ph": "ví dụ: đổi giá tháng 3 · đổi nền tảng · nghỉ đăng 2 tháng · thuê thêm người"
+      },
+      "luat": "'co-luc-on' + có mốc → nguyên nhân gần như chắc nằm ở cái vừa đổi, skill phải ưu tiên đọc mốc này trước C. 'tu-dau' → nghiêng về thiếu kỹ năng (chưa từng làm được). 'khong-nho' → dấu hiệu chưa để ý chính mình, nối vào bệnh nền 'không tập trung sâu'."
+    },
+    "xetNghiem": {
+      "luat": "KHÁM LÂM SÀNG + XÉT NGHIỆM — chỗ bác sĩ ngừng tin lời bệnh nhân và nhìn bằng mắt mình. GĐ1 chưa kéo số tự động (cần quyền vào Facebook/inbox); thay bằng bắt TỰ ĐẾM rồi gõ số — vẫn là con số cứng, vẫn lộ chỗ lệch. Người nói 'đăng đều' mà đếm ra 4 bài là tự thấy ngay, không cần ai giảng. Chỉ hỏi cho khâu máy quét ra + hai khâu liền kề có số đếm được. Bảng LỆCH (tự khai vs đếm) là bằng chứng thuyết phục nhất của cả buổi khám.",
+      "so": [
+        {
+          "id": "nguoiGiong",
+          "khau": "dinh-huong",
+          "hoi": "30 ngày qua, đếm được bao nhiêu người ĐÚNG nhóm khách mình chọn đã nhắn / hỏi / mua?",
+          "phu": "Người lạ bất kỳ không tính — chỉ đếm người khớp chân dung mình chọn.",
+          "donVi": "người",
+          "cauSang": "dinh-huong-1",
+          "nguong": {
+            "do": 0,
+            "vang": 3
+          },
+          "doiChieu": "chọn xong một nhóm mà 30 ngày không đếm được 3 người như thế → nhóm đó chưa có ở chỗ mình đứng",
+          "duongTheo": "giuLienLac"
+        },
+        {
+          "id": "bai30",
+          "khau": "thu-hut",
+          "hoi": "Mở trang của mình lên, đếm: 30 ngày qua đăng được bao nhiêu bài / video?",
+          "phu": "Đếm thật, đừng ước.",
+          "donVi": "bài",
+          "cauSang": "thu-hut-1",
+          "nguong": {
+            "do": 2,
+            "vang": 8
+          },
+          "doiChieu": "đăng đều mà dưới 8 bài / 30 ngày là tự khai lệch",
+          "duongTheo": "kenh"
+        },
+        {
+          "id": "hoi30",
+          "khau": "chuyen-doi",
+          "hoi": "Mở inbox, đếm: 30 ngày qua bao nhiêu người hỏi giá / hỏi mua?",
+          "donVi": "người",
+          "cauSang": "chuyen-doi-1",
+          "nguong": null,
+          "duongTheo": "giuLienLac"
+        },
+        {
+          "id": "chuaTraLoi",
+          "khau": "chuyen-doi",
+          "hoi": "Trong số đó, bao nhiêu người mình chưa trả lời, hoặc trả lời rồi bỏ đó quá 3 ngày?",
+          "donVi": "người",
+          "cauSang": "chuyen-doi-1",
+          "nguong": {
+            "tyLe": 0.3,
+            "mau": "hoi30"
+          },
+          "doiChieu": "trên 30% chưa trả lời thì bệnh KHÔNG phải 'chốt kém' — là KHÔNG TRẢ LỜI, khác thuốc",
+          "duongTheo": "giuLienLac"
+        },
+        {
+          "id": "danhSach",
+          "khau": "niem-tin",
+          "hoi": "Danh sách mình SỞ HỮU (email, Zalo, nhóm kín, CRM) — đếm ra bao nhiêu người?",
+          "phu": "Follower trên nền tảng KHÔNG tính — đó là đi thuê.",
+          "donVi": "người",
+          "cauSang": "niem-tin-1",
+          "nguong": {
+            "do": 0,
+            "vang": 100
+          },
+          "duongTheo": "giuLienLac"
+        },
+        {
+          "id": "don90",
+          "khau": "offer",
+          "hoi": "90 ngày qua bán được bao nhiêu đơn món chính?",
+          "donVi": "đơn",
+          "cauSang": "offer-1",
+          "nguong": {
+            "do": 0,
+            "vang": 3
+          },
+          "duongTheo": "ghiSo"
+        },
+        {
+          "id": "khachMua90",
+          "khau": "chuyen-giao",
+          "hoi": "90 ngày qua có bao nhiêu khách mua (mọi món)?",
+          "donVi": "người",
+          "cauSang": "chuyen-giao-1",
+          "nguong": null,
+          "duongTheo": "ghiSo"
+        },
+        {
+          "id": "daHoiKetQua",
+          "khau": "cham-soc",
+          "hoi": "Trong số khách đó, mình đã hỏi lại KẾT QUẢ của bao nhiêu người?",
+          "phu": "Hỏi thăm xã giao không tính — hỏi 'cái em bán cho anh, anh ra được gì rồi'.",
+          "donVi": "người",
+          "cauSang": "cham-soc-1",
+          "nguong": {
+            "tyLe": 0.3,
+            "mau": "khachMua90",
+            "cao": false
+          },
+          "doiChieu": "dưới 30% khách được hỏi kết quả → chưa có gì để chăm, chưa tới lượt xin giới thiệu",
+          "duongTheo": "ghiSo"
+        },
+        {
+          "id": "phutTimLai",
+          "khau": "van-hanh",
+          "hoi": "Muốn biết tháng trước lãi hay lỗ bao nhiêu — mình mất mấy phút để tìm ra con số?",
+          "phu": "Tìm không ra thì ghi 999.",
+          "donVi": "phút",
+          "cauSang": "van-hanh-1",
+          "nguong": {
+            "nguoc": true,
+            "do": 60,
+            "vang": 15
+          },
+          "doiChieu": "quá 1 tiếng hoặc không tìm ra → số không nằm ở một chỗ, vận hành đang chạy bằng trí nhớ",
+          "tuLam": true
+        },
+        {
+          "id": "viecGiao",
+          "khau": "nhan-ban",
+          "hoi": "Việc lặp lại hằng tuần — bao nhiêu việc đã có người khác hoặc máy làm thay mình?",
+          "donVi": "việc",
+          "cauSang": "nhan-ban-1",
+          "nguong": {
+            "do": 0,
+            "vang": 2
+          },
+          "tuLam": true
+        }
+      ],
+      "nguong": "Cách đọc ngưỡng: {do,vang} = n ≤ do → 🔴, n ≤ vang → 🟡, còn lại 🟢 · {nguoc:true} = đảo chiều (số càng cao càng tệ) · {tyLe, mau} = chia cho số đếm `mau`, vượt tyLe → 🔴 (cao:false = dưới tyLe mới 🔴). Không có ngưỡng = chỉ ghi số, không chấm. Máy chỉ hỏi số của khâu quét ra + hai khâu kề trong chuỗi.",
+      "luatDuong": "`duongTheo` trỏ sang câu nào trong congCu.hoi quyết định đường lấy số của ô này. Ô có `tuLam: true` thì CẤM kéo số tự động — nó không đo con số, nó đo CHÍNH NGƯỜI ĐÓ có tìm được số của mình không (Đoàn 2026-09-06). Máy tìm ra trong hai giây thì câu hỏi chết. Số đo CÔNG VIỆC thì kéo được; số đo CHÍNH HỌ thì phải tự làm."
+    },
+    "testChucNang": {
+      "luat": "TEST CHỨC NĂNG — như bảo bệnh nhân đi vài bước để xem chân. Hỏi SAU ô R (đang có gì), TRƯỚC ô E. Tách hai nguyên nhân cùng một triệu chứng: A thiếu KỸ NĂNG (chưa biết cách) vs B thiếu NĂNG LƯỢNG (biết mà không làm). ⛔ KHÔNG hỏi 'anh có biết cách không' — hỏi thế ai cũng gật, và người B trốn câu đó mạnh nhất (§Nhà tù danh vọng). Bắt KỂ CÁC BƯỚC: kể được 3+ bước cụ thể → biết cách; kể một bước rồi tắc, hoặc toàn chữ chung chung → chưa biết. Không ai phải nhận mình dốt — họ chỉ kể việc, máy tự đọc ra. GĐ1: máy đếm bước thô rồi hỏi lại 'đúng không' — Đoàn vừa là bác sĩ vừa là bệnh nhân nên tự xác nhận được. GĐ2: AI đọc và xếp loại. Ô xác nhận trả 'biet' (→ nguyên nhân B thiếu năng lượng) hoặc 'doan' (→ nguyên nhân A thiếu kỹ năng) — cố ý KHÔNG dùng chữ A/B ở ô này để khỏi lẫn với A/B của nguyên nhân.",
+      "hoi": "Tuần này bắt buộc phải làm cho xong chỗ này — mình sẽ làm những bước gì? Kể ra từng bước.",
+      "phu": "Kể như đang dặn một người khác làm thay. Mỗi dòng một bước.",
+      "ph": "ví dụ:\n1. lọc ra ai hỏi trong 30 ngày\n2. nhắn lại từng người, hỏi còn quan tâm không\n3. ai trả lời thì hẹn call\n…",
+      "nguongBuoc": 3,
+      "xacNhan": {
+        "hoi": "Máy đếm được {n} bước. Đọc lại — đây là các bước mình THẬT SỰ biết làm, hay đang đoán?",
+        "dap": [
+          {
+            "id": "biet",
+            "nhan": "Biết làm — chỉ là chưa làm",
+            "mo": "các bước này mình làm được ngay nếu ngồi xuống"
+          },
+          {
+            "id": "doan",
+            "nhan": "Thật ra mình đang đoán",
+            "mo": "kể ra cho có, chưa chắc bước nào đúng, chưa từng làm trọn"
+          }
+        ]
+      }
+    },
+    "nguyenNhan": {
+      "luat": "Sau khi có khâu, phải có NGUYÊN NHÂN mới kê được ngăn tận gốc. Ba nguồn tín hiệu, ưu tiên theo thứ tự: (1) test chức năng A/B, (2) giờ chảy vào đâu so với khâu quét ra, (3) tiền sử. Ngăn 🌱 hôm nay luôn kê 'môi trường' cho cả 9 khâu = luôn đoán mọi người là loại B. Với người A nó sai thuốc: ngồi Zoom 6h sáng ba mươi ngày vẫn không biết viết câu nhắn lại.",
+      "A": {
+        "ten": "Thiếu KỸ NĂNG",
+        "dau": "test chức năng ra 'doan' (đang đoán, hoặc kể dưới 3 bước) · hoặc tiền sử làm thuê không bán hàng + dưới 2 năm + khởi phát 'từ đầu'",
+        "tanGoc": "DẠY — khoá tương ứng ở bảng nối (cột free), KHÔNG kê môi trường. Môi trường để dành cho lúc đã biết cách mà vẫn không làm."
+      },
+      "B": {
+        "ten": "Thiếu NĂNG LƯỢNG / kỷ luật",
+        "dau": "test chức năng ra 'biet' (biết làm mà chưa làm) · hoặc khởi phát 'từng ổn rồi tụt' không kèm đổi gì",
+        "tanGoc": "MÔI TRƯỜNG — như đơn hiện tại: nhóm sáng, nhịp, người đợi."
+      },
+      "docGio": {
+        "dungCho": {
+          "ten": "Cày đúng chỗ mà vẫn tắc",
+          "dau": "giờ chảy vào ĐÚNG khâu đỏ",
+          "doc": "Không phải thiếu cố gắng. Thiếu kỹ năng hoặc thiếu đòn bẩy — test chức năng quyết.",
+          "o2": "Anh đang đổ giờ vào đúng chỗ tắc mà nó vẫn tắc — nên câu hỏi không còn là 'có làm không', mà là 'làm có đúng cách không'."
+        },
+        "saiCho": {
+          "ten": "Cày sai chỗ",
+          "dau": "giờ chảy vào khâu KHÁC, khâu đó đang 🟢/🟡",
+          "doc": "Giờ tự chảy về việc DỄ CHỊU (chốt, chăm sóc — nói chuyện với người đã quý mình), tránh việc KHÓ CHỊU (thu hút — đăng cho người lạ, phần lớn im lặng). Hai khâu đang khoẻ khoẻ VÌ được đổ giờ — nhưng đổ thêm cũng không sinh thêm khách khi đầu ống không có ai mới.",
+          "o2": "Giờ tuần rồi đổ vào {gio} — chỗ anh tự chấm là ổn. Khâu đang tắc là {khau}, không ai đụng. Anh đang chăm rất giỏi một cái ao đang cạn."
+        },
+        "raiDeu": {
+          "ten": "Chưa tìm ra đô-mi-nô",
+          "dau": "giờ rải đều, không khâu nào ăn quá nửa · và ≥3 khâu cùng 🟠",
+          "doc": "Đoàn chốt 31/08: 'không có cái nào để nó gánh cho mình thì bắt buộc phải tối ưu từng cái một' — và 'tối ưu hết' là PHƯƠNG ÁN DỰ PHÒNG, dấu hiệu chưa chẩn ra, không phải siêng. Đơn phải nói thẳng: chưa chắc đây là đô-mi-nô, làm việc rẻ nhất rồi soi lại sau 14 ngày; ⛔ cấm tối ưu dàn trải.",
+          "o2": "Bốn khâu cùng vàng, giờ rải đều. Kho gọi đây là chưa tìm ra đòn bẩy, không phải 'khâu nào cũng cần làm'. Phép thử: tìm đúng đô-mi-nô thì các khâu khác tự tụt hạng ưu tiên."
+        }
+      }
+    },
+    "benhNen": {
+      "luat": "BỆNH NỀN không gây tắc khâu, nhưng làm mọi thuốc uống vào yếu đi. Bác sĩ luôn hỏi bệnh nền TRƯỚC khi kê. Đơn có thêm dòng 💊 — là ĐIỀU KIỆN để ngăn ③④ có tác dụng, không phải lời khuyên sức khoẻ. Đoàn 25/08: 'nút thắt muốn giải quyết được thì cần một nguồn năng lượng khá lớn'. ⛔ Không dán nhãn tính cách — chỉ gọi tên điều kiện thiếu.",
+      "dau": [
+        {
+          "id": "ngu",
+          "ten": "Năng lượng nền thấp",
+          "khi": "ngủ dưới 6 tiếng",
+          "don": "Ngủ đủ 7 tiếng từ đêm nay — không phải để khoẻ, là để đơn trên có tác dụng. Thiếu ngủ thì bước nào cũng làm được một nửa.",
+          "dieuKien": {
+            "ngu": [
+              "d5",
+              "5-6"
+            ]
+          }
+        },
+        {
+          "id": "keo-ca-ngay",
+          "ten": "Không có kẽ hở để nghĩ",
+          "khi": "tích 'Bị công việc kéo cả ngày' + 'Lâu rồi đầu óc chưa được nghỉ'",
+          "don": "Trước khi làm việc ③, chặn ra 30 phút mỗi sáng không màn hình. Đoàn 25/08: 'gần như không có thời gian kẽ hở để có thể suy nghĩ nữa' — không có kẽ hở thì không nhìn thấy nút thắt của chính mình, và đơn này sẽ bị việc vặt xích lại.",
+          "dieuKien": {
+            "tich": [
+              "b7",
+              "b8"
+            ]
+          }
+        },
+        {
+          "id": "khong-de-y",
+          "ten": "Chưa để ý chính mình",
+          "khi": "khởi phát 'không nhớ' + xét nghiệm lệch ≥2 chỗ",
+          "don": "Bắt đầu ghi một dòng mỗi tối: hôm nay làm gì, mấy tiếng. Không ghi thì lần tái khám vẫn không biết đã làm được mấy phần.",
+          "dieuKien": {
+            "khoiPhat": "khong-nho",
+            "lechToiThieu": 2
+          }
+        }
+      ],
+      "dieuKienDoc": "dieuKien là AND của các khoá: ngu (thuộc danh sách) · tich (tích đủ các dòng cuộc sống) · khoiPhat (bằng) · lechToiThieu (số dòng bảng LỆCH khai nhẹ hơn thực tế ≥) · khau (khâu quét ra bằng) · lamBaoLau (thuộc) · capCuu (true)."
+    },
+    "redFlag": {
+      "luat": "Mỗi đơn có một dòng 🚨 'quay lại ngay nếu…' — dấu hiệu CHẨN SAI, không phải dấu hiệu làm sai. Người bệnh phải biết lúc nào thuốc không hợp thay vì cố uống hết đợt.",
+      "theoKhau": {
+        "thu-hut": "12 bài đăng đủ mà 0 người lạ nhắn → không phải thiếu bài, có thể sai nhóm khách (Định hướng) hoặc bài không có bằng chứng (Niềm tin)",
+        "niem-tin": "30 người vào danh sách mà 0 người trả lời tin nhắn đầu → danh sách đang nhặt nhầm người",
+        "offer": "viết xong một mặt giấy mà tự mình không dám báo giá → chưa tin sản phẩm, quay lại Định hướng",
+        "chuyen-doi": "nhắn lại đủ mọi người hỏi mà 0 ai trả lời → không phải chốt kém, có thể offer sai hoặc nhóm khách sai",
+        "chuyen-giao": "khách có lộ trình 3 mốc mà vẫn bỏ ở mốc 1 → mốc 1 đặt sai, không phải khách lười",
+        "cham-soc": "gọi 10 khách cũ mà 0 ai nhớ kết quả của họ → chuyển giao chưa xong, chưa tới lượt chăm",
+        "van-hanh": "gom xong một chỗ mà vẫn không biết lãi lỗ → thiếu số đầu vào, quay lại Chuyển đổi",
+        "nhan-ban": "giao việc 2 tuần mà kết quả tụt → quy trình chưa đủ chi tiết, hoặc chọn nhầm việc để giao",
+        "dinh-huong": "chọn xong một nhóm mà 2 tuần không tìm được người nào như thế → nhóm không tồn tại ở chỗ mình đứng"
+      }
+    },
+    "chuyenTuyen": {
+      "luat": "Bác sĩ đa khoa KHÔNG chữa hết. Ba ca phải nói thẳng 'cái này tôi không có thuốc' thay vì kê bừa. Chuyển tuyến là dấu hiệu bác sĩ giỏi, không phải bác sĩ kém.",
+      "ca": [
+        {
+          "id": "thi-truong",
+          "khi": "Định hướng 🔴 VÀ bán trên 2 năm VÀ khởi phát 'từ đầu, chưa từng ổn'",
+          "noi": "Không phải khâu — là THỊ TRƯỜNG KHÔNG CÓ. Hai năm chưa từng ổn ở chính chỗ chọn khách thì không sửa bằng một việc 7 ngày. Chuyển sang chọn lại thị trường (offer-design-protocol §Bước 1), KHÔNG kê đơn khâu.",
+          "hanhDong": "khong-ke-don",
+          "dieuKien": {
+            "khau": "dinh-huong",
+            "lamBaoLau": [
+              "2-5",
+              "t5"
+            ],
+            "khoiPhat": "tu-dau"
+          }
+        },
+        {
+          "id": "cap-cuu",
+          "khi": "cấp cứu (doanh thu 0 + tiền dưới 3 tháng)",
+          "noi": "Không xét nghiệm, không tận gốc. Chỉ một việc: nhặt lại người đã hỏi trong 90 ngày (Chuyển đổi ③). Cầm máu trước.",
+          "hanhDong": "chi-giam-dau",
+          "dieuKien": {
+            "capCuu": true
+          }
+        },
+        {
+          "id": "ngoai-pham-vi",
+          "khi": "tắc vì hết vốn, hoặc vì việc pháp lý / sức khoẻ nặng — lộ ra ở C",
+          "noi": "Không phải bệnh kinh doanh. Nói thẳng đây không phải thứ bộ máy này chữa được.",
+          "hanhDong": "khong-ke-don",
+          "dieuKienDoc": "máy không đọc được — chỉ lộ ra ở lời kể C, skill tự soi"
+        }
+      ]
+    },
+    "taiKham": {
+      "luat": "TÁI KHÁM là chỗ bác sĩ giỏi khác bác sĩ thường. Không hỏi 'đỡ chưa' — hỏi tách BA lý do chưa đỡ, vì ba cái đó chữa khác hẳn nhau. Lỗi 22–23/08 (chẩn hai lần ra y nguyên) là vì máy chỉ quét lại, không hỏi đơn cũ đã uống chưa. Chạy khi bắt đầu khám mà đơn lượt trước còn trong donChayNgay hoặc vừa hết. Máy hỏi tái khám khi lượt trước có đơn và cách nay ≤ hoiTrongNgay (45 ngày ≈ 3 × donChayNgay); xa hơn thì đơn cũ đã nguội, khám lại từ đầu.",
+      "lamDuoc": {
+        "hoi": "Đơn lượt trước — mình làm được mấy phần?",
+        "dap": [
+          {
+            "id": "0",
+            "nhan": "Gần như chưa đụng",
+            "mo": "dưới 2/10"
+          },
+          {
+            "id": "mot-phan",
+            "nhan": "Làm được một phần",
+            "mo": "3–7/10"
+          },
+          {
+            "id": "het",
+            "nhan": "Làm gần hết",
+            "mo": "8/10 trở lên"
+          }
+        ]
+      },
+      "ketQua": {
+        "hoi": "Chỗ đó giờ ra sao?",
+        "dap": [
+          {
+            "id": "do",
+            "nhan": "Đỡ rõ"
+          },
+          {
+            "id": "nhu-cu",
+            "nhan": "Như cũ"
+          },
+          {
+            "id": "te-hon",
+            "nhan": "Tệ hơn"
+          }
+        ]
+      },
+      "baLyDo": [
+        {
+          "id": "khong-uong",
+          "khi": "lamDuoc = 0 hoặc mot-phan, bất kể kết quả",
+          "ten": "Không uống thuốc",
+          "doc": "Thuốc đúng, thiếu ĐIỀU TRỊ. Đây mới là lúc kê MÔI TRƯỜNG — lượt trước chưa chắc cần. Đừng chẩn lại khâu: khâu cũ vẫn đúng, chỉ chưa được chữa.",
+          "hanhDong": "giu-khau-cu-ke-moi-truong",
+          "dieuKien": {
+            "lamDuoc": [
+              "0",
+              "mot-phan"
+            ]
+          }
+        },
+        {
+          "id": "khong-ngam",
+          "khi": "lamDuoc = het VÀ ketQua = nhu-cu/te-hon",
+          "ten": "Uống mà không ngấm",
+          "doc": "Thuốc SAI. Khâu có thể vẫn đúng, nhưng việc ③ không trúng — đổi việc ③, hỏi lại C kỹ hơn.",
+          "hanhDong": "giu-khau-doi-viec",
+          "dieuKien": {
+            "lamDuoc": [
+              "het"
+            ],
+            "ketQua": [
+              "nhu-cu",
+              "te-hon"
+            ]
+          }
+        },
+        {
+          "id": "chan-nham",
+          "khi": "lamDuoc = het VÀ ketQua = do NHƯNG 11 câu quét lại vẫn ra khâu cũ đỏ",
+          "ten": "Chẩn nhầm — hoặc đã sang nút thắt mới",
+          "doc": "Đỡ rồi mà khâu vẫn đỏ → bệnh ở khâu KHÁC, khâu này chỉ là hệ quả. Quét lại toàn bộ từ tiếp nhận.",
+          "hanhDong": "kham-lai-tu-dau",
+          "dieuKien": {
+            "lamDuoc": [
+              "het"
+            ],
+            "ketQua": [
+              "do"
+            ],
+            "quetLai": "con-do"
+          }
+        },
+        {
+          "id": "khoi",
+          "khi": "lamDuoc = het VÀ ketQua = do VÀ quét lại khâu cũ hết đỏ",
+          "ten": "Khỏi — nút thắt đã di chuyển",
+          "doc": "Đúng như Đoàn: 'hết được cái lười thì một tháng sau quay lại, nó sẽ có một cái nút thắt khác'. Khám tiếp bình thường.",
+          "hanhDong": "kham-tiep",
+          "dieuKien": {
+            "lamDuoc": [
+              "het"
+            ],
+            "ketQua": [
+              "do"
+            ],
+            "quetLai": "het-do"
+          }
+        }
+      ],
+      "hoiTrongNgay": 45,
+      "dieuKienDoc": "Duyệt theo thứ tự, khớp cái đầu tiên. quetLai chỉ kiểm được SAU 11 câu sàng (con-do = khâu nút thắt lượt trước vẫn 🔴); trước đó máy đọc sơ bộ hai lý do đầu."
+    },
+    "congCu": {
+      "luat": "BẢN KÊ CÔNG CỤ — hỏi ở tiếp nhận, sau tiền sử, trước 11 câu sàng. Coi như 'bệnh nhân đang dùng thuốc gì': bác sĩ hỏi ở bàn tiếp nhận chứ không đợi tới lúc chỉ định xét nghiệm. Ba câu này làm BA việc cùng lúc: (1) hỏi đúng câu xét nghiệm — người đăng TikTok thì đừng bắt đếm bài Facebook; (2) chọn đúng đường lấy số — mỗi đáp án gắn sẵn một `duong`; (3) tự nó là tín hiệu chẩn đoán. Đoàn 2026-09-06: \"phải hỏi xem họ dùng cái gì, rồi mới biết đường khám chứ nhỉ\".\n⛔ KHÔNG chấm màu khâu từ bản kê này. Màu khâu vẫn chỉ lấy từ đáp án 11 câu sàng (luật ở chamMau). Bản kê chỉ đẻ ra CỜ LỆCH — cùng loại với bảng LỆCH của xét nghiệm: tự khai một đằng, công cụ nói một nẻo.\n⚠️ Trang `systems-and-stack.md` (cả của Đoàn lẫn bản mẫu phát cho member) đang nói về công cụ AI và nhịp làm việc, KHÔNG nói bán ở đâu / giữ khách bằng gì. Nên chưa đọc sẵn được, phải hỏi. Hỏi xong nên nạp ngược vào trang đó để lần sau đọc thay vì hỏi lại.",
+      "hoi": [
+        {
+          "id": "kenh",
+          "toiDa": 2,
+          "hoi": "Người mới biết tới mình chủ yếu qua đâu?",
+          "phu": "Chọn tối đa 2. Chỗ THẬT SỰ ra người mới, không phải chỗ mình có tài khoản.",
+          "dap": [
+            {
+              "id": "fb-ca-nhan",
+              "nhan": "Trang cá nhân Facebook",
+              "mo": "đăng trên tường mình",
+              "duong": "tu-dem"
+            },
+            {
+              "id": "fb-page",
+              "nhan": "Fanpage Facebook",
+              "duong": "meta-export"
+            },
+            {
+              "id": "tiktok",
+              "nhan": "TikTok",
+              "duong": "tiktok-studio"
+            },
+            {
+              "id": "youtube",
+              "nhan": "YouTube",
+              "duong": "youtube-studio"
+            },
+            {
+              "id": "zalo",
+              "nhan": "Zalo",
+              "mo": "đăng nhật ký, nhắn nhóm",
+              "duong": "tu-dem"
+            },
+            {
+              "id": "gioi-thieu",
+              "nhan": "Người quen giới thiệu",
+              "mo": "không tự đăng, khách tới qua người khác",
+              "duong": "khong-co"
+            },
+            {
+              "id": "offline",
+              "nhan": "Gặp trực tiếp, sự kiện",
+              "duong": "khong-co"
+            },
+            {
+              "id": "ads",
+              "nhan": "Chạy quảng cáo",
+              "duong": "meta-ads"
+            }
+          ]
+        },
+        {
+          "id": "giuLienLac",
+          "hoi": "Ai quan tâm rồi thì mình giữ liên lạc ở đâu?",
+          "phu": "Follower trên nền tảng KHÔNG tính — đó là đi thuê, không phải sở hữu.",
+          "dap": [
+            {
+              "id": "khong-giu",
+              "nhan": "Không giữ, ai nhắn thì trả lời",
+              "duong": "khong-co",
+              "coBao": "niem-tin"
+            },
+            {
+              "id": "inbox",
+              "nhan": "Để nguyên trong inbox",
+              "mo": "muốn tìm lại thì lục tin nhắn",
+              "duong": "tu-dem",
+              "coBao": "niem-tin"
+            },
+            {
+              "id": "zalo-ca-nhan",
+              "nhan": "Bạn bè Zalo cá nhân",
+              "duong": "tu-dem"
+            },
+            {
+              "id": "nhom-kin",
+              "nhan": "Nhóm kín Zalo / Facebook",
+              "duong": "tu-dem"
+            },
+            {
+              "id": "email",
+              "nhan": "Danh sách email",
+              "duong": "email-export"
+            },
+            {
+              "id": "cong-dong",
+              "nhan": "Cộng đồng riêng",
+              "mo": "Skool, Circle, diễn đàn riêng",
+              "duong": "cong-dong-tay"
+            },
+            {
+              "id": "crm",
+              "nhan": "CRM thật",
+              "mo": "Notion, HubSpot, GoHighLevel…",
+              "duong": "notion-mcp"
+            }
+          ]
+        },
+        {
+          "id": "ghiSo",
+          "hoi": "Khách và tiền mình ghi ở đâu?",
+          "phu": "Chỗ mình mở ra để biết tháng này ai mua, thu bao nhiêu.",
+          "dap": [
+            {
+              "id": "trong-dau",
+              "nhan": "Nhớ trong đầu",
+              "duong": "khong-co",
+              "coBao": "van-hanh"
+            },
+            {
+              "id": "tin-nhan",
+              "nhan": "Lục lại tin nhắn",
+              "duong": "khong-co",
+              "coBao": "van-hanh"
+            },
+            {
+              "id": "so-giay",
+              "nhan": "Sổ giấy",
+              "duong": "khong-co"
+            },
+            {
+              "id": "sheet",
+              "nhan": "Excel / Google Sheet",
+              "duong": "sheet-csv"
+            },
+            {
+              "id": "crm",
+              "nhan": "CRM thật",
+              "duong": "notion-mcp"
+            }
+          ]
+        }
+      ],
+      "duongLaySo": {
+        "notion-mcp": {
+          "ten": "Notion CRM qua MCP",
+          "cach": "MCP Notion đã cắm sẵn — tra thẳng, không cần khoá. Khử trùng theo TÊN ĐẦY ĐỦ trước khi đếm: data-sources §1 ghi 'Duy Anh' và 'Mạc Duy Anh' từng là một người bị tách hai dòng.",
+          "san": true
+        },
+        "sheet-csv": {
+          "ten": "Google Sheet / Excel",
+          "cach": "Sheet public thì curl \".../export?format=csv\". Đếm bằng bộ đọc CSV, KHÔNG dùng wc -l — ô tiếng Việt nhiều đoạn làm wc -l báo sai gấp ba (data-sources §2).",
+          "san": true
+        },
+        "meta-export": {
+          "ten": "Meta Business Suite — xuất file",
+          "cach": "Người dùng tự bấm Xuất ở Business Suite rồi thả file vào thư mục, skill đọc. Không cần token, không cần quyền gì. Đây là cửa rẻ nhất.",
+          "san": true
+        },
+        "meta-api": {
+          "ten": "Meta Graph API",
+          "cach": "ads/lib/meta.mjs đã có sẵn client, khoá đọc từ ads/.khoa/that.env. CHƯA dựng được: that.env chưa tồn tại, và công thức trong mau.env chỉ xin ads_read + ads_management — quyền QUẢNG CÁO. Đếm bài đăng cần thêm pages_read_engagement.",
+          "san": false
+        },
+        "meta-ads": {
+          "ten": "Số quảng cáo Meta",
+          "cach": "node ads/keo.mjs rồi node ads/soi.mjs. Cần META_TOKEN trong ads/.khoa/that.env — hiện chưa có.",
+          "san": false
+        },
+        "tiktok-studio": {
+          "ten": "TikTok Studio",
+          "cach": "Chưa có API nối. Mở TikTok Studio, mục Nội dung, lọc theo ngày rồi đếm tay.",
+          "san": false
+        },
+        "youtube-studio": {
+          "ten": "YouTube Studio",
+          "cach": "Chưa có API nối. Mở Studio, lọc theo ngày rồi đếm tay.",
+          "san": false
+        },
+        "email-export": {
+          "ten": "Danh sách email",
+          "cach": "Xuất CSV từ nhà cung cấp rồi đọc. Tệp 66k đi qua NextFunnel — luật cứng ở data-sources §2: CHỈ nhận số tổng hợp, cấm kéo danh sách vào ngữ cảnh.",
+          "san": true
+        },
+        "cong-dong-tay": {
+          "ten": "Cộng đồng riêng",
+          "cach": "Skool chưa có API/MCP (data-sources §3) — mở trang đọc số rồi ghi kèm ngày chụp.",
+          "san": false
+        },
+        "tu-dem": {
+          "ten": "Tự đếm",
+          "cach": "Nền tảng này không có đường kéo số. Bắt người ta mở ra đếm thật, chờ đếm xong. Bản khám phải ghi rõ đây là SỐ TỰ ĐẾM.",
+          "san": true
+        },
+        "khong-co": {
+          "ten": "Không có chỗ nào để kéo",
+          "cach": "Không phải trục trặc kỹ thuật — ĐÂY LÀ KẾT QUẢ XÉT NGHIỆM. Không có chỗ nào giữ số nghĩa là số đó chưa từng tồn tại.",
+          "san": true
+        }
+      },
+      "lech": {
+        "luat": "Cờ LỆCH sinh từ bản kê, cùng loại với bảng LỆCH của xét nghiệm: tự khai một đằng, công cụ nói một nẻo. Chỉ dựng cờ khi câu sàng của khâu đó tự khai TỪ 'chớm' TRỞ LÊN (nhe hoặc xanh) — tự khai đỏ rồi thì không có gì lệch.",
+        "ca": [
+          {
+            "id": "niem-tin",
+            "khau": "niem-tin",
+            "cauSang": "niem-tin-1",
+            "hoi": "giuLienLac",
+            "khiDap": [
+              "khong-giu",
+              "inbox"
+            ],
+            "doc": "Tự khai giữ được liên lạc, nhưng không có chỗ nào SỞ HỮU danh sách. Follower là đi thuê. Đây là Niềm tin đỏ dù bảng màu ghi khác."
+          },
+          {
+            "id": "van-hanh",
+            "khau": "van-hanh",
+            "cauSang": "van-hanh-1",
+            "hoi": "ghiSo",
+            "khiDap": [
+              "trong-dau",
+              "tin-nhan"
+            ],
+            "doc": "Tự khai nắm được khách và tiền, nhưng số không nằm ở đâu cả. Nắm bằng trí nhớ thì không tra được, không giao được, và không biết mình sai lúc nào."
+          }
+        ]
+      },
+      "raiDeu": {
+        "toiThieu": 3,
+        "doc": "Chọn từ 3 kênh trở lên mà không kênh nào có nhịp — nguồn thứ hai cho dấu 'chưa tìm ra đô-mi-nô', độc lập với cách đọc giờ. Hai nguồn cùng chỉ một hướng thì chắc hơn hẳn một nguồn."
+      }
+    },
+    "canCuLuat": "`canCu` = TRANG KHUNG của khâu, dùng cho cách ② lấp ô trống ở bảng nối (chan-doan-cua-vao §LUẬT ô ⬜, Đoàn chốt 22/08: \"lấy framework chuyển giao ra chỉ họ chẳng hạn\"). Chưa có khoá cho ô đó thì rút gọn khung từ trang này vào thẳng đơn, còn MỘT MÀN HÌNH đọc hết, đừng bê nguyên trang. ⚠️ Sửa 2026-09-06: ba khâu (thu-hut, chuyen-doi, nhan-ban) trước đó trỏ `goals#nut-that-hien-tai` — đó là nút thắt hiện tại CỦA ĐOÀN, không phải khung của khâu; hai khâu (niem-tin, cham-soc) trỏ vào chính `chan-doan-cua-vao`, tức trỏ vòng lại trang chứa bảng. Trước ngày này KHÔNG code nào đọc `canCu`, nên sai mà không ai biết."
+  }
+}
