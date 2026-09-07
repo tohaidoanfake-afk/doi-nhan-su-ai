@@ -56,7 +56,7 @@ Họ nói để lát nữa thì **vẫn viết được** — rơi xuống Cửa
 
 ### Tầng 2 — kho biến thiên, nạp thêm mãi
 
-Bảy kho này **không bao giờ xong** — chúng dày lên theo thời gian. Lần đầu chỉ cần **mồi**, đừng cố lấp đầy.
+Tám kho này **không bao giờ xong** — chúng dày lên theo thời gian. Lần đầu chỉ cần **mồi**, đừng cố lấp đầy.
 
 | Kho | Mồi bằng gì | Khuôn |
 |---|---|---|
