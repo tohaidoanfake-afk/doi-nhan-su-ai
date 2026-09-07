@@ -75,7 +75,7 @@ Thiếu nháy kép là báo lỗi ngay. Cách tránh: để thư mục ở chỗ
 
 ### Kẹt thì làm gì
 
-Nhắn vào nhóm kèm **ảnh chụp màn hình chỗ kẹt**. Đây là việc duy nhất trong 8 việc có người gỡ hộ — 7 việc còn lại là việc của riêng bạn, không ai làm thay được.
+Nhắn vào nhóm kèm **ảnh chụp màn hình chỗ kẹt**. Đây là việc duy nhất trong 7 việc có người gỡ hộ — 6 việc còn lại là việc của riêng bạn, không ai làm thay được.
 
 ---
 
