@@ -22,13 +22,15 @@ description: Vai bán hàng trong đội nhân sự A.I — nhận một khâu c
 | Trang | Vai này cần để làm gì | Chủ của trang |
 |---|---|---|
 | **`wiki/pheu.md`** | ⚡ **quan trọng nhất** — cửa vào nào bán gì, chặng nào đang đứt | **vai này**, khuôn `khuon/pheu.md` |
-| `wiki/positioning.md` | vì sao chọn bạn chứ không phải người khác | **vai này**, khuôn `khuon/positioning.md` |
+| `wiki/positioning.md` | vì sao chọn bạn chứ không phải người khác | ✅ nền — chạy `/phong-van-dinh-vi`, chặng 2 |
 | `wiki/offer-ladder.md` | bán gì, giá bao nhiêu, thang leo thế nào | ✅ nền, `/onboard` dựng |
 | `wiki/target-customer.md` | khách sợ gì, khao khát gì, phản đối gì | ✅ nền, `/onboard` dựng |
 | `wiki/customer-wins.md` | bằng chứng để trang bán và thư bán đứng được | ⬜ vai Content |
 | `wiki/voice-profile.md` | chữ nghĩa phải ra giọng bạn | ⬜ vai Content |
 
-**Lần chạy đầu, dựng hai trang của vai này** — hỏi rồi mời `/nap-kho` lưu thật. `pheu` trước, `positioning` sau: định vị viết ra dễ hơn khi đã biết mình đang bán cho ai ở cửa nào.
+**Lần chạy đầu, dựng `pheu.md`** — trang của riêng vai này, hỏi rồi mời `/nap-kho` lưu thật.
+
+📌 `positioning` **không phải việc của vai này** — nó là chặng 2 của `/phong-van-dinh-vi` bên nền. Chưa có thì nói thẳng: *"chạy `/phong-van-dinh-vi` trước, nó hỏi đúng bảy chặng và ra câu định vị tử tế hơn tôi hỏi vội ở đây."*
 
 ⚠️ **Nạp thiếu vẫn chạy được, nhưng phải nói ra.** Thiếu `pheu` thì mọi câu trả lời đều là đoán. Thiếu `offer-ladder` thì không biết có những gói nào để rẽ. Thiếu `customer-wins` thì mọi bằng chứng đều trống. **Mỗi lần chạy mà nền còn trống, câu đầu tiên phải là dòng cảnh báo thiếu gì và vì thế kém ở đâu** — đừng im lặng làm rồi giao một bản yếu.
 

@@ -4,6 +4,26 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v3.6 — 2026-09-07
+
+**Thêm lệnh thứ tư: `/phong-van-dinh-vi` — buổi phỏng vấn định vị 7 chặng.**
+
+- **Vì sao nó ở nền chứ không ở một vai:** bảy chặng đẻ ra đầu ra đi vào **bảy chỗ thuộc bốn vai khác nhau** — `positioning` *(Bán hàng)* · `brand-guide` *(Thiết kế)* · `models/` và `video-production-setup` *(Content)* · `systems-and-stack` *(nền)*. Không vai nào sở hữu nó. Nó cùng loại với `/onboard`: một **buổi phỏng vấn dựng nền**, chạy một lần, nhiều vai đọc sau.
+
+- **Nền nay dựng 13 trang**, thêm `positioning` và `brand-guide` — hai khuôn chuyển về từ vai Bán hàng và vai Thiết kế. Vai nào chạy phỏng vấn thì vai đó sở hữu trang đầu ra; để khuôn ở hai nơi là hai bản rồi lệch.
+
+- **Viết mới, không chép.** Bản gốc chỉ là con trỏ sang `wiki/brand-positioning-protocol.md` 211 dòng. Nay bảy chặng tự chứa, cộng bốn chỗ siết chặt hơn bản khoá gốc:
+  - **Từ khoá là MỘT TỪ, không phải một cụm.** Cụm nghe đầy đủ hơn nhưng **không ai nhớ nổi** — mà cả buổi này tồn tại để có thứ người khác nhớ được.
+  - **Bộ 12 nguyên mẫu là của Mark & Pearson (2001), KHÔNG phải Carl Jung.** Rất nhiều tài liệu chép sai chỗ này.
+  - **Phép thử 3 câu là phép thử của TỪ KHOÁ, không phải của offer.** Đã chấm nhầm một lần: ô *"có bằng chứng thật không"* bị chấm đỏ bằng bằng chứng của offer. Sai thước — rồi đi tìm lại một từ khoá vốn đã đúng.
+  - **Kết buổi bằng HẠN CHÓT, không kết bằng bảng đã điền đủ.** Bảng đủ mà không ai làm gì với nó thì sáu tháng sau vẫn y nguyên.
+
+- **Màu và font đi về `systems-and-stack`, không về `brand-guide`** — cố ý tách, vì mọi vai sản xuất đều tra màu/font, để hai chỗ là hai nguồn sự thật.
+
+- Vai Bán hàng đổi theo: `positioning` **không còn là việc của nó**. Lớp 1 nay trỏ sang `/phong-van-dinh-vi`, kèm câu nói thẳng — *"chạy nó trước, nó hỏi đúng bảy chặng và ra câu định vị tử tế hơn tôi hỏi vội ở đây."*
+
+---
+
 ## v3.5 — 2026-09-07
 
 **Thêm `/nap-kho` luồng SỬA KHO — lấp chỗ hở lớn nhất của bản phát.**

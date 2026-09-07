@@ -23,6 +23,8 @@
 | [[decision-style]] | Cách ra quyết định, nỗi sợ lớn nhất | ✅ nền |
 | [[network]] | 5–10 người quan trọng nhất | ✅ nền |
 | [[expertise]] | 3 lĩnh vực bạn giỏi đến mức người ta trả tiền để nghe | ✅ nền |
+| [[positioning]] | 3 từ khoá · câu định vị · phép thử 3 câu | ✅ nền, qua `/phong-van-dinh-vi` |
+| [[brand-guide]] | Feel/Look · nguyên mẫu · mood board · kho ảnh · bố cục | ✅ nền, qua `/phong-van-dinh-vi` |
 
 ## 💼 Kinh doanh — từ hai vai trở lên cùng đọc
 
@@ -61,7 +63,7 @@
 
 | Trang | Mô tả | Ai lấp |
 |---|---|---|
-| [[positioning]] | Vì sao chọn tôi chứ không phải người khác | ⬜ vai Bán hàng |
+
 | [[objections-library]] | Khách hay phản đối gì, trả lời ra sao | ⬜ vai Bán hàng |
 | [[customers]] | Khách thật + tình trạng *(đọc `reference/luat-du-lieu-nhay-cam.md` trước)* | ⬜ vai Chăm sóc |
 | [[competitors]] | Đối thủ, điểm yếu của họ | ⬜ vai Nghiên cứu |

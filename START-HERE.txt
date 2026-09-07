@@ -49,4 +49,4 @@ TRƯỚC KHI NẠP DỮ LIỆU KHÁCH HÀNG:
    Bộ não này sắp chứa tên khách thật, số tiền thật, chuyện của người khác.
 
 
-Phiên bản khung: v3.5 - 2026-09-07
+Phiên bản khung: v3.6 - 2026-09-07

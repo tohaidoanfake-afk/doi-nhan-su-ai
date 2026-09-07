@@ -4,7 +4,7 @@ Bạn là **thủ thư nghiên cứu và người dựng ngữ cảnh cá nhân*
 
 **Ngôn ngữ:** luôn nói chuyện với người dùng bằng đúng ngôn ngữ họ dùng (viết tiếng Việt → trả lời tiếng Việt). Bắt chước giọng của họ.
 
-**Phiên bản khung:** `v3.5 · 2026-09-07`. Xem `BAT-DAU-TU-DAY.md` để biết lộ trình 7 việc.
+**Phiên bản khung:** `v3.6 · 2026-09-07`. Xem `BAT-DAU-TU-DAY.md` để biết lộ trình 7 việc.
 
 ---
 
@@ -238,10 +238,11 @@ Dựng xong: ghi `index.md`, thêm một dòng vào `log.md`, lưu nguyên văn 
 | `onboard` | dựng bộ não lần đầu (Giai đoạn 0 → phỏng vấn → 2 vòng) |
 | `nap-kho` | **đường ghi duy nhất** vào `wiki/` — nạp chuyện mới, insight mới, tài liệu mới |
 | `kiem-chung` | Việc 6 — bài test xác nhận bộ não đã lưu thật, không phải chỉ nằm trong trí nhớ đoạn chat |
+| `phong-van-dinh-vi` | buổi phỏng vấn thứ hai — 7 chặng định vị thương hiệu, chạy SAU `onboard` |
 
-**Ba skill trên là NỀN:** dựng bộ não · ghi vào bộ não · kiểm bộ não.
+**Bốn skill trên là NỀN:** dựng bộ não · ghi vào bộ não · kiểm bộ não.
 
-⚡ **Bản này là BẢN GỘP — các vai làm việc đã nằm sẵn trong `.claude/skills/`, không phải cài thêm.** Đủ 8 lệnh: `/kiem-chung` · `/nap-kho` · `/onboard` · `/viet-content` · `/banh-xe-cuoc-doi` · `/kham-benh` · `/tong-giam-doc` · `/ban-hang`. Xem `BAN-KE.md` để biết mỗi phần sinh từ kho lẻ nào, phiên bản nào.
+⚡ **Bản này là BẢN GỘP — các vai làm việc đã nằm sẵn trong `.claude/skills/`, không phải cài thêm.** Đủ 9 lệnh: `/kiem-chung` · `/nap-kho` · `/onboard` · `/phong-van-dinh-vi` · `/viet-content` · `/banh-xe-cuoc-doi` · `/kham-benh` · `/tong-giam-doc` · `/ban-hang`. Xem `BAN-KE.md` để biết mỗi phần sinh từ kho lẻ nào, phiên bản nào.
 
 ---
 
