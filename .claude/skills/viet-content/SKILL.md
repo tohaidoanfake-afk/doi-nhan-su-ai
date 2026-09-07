@@ -91,6 +91,24 @@ Tám kho này **không bao giờ xong** — chúng dày lên theo thời gian. L
 
 `wiki/voice-profile.md` · `wiki/experiences-library.md` · `wiki/target-customer.md` · `wiki/contrarian-beliefs.md`
 
+### 📂 Đếm 0 thì NGÓ LẠI RUN CŨ trước khi kết luận là trống
+
+Không có file nào trong `wiki/` **không** đồng nghĩa chưa có chất liệu. Người dùng chạy không nền thì chất liệu nằm ở file bàn giao của lượt trước:
+
+```
+content/*/de-nap-vao-nao.md
+```
+
+**Tìm file mới nhất, đọc nó, dùng luôn.** Có nó thì **đừng hỏi lại bốn câu** — hỏi lại thứ họ đã kể tuần trước là cách nhanh nhất làm người ta bỏ công cụ.
+
+⚠️ **Nhưng KHÔNG tính nó vào điểm cửa vào.** Cửa vào đếm file trong `wiki/`, và nó phải tiếp tục đếm 0 — vì kho thật vẫn trống, và đó vẫn là lý do phải cài nền. Chất liệu từ file bàn giao là thứ **cứu được lượt hôm nay**, không phải thứ thay được cái kho.
+
+Nói ra cả hai vế, một dòng:
+
+> *"Tôi lấy lại giọng và chuyện bạn kể hôm <ngày> ở `content/<...>/de-nap-vao-nao.md`, khỏi kể lại. Vẫn chưa vào bộ não được vì máy chưa có nền — file đó đang phình ra mỗi lượt, cài nền một lần là nạp hết vào kho."*
+
+📌 **Lượt này thu thêm gì thì ghi TIẾP vào file bàn giao của lượt này**, đừng sửa file cũ. Mỗi run một file, `/nap-kho` gộp lúc nạp — cùng kỷ luật với `log.md`: chỉ thêm, không viết đè.
+
 ### Ba mức, ba cách hành xử khác hẳn nhau
 
 **🔴 Kho trống — 0 hoặc 1 trên 4. KHÔNG VIẾT NGAY — thu trước đã.**
