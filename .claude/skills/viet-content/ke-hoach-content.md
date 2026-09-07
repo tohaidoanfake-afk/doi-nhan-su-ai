@@ -1,4 +1,6 @@
-# `ke-hoach-thang` — Kế hoạch content một tháng
+# `ke-hoach-content` — Kế hoạch content một tháng
+
+> 📌 **Đây là kế hoạch CONTENT — tháng này đăng gì.** Kế hoạch tháng của cả việc kinh doanh — *tháng này gỡ khâu nào, nghiệm thu bằng hai con số* — là `/dieu-hanh` bên vai Điều phối. Chạy `/dieu-hanh` trước thì kế hoạch content này biết mình đang phục vụ đích nào.
 
 > Đọc file này **sau** `SKILL.md`, không thay cho nó. Đây là loại việc duy nhất **không đẻ ra bài** — nó đẻ ra một danh sách đề bài, mỗi đề bài là một đề xuất phải tự bảo vệ được.
 

@@ -3,7 +3,7 @@ name: viet-content
 description: Dùng khi bạn nhờ viết hoặc xử lý nội dung đăng ra ngoài — bài Facebook, caption, hook, kịch bản video ngắn/dài, shotlist, email, bài bán hàng, mindmap từ một trang bộ não. Kể cả khi chỉ nói "viết bài về X", "làm content", "hôm nay đăng gì", "đặt hook cho bài này", "soi giúp bài này", "viết lại cho đúng giọng", "gợi ý ý tưởng", hay dán một bài cũ vào nhờ chỉnh. Cũng dùng khi gõ /viet-content.
 ---
 
-> 🧩 **Vai trong đội nhân sự A.I: Content.** Có `/tong-giam-doc` trong máy thì nó giao việc *viết bài, kịch bản, ý tưởng, hook* xuống đây. Không có cũng chạy được — gõ thẳng `/viet-content`, vai này đứng một mình đủ.
+> 🧩 **Vai trong đội nhân sự A.I: Content.** Có `/dieu-hanh` trong máy thì nó giao việc *viết bài, kịch bản, ý tưởng, hook* xuống đây. Không có cũng chạy được — gõ thẳng `/viet-content`, vai này đứng một mình đủ.
 >
 > 🧱 **Vai này chạy TRÊN một cái nền, không thay được nền.** Nền là bộ khung `nhan-su-thu-thu` — nó dựng `wiki/` và giữ `/nap-kho`, đường ghi duy nhất vào bộ não. Chưa có nền thì Cửa vào bên dưới sẽ bắt gặp một `wiki/` trống và nói thẳng ra, chứ không viết bừa.
 
@@ -439,7 +439,7 @@ trang-thai: nhap            # nhap | da-soi | da-dang
 - **`y-tuong`** — ý viết được ngay, không phải chủ đề chung chung. Bám quan điểm cốt lõi ở `wiki/contrarian-beliefs.md`; **không** gợi ý theo trending.
 - **`viet-lai` · `tai-su-dung`** — đổi **cách kể** cho hợp định dạng đích, không phải cắt ngắn bài cũ.
 - **Chọn chuyện** — **có file riêng: `chon-chuyen.md`, đọc khi Bước 3 cần một chuyện thật.** Luật lõi: **tìm bằng NGHĨA, không bằng TỪ KHOÁ.** Đo thật — thông điệp *"giàu có là sự tự do lựa chọn"* lọc theo chữ ra đúng một chuyện **sai hoàn toàn nghĩa**, và mù hẳn hai chuyện mạnh nhất vì chúng không chứa chữ nào của thông điệp.
-- **`ke-hoach-thang`** — **có file riêng: `ke-hoach-thang.md`.** Loại việc duy nhất **không đẻ ra bài** — nó đẻ ra danh sách đề bài, mỗi đề bài phải tự bảo vệ được bằng ba câu: *vì sao bài này · ý tưởng ra từ đâu · viết thế nào*. 🔴 Bước 2 của nó là chỗ hỏng đắt nhất: **đối chiếu nhịp THẬT trước khi hứa** — kế hoạch không ai làm nổi thì tệ hơn không có kế hoạch.
+- **`ke-hoach-content`** — **có file riêng: `ke-hoach-content.md`.** Loại việc duy nhất **không đẻ ra bài** — nó đẻ ra danh sách đề bài, mỗi đề bài phải tự bảo vệ được bằng ba câu: *vì sao bài này · ý tưởng ra từ đâu · viết thế nào*. 🔴 Bước 2 của nó là chỗ hỏng đắt nhất: **đối chiếu nhịp THẬT trước khi hứa** — kế hoạch không ai làm nổi thì tệ hơn không có kế hoạch.
 - **`giam-khao`** — **có file riêng: `giam-khao.md`.** Bước soi lại bởi một con **chưa đọc brief**. Lý do: con vừa viết *nhớ* chi tiết nào có thật nên trong đầu nó bài lúc nào cũng đầy chất riêng — nó biết quá nhiều để chấm đúng. Chạy máy trước *(miễn phí)*, mở giám khảo AI sau.
 - **`trang-ban-hang`** — **có file riêng: `trang-ban-hang.md`, đọc trước khi viết.** Khác `email-ban-hang` đúng một điểm nhưng điểm đó quyết định cả cách viết: **thư đọc tuyến tính, trang thì người ta LƯỚT** — nên nội dung phải chia thành khối rõ ràng để người dựng giao diện cắt đúng chỗ. Viết một bài văn xuôi liền mạch rồi giao là **sai định dạng**, dù câu chữ hay tới đâu.
 
@@ -449,7 +449,7 @@ trang-thai: nhap            # nhap | da-soi | da-dang
 
 **Có sẵn trong nền** (`nhan-su-thu-thu`):
 
-`/onboard` — dựng bộ não lần đầu nếu `wiki/` còn trống · `/nap-kho` — đường duy nhất ghi vào bộ não · `/kiem-chung` — soi bộ não sau mỗi lần nạp khối lớn · `/kham-benh` + `/tong-giam-doc` — soi bạn đang tắc ở khâu nào rồi chốt việc của tháng.
+`/onboard` — dựng bộ não lần đầu nếu `wiki/` còn trống · `/nap-kho` — đường duy nhất ghi vào bộ não · `/kiem-chung` — soi bộ não sau mỗi lần nạp khối lớn · `/kham-benh` + `/dieu-hanh` — soi bạn đang tắc ở khâu nào rồi chốt việc của tháng.
 
 **Chưa phát — đừng gọi, gọi cũng không có:** `/anh-quote` (biến câu chốt thành ảnh đăng) và `/giai-thich-de-hieu` (biến khái niệm khó thành trang có hình) nằm ở vai Thiết kế, còn đang đóng gói. Cần chúng thì nhắn Đoàn.
 

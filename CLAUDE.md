@@ -242,7 +242,7 @@ Dựng xong: ghi `index.md`, thêm một dòng vào `log.md`, lưu nguyên văn 
 
 **Bốn skill trên là NỀN:** dựng bộ não · ghi vào bộ não · kiểm bộ não.
 
-⚡ **Bản này là BẢN GỘP — các vai làm việc đã nằm sẵn trong `.claude/skills/`, không phải cài thêm.** Đủ 9 lệnh: `/kiem-chung` · `/nap-kho` · `/onboard` · `/phong-van-dinh-vi` · `/viet-content` · `/banh-xe-cuoc-doi` · `/kham-benh` · `/tong-giam-doc` · `/ban-hang`. Xem `BAN-KE.md` để biết mỗi phần sinh từ kho lẻ nào, phiên bản nào.
+⚡ **Bản này là BẢN GỘP — các vai làm việc đã nằm sẵn trong `.claude/skills/`, không phải cài thêm.** Đủ 9 lệnh: `/kiem-chung` · `/nap-kho` · `/onboard` · `/phong-van-dinh-vi` · `/viet-content` · `/banh-xe-cuoc-doi` · `/dieu-hanh` · `/kham-benh` · `/ban-hang`. Xem `BAN-KE.md` để biết mỗi phần sinh từ kho lẻ nào, phiên bản nào.
 
 ---
 

@@ -22,7 +22,7 @@ Mở công cụ AI **ngay trong thư mục vừa clone**, nhắn `bắt đầu`.
 |---|---|
 | 🧑‍🏫 **Thủ thư** *(nền)* | `/kiem-chung` · `/nap-kho` · `/onboard` · `/phong-van-dinh-vi` |
 | ✍️ Content | `/viet-content` |
-| 🎛️ Điều phối | `/banh-xe-cuoc-doi` · `/kham-benh` · `/tong-giam-doc` |
+| 🎛️ Điều phối | `/banh-xe-cuoc-doi` · `/dieu-hanh` · `/kham-benh` |
 | 💰 Bán hàng | `/ban-hang` |
 
 Đi kèm: khung 15 trang nền, lộ trình 7 việc (`BAT-DAU-TU-DAY.md`), và tài liệu cài đặt trong `reference/`.

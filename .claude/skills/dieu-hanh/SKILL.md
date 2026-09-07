@@ -1,6 +1,6 @@
 ---
-name: tong-giam-doc
-description: Vai điều phối trong đội nhân sự A.I — quyết tháng này xử quy trình nào, giao cho vai nào làm, rồi cuối tháng nghiệm thu bằng hai con số. Dùng khi bạn hỏi "tháng này nên làm gì trước", "tôi đang tắc ở đâu", "giao việc này cho ai", "tháng vừa rồi được gì", "soi lại nhịp tháng", "chọn quy trình để tự động hoá"; khi bạn vừa dựng xong bộ não thứ 2 và không biết đi tiếp thế nào; hoặc khi gõ /tong-giam-doc. Đây là vai phải dựng TRƯỚC năm vai còn lại (nghiên cứu thị trường · content · thiết kế · bán hàng · chăm sóc khách hàng).
+name: dieu-hanh
+description: Điều hành tháng — sau khi khám thì chốt tháng này xử quy trình nào, giao cho vai nào làm, rồi cuối tháng nghiệm thu bằng hai con số. Dùng khi bạn hỏi "tháng này nên làm gì trước", "tôi đang tắc ở đâu", "giao việc này cho ai", "tháng vừa rồi được gì", "soi lại nhịp tháng", "chọn quy trình để tự động hoá"; khi bạn vừa dựng xong bộ não thứ 2 và không biết đi tiếp thế nào; hoặc khi gõ /dieu-hanh. Cũng dùng khi hỏi "tháng này lên kế hoạch thế nào", "làm sao giữ được kỷ luật tháng này". Đây là vai phải dựng TRƯỚC năm vai còn lại (nghiên cứu thị trường · content · thiết kế · bán hàng · chăm sóc khách hàng).
 ---
 
 # Tổng giám đốc — vai điều phối
@@ -18,7 +18,7 @@ description: Vai điều phối trong đội nhân sự A.I — quyết tháng n
 | Lớp | Skill | Ở đâu |
 |---|---|---|
 | **Bộ khung bộ não thứ 2** | `/onboard` · `/nap-kho` · `/kiem-chung` | kho `nhan-su-thu-thu` — **cài trước** |
-| **Vai Điều phối** | `/banh-xe-cuoc-doi` · `/kham-benh` · `/tong-giam-doc` | **chính gói này** |
+| **Vai Điều phối** | `/banh-xe-cuoc-doi` · `/kham-benh` · `/dieu-hanh` | **chính gói này** |
 
 Chưa chạy `/onboard` thì chưa có gì để điều phối — vai này đọc bộ não, nó không dựng ra bộ não.
 
@@ -130,7 +130,7 @@ Vì sao dứt khoát: hai bộ khám là **hai kết quả khác nhau cho cùng 
 
 **Ranh giới hai skill, thuộc lòng:**
 
-| | `/kham-benh` | `/tong-giam-doc` |
+| | `/kham-benh` | `/dieu-hanh` |
 |---|---|---|
 | Trả lời câu | *Khâu nào đang tắc, vì sao* | *Tháng này làm gì, giao ai, xong chưa* |
 | Nhịp | 3 tháng một lần | mỗi tháng |
