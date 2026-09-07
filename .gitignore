@@ -1,0 +1,40 @@
+# ══════════════════════════════════════════════════════════════════
+# BỘ NÃO CỦA BẠN — KHÔNG BAO GIỜ ĐẨY LÊN
+# ══════════════════════════════════════════════════════════════════
+# Thư mục SecondBrain/ chứa dữ liệu riêng của bạn: tên khách hàng thật,
+# doanh thu, chuyện cá nhân. Repo này chỉ chứa BỘ KHUNG.
+#
+# Đừng gỡ dòng dưới đây. Gỡ ra là một lần `git push` nhầm đủ để
+# đưa toàn bộ dữ liệu khách hàng của bạn lên mạng — và xoá file sau đó
+# KHÔNG đủ, vì lịch sử git vẫn còn.
+SecondBrain/
+
+# Phòng trường hợp bạn đặt bộ não ở tên khác
+brain/
+my-brain/
+*-brain/
+
+# File dữ liệu cá nhân nếu lỡ để ngoài SecondBrain/
+customers.md
+khach-hang.md
+*.private.md
+
+# ...nhưng KHUÔN customers thì phải giữ — nó là file khung, không chứa dữ liệu ai cả
+!templates/customers.md
+
+# ── Rác hệ thống ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+._*
+
+# ── Obsidian ──────────────────────────────────────────────────────
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ── Công cụ AI ────────────────────────────────────────────────────
+.claude/settings.local.json
+.claude/worktrees/
+.antigravity/

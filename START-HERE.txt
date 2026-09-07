@@ -1,0 +1,52 @@
+SECOND BRAIN — bắt đầu thế nào (2 bước, 1 phút)
+
+1) Mở công cụ AI bậc 2 — Claude Cowork, Claude Code, hoặc AntiGravity.
+   Đặt FOLDER NÀY làm workspace — hoặc kéo cả folder vào cửa sổ công cụ.
+
+   ⚠️ PHẢI mở công cụ NGAY TRONG folder này, không phải folder cha.
+      Claude Code:  cd nhan-su-thu-thu  rồi mới gõ  claude
+      Sai chỗ thì AI không nạp được luật, nhắn "bắt đầu" cũng không có gì xảy ra.
+      Kiểm nhanh: gõ  /  và tìm  /onboard  — thấy là đúng chỗ.
+
+   (Chatbot thường như ChatGPT web KHÔNG dùng được — nó không ghi được
+    file ra máy bạn, mà bộ não thứ 2 chính là các file trên máy bạn.
+    Chưa biết cài: mở reference/huong-dan-cai-dat.md)
+
+2) Nhắn: "bắt đầu"
+
+Xong. AI sẽ tự tạo cấu trúc và hỏi bạn từng câu để dựng bộ não thứ 2.
+Trả lời thoải mái, sai cũng được — sửa sau.
+
+
+TOÀN BỘ LỘ TRÌNH: mở BAT-DAU-TU-DAY.md
+   7 việc, 5-10 tiếng, chia được ra nhiều buổi.
+   Tick từng ô khi xong — file đó vừa là bản đồ vừa là bằng chứng.
+
+
+CÓ SẴN BẢN KẾ HOẠCH NÀO THÌ MANG THEO:
+   Bánh xe cuộc đời, OKR, kế hoạch 90 ngày — bất cứ dạng nào bạn
+   đã từng ngồi làm cho chính mình. Đưa cho AI ở Việc 3, nó dùng
+   thẳng làm goals.md thay vì hỏi lại giữa buổi phỏng vấn.
+   Chưa có cũng không sao, vẫn chạy được hết lộ trình.
+
+
+ĐỪNG BỎ VIỆC 6 — bài test kiểm chứng.
+   Gõ: /kiem-chung  (nhớ mở ĐOẠN CHAT MỚI, PROJECT MỚI)
+   Nó bắt đúng cái bẫy phổ biến nhất: tưởng đã lưu vào bộ não,
+   thật ra chỉ nằm trong trí nhớ của đoạn chat — hết phiên là mất.
+   Hai trường hợp đó trông giống hệt nhau, chỉ bài test này phân biệt được.
+
+
+SAU NÀY DÙNG HẰNG NGÀY:
+   /nap-kho     — nạp chuyện mới, insight mới, tài liệu mới vào bộ não
+                  (đây là đường ghi DUY NHẤT — đừng sửa tay file .md)
+   /kiem-chung  — chạy lại sau mỗi lần nạp một khối dữ liệu lớn
+   Hoặc chỉ cần hỏi: "brain của tôi biết gì về ..."
+
+
+TRƯỚC KHI NẠP DỮ LIỆU KHÁCH HÀNG:
+   Đọc reference/luat-du-lieu-nhay-cam.md (3 phút).
+   Bộ não này sắp chứa tên khách thật, số tiền thật, chuyện của người khác.
+
+
+Phiên bản khung: v3.4 - 2026-09-07
