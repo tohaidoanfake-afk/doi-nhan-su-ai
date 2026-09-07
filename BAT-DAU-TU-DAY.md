@@ -138,13 +138,9 @@ Chọn **một** việc thật bạn đang cần làm — soạn một email, d�
 
 Nền xong rồi thì nó **biết về bạn**, nhưng chưa **làm hộ** việc gì. Vai mới là thứ làm việc.
 
-Bắt đầu bằng vai Content nếu bạn làm nội dung — **hai lệnh, hai bước riêng**:
+⚡ **Bản gộp này đã có sẵn mọi vai — bạn KHÔNG phải cài gì thêm.** Bản lẻ phải chạy hai lệnh `claude plugin install`; ở đây thì không.
 
-- [ ] `claude plugin marketplace add creator-ceo/nhan-su-content`
-- [ ] `claude plugin install content`
-- [ ] Gõ `/` thấy `/viet-content`
-
-> ⚠️ **Lệnh đầu chỉ thêm nguồn, chưa cài gì.** Dừng ở đó rồi gõ `/viet-content` là không thấy lệnh nào — đây là chỗ hay tưởng hỏng nhất.
+- [ ] Gõ `/` thấy `/viet-content` trong danh sách 9 lệnh
 
 **Lượt chạy đầu tiên, vai tự dựng kho của nó** — hai tầng:
 
