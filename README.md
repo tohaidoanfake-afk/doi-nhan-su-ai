@@ -25,7 +25,7 @@ Mở công cụ AI **ngay trong thư mục vừa clone**, nhắn `bắt đầu`.
 | 🎛️ Điều phối | `/banh-xe-cuoc-doi` · `/dieu-hanh` · `/kham-benh` |
 | 💰 Bán hàng | `/ban-hang` |
 
-Đi kèm: khung 15 trang nền, lộ trình 7 việc (`BAT-DAU-TU-DAY.md`), và tài liệu cài đặt trong `reference/`.
+Đi kèm: khung 11 trang `/onboard` dựng + 2 trang `/phong-van-dinh-vi` dựng, lộ trình 7 việc (`BAT-DAU-TU-DAY.md`), và tài liệu cài đặt trong `reference/`.
 
 ## Bản gộp khác bản lẻ ở đâu
 
