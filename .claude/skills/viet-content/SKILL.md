@@ -310,6 +310,18 @@ Chưa có brief thì hỏi. **Hai điều đầu không được đoán:**
 
 Phiên không hỏi lại được (chạy nền, chạy theo lịch) thì tự chốt, ghi rõ **"tự chốt, chưa hỏi"** kèm lý do, và nói ra ngay đầu phần bàn giao. Đừng dừng hẳn, cũng đừng để chỗ tự chốt trôi qua im lặng.
 
+### 🔴 Điều thứ năm: CHỐT DANH SÁCH TRANG PHẢI ĐỌC — trước khi mở trang nào
+
+Ngay sau khi rõ bốn điều trên, **viết ra danh sách file lượt này bắt buộc đọc**, vào `brief.md` mục `## Trang bắt buộc đọc`. Nguồn của danh sách: mục **Bước 2** và bảng *"Việc có luật riêng"* ở cuối file — **chép từ đó, đừng nhớ, đừng suy.**
+
+⚠️ **Vì sao phải viết ra TRƯỚC, không phải kê lại ở cuối.** Cuối bài có mục `## Nguyên liệu đã dùng`, nhưng nó ghi **thứ đã dùng**, không ghi **thứ lẽ ra phải đọc**. Hai cái đó khác nhau, và chỗ chênh chính là chỗ hỏng:
+
+> **Đã hỏng thật *(28/08, bản gốc của skill này)*:** một lượt viết bỏ qua `hook-library.md` và `dau-hieu-ai-viet.md`, rồi ở phần tự soi **vẫn tự chấm ✅ cho cả hai**. Luật bắt buộc đọc có tồn tại từ trước — nhưng nó nằm ở nửa sau file, tức **sau** chỗ người ta đã bắt đầu đọc. Tự soi không có gì để đối chiếu ngoài trí nhớ, mà trí nhớ thì luôn báo là đã đọc.
+
+📌 **Bản vá đầu tiên của lỗi này cũng đặt sai chỗ** — nó nằm trong bước "Lưu lại" ở cuối. Đọc tuần tự tới đó thì đã đọc xong hết rồi: bản vá **mắc lại đúng bệnh nó định chữa**. Đó là lý do danh sách nằm ở đây, Bước 0, chứ không phải chỗ nào khác.
+
+**Tới Bước 6, đối chiếu với danh sách đã VIẾT RA này, không đối chiếu với trí nhớ.** File nào trong danh sách mà không mở thì ghi thẳng là **chưa đọc**, đừng đánh ✅.
+
 ---
 
 ## Bước 1 — Luật không được phá
@@ -519,6 +531,19 @@ Còn **nói thẳng thông điệp ra hay để nó ẩn trong câu chuyện th�
 
 ## Bước 6 — Tự soi trước khi giao
 
+### Trục 0 — Đối chiếu DANH SÁCH ĐÃ VIẾT, không đối chiếu trí nhớ
+
+Mở `brief.md` mục `## Trang bắt buộc đọc` *(viết ở Bước 0)*. Đi từng dòng: **file này lượt vừa rồi có thật sự mở ra không?**
+
+- Có → ✅
+- Không → ghi **"chưa đọc"**, và nói ra ở phần bàn giao rằng bài này viết mà thiếu file đó
+
+🚫 **Đừng đánh ✅ theo trí nhớ.** Trí nhớ luôn báo là đã đọc — đó chính là cách lỗi 28/08 lọt qua: bỏ qua hai file rồi vẫn tự chấm ✅ cho cả hai. Một danh sách viết ra từ đầu là thứ duy nhất trí nhớ không sửa được.
+
+📌 Trục này chạy **trước** hai trục dưới, vì nó quyết định hai trục kia có đáng tin không: soi câu chữ bằng một bộ luật chưa đọc thì kết quả soi cũng chỉ là phỏng đoán.
+
+### Hai trục còn lại
+
 Soi theo **hai trục riêng, đừng gộp làm một** — một bài hoàn toàn có thể qua trục A mà vẫn hỏng trục B: đầy chi tiết thật nhưng vẫn *diễn đạt* bằng văn phong AI.
 
 ### Trục A — Có thật không (chống bịa)
@@ -557,6 +582,7 @@ Mỗi lượt viết một thư mục: `content/<YYYY-MM-DD>-<slug>/`
 ```
 content/2026-08-27-bai-hoc-tu-lan-that-bai/
 ├── brief.md      ← đề bài: mục tiêu, tuyến, tầng, không khí, khung
+│                  + `## Trang bắt buộc đọc` — viết ở Bước 0, TRƯỚC khi mở file nào
 └── ket-qua.md    ← thành phẩm + tự soi + nguyên liệu đã dùng
 ```
 

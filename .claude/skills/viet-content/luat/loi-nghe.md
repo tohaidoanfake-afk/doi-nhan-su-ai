@@ -59,7 +59,7 @@ Trước khi có file này, **không có luật phân xử nào** — prompt vi�
 
 ---
 
-## Tầng 1 — Lõi nghề: 10 luật
+## Tầng 1 — Lõi nghề: 11 luật
 
 Nguyên văn dạng đi vào system prompt:
 
@@ -71,7 +71,7 @@ bận tâm không liên quan gì tới bài. Đừng viết cho một người �
 đọc bài của bạn — không có người đó. Bài phải tự giành lấy chỗ, và
 giành bằng cách nối được điều mình nói với thứ đang có sẵn trong họ.
 
-Mười luật dưới đây áp trên giả định đó.
+Mười một luật dưới đây áp trên giả định đó.
 
 NHÓM A — BÀI PHẢI ĐỌNG LẠI GÌ
 
@@ -103,6 +103,9 @@ B1. CỤ THỂ HOÁ. Thay mọi thứ mơ hồ bằng thứ nhìn thấy đượ
     "kiếm được nhiều" mà con số. Con số không cần lớn, cần thật.
     CẤM TUYỆT ĐỐI BỊA SỐ, bịa tên, bịa kết quả để cho tròn luật này.
     Không có số thật thì kể chi tiết thật, hoặc để trống.
+    Luật này cấm BỊA, không cấm TRÍCH. Một con số hay một câu của
+    người khác, dẫn kèm nguồn tra lại được (tên người/tổ chức/nghiên
+    cứu, năm), là bằng chứng hợp lệ — không phải khoản phải trừ.
 
 B2. TRẢ NỢ CHO THỨ ĐÃ HỨA. Câu mở hứa gì, thông điệp khai gì, thì thân
     bài phải chứng minh đúng cái đó. Cấm mở bằng một chuyện rồi giữa
@@ -148,6 +151,26 @@ C5. KHÔNG AI KHÁC VIẾT ĐƯỢC BÀI NÀY. Thử đổi tên người viết
     có gì là của mình — mới chỉ đúng, chưa thật.
     Thứ không thay được: chuyện đã sống, số đã đo, người đã gặp,
     giá đã trả.
+    PHẠM VI: luật này áp cho LÕI PHÂN BIỆT của bài, KHÔNG áp cho bằng
+    chứng phụ trợ có dẫn nguồn. Mượn khung/quan điểm/số của người khác
+    mà ghi rõ của ai thì hợp lệ; nó chỉ sai khi kể lại như của mình.
+
+C6. ĐỂ LẠI DẤU TAY. Bài quá sạch là bài không ai viết.
+    Giữ lại ít nhất một chi tiết KHÔNG phục vụ thông điệp — trời hôm
+    đó, món đã gọi, câu ai đó nói chen ngang. Chính chi tiết vô dụng
+    chứng minh chuyện có thật; không ai bịa ra thứ chẳng để làm gì.
+    Được phép để ngỏ một chỗ chưa nghĩ xong. Được phép có một đoạn chùng.
+    Cảm xúc: GỌI TÊN RỒI NEO VÀO THÂN THỂ. Gọi tên xong mà dừng lại ở
+    đó mới là mô tả — "tôi đã rất sốc" đứng một mình thì rỗng. Nối tên
+    cảm xúc với một cảm giác trong người thì nó bật ra: "vừa sững sờ,
+    vừa nhẹ nhõm, vừa như có ai nhấc hẳn tảng đá ra khỏi ngực mình."
+    Cấm là DỪNG Ở TÍNH TỪ, không phải cấm gọi tên.
+    Luật này là đối trọng của B2 và B3 — hai luật đó bảo cắt hết thứ
+    không phục vụ thông điệp, làm đúng tuyệt đối thì ra văn AI. C6 giữ
+    lại đúng một chỗ cho người thật.
+    ⚠️ NEO VÀO B1: chi tiết thừa phải là chi tiết THẬT. Không nhớ nổi
+    một chi tiết thật nào thì BỎ TRỐNG, tuyệt đối không chế ra một cơn
+    mưa cho có dấu tay. B1 thắng C6 y như B1 thắng C5.
 ```
 
 ### Nguồn từng luật
@@ -286,6 +309,53 @@ Chi tiết giác quan viết quá tay là **văn AI**, không phải văn hay. B
 
 
 ---
+
+### ⚡ ĐI TÌM NGHỊCH LÝ — chỗ AI phẳng nhất
+
+> 📌 Ba mục dưới đây rút từ **diff thật**: bản A.I viết ra so với bản tác giả sửa tay. Ví dụ là **của tác giả bộ skill này**, để bạn thấy cái sai trông thế nào — **đừng chép câu chữ**, chép cách nghĩ.
+
+| | |
+|---|---|
+| ❌ A.I viết | *"có một buổi tối tôi ngồi nhìn lại toàn bộ, và thấy một điều không ổn"* |
+| ✅ Người sửa | *"Người đang gục xuống lúc đó là tôi, đúng người vẫn hằng ngày đứng lớp dạy thiên hạ cách đừng gục."* |
+
+Tiêu đề đổi cùng hướng: *"Học không ăn thua. Biết không ăn thua."* → *"Tôi dạy điều này cho hàng nghìn người. Rồi chính tôi trượt dài một năm vì không làm nổi nó."*
+
+**Cơ chế của lỗi:** A.I kể theo trục **thời gian** *(rồi… rồi… sau đó…)*. Mạch đó luôn phẳng vì không có gì chống lại gì. Người viết thật kể theo trục **mâu thuẫn**: giữa **vai mình đóng** và **thứ mình thật sự sống**.
+
+**Việc phải làm trước khi viết:** hỏi một câu — *trong chuyện này, chỗ nào tôi đang làm ngược lại chính thứ tôi rao giảng, hoặc ngược lại chính thứ người ta tưởng về tôi?* Có thì đó là hook và là bản lề. Không có thì **đừng bịa ra một cái**, nhưng phải biết là bài đang thiếu lực.
+
+⚠️ **Nghịch lý phải CÓ THẬT.** Cấm dựng một vai giả để tự đập cho có kịch. Luật **B1** thắng.
+
+### ⚡ LỜI MỜI PHẢI CHỮA ĐÚNG THỨ THÂN BÀI VỪA CHẨN
+
+**B2 chỉ soi *hook ↔ thân bài*. Không luật nào soi *thân bài ↔ CTA*** — nên một bài chẩn ba nguyên nhân rồi bán cách chữa một nguyên nhân vẫn đi qua sạch cả B2 lẫn B3, vì hook và thân khớp nhau hoàn hảo.
+
+**Bị bắt bốn lần độc lập** *(ba giám khảo khác nhau trên ba bài khác nhau, cộng một lần người viết tự vá tay)* — tức đây không phải xui một lượt, là chỗ hở có hệ thống.
+
+**Luật:** thân bài chỉ ra nguyên nhân nào thì lời mời phải chạm đúng nguyên nhân đó. **Chữa được một phần thì phải nói ra là một phần** — thành thật mua được nhiều lòng tin hơn là gọn gàng.
+
+### ⚡ NÓI CHÍNH XÁC — hai chỗ A.I hay trượt
+
+**1 · Phủ định tuyệt đối → đổi thành SO SÁNH.**
+
+| ❌ A.I viết | ✅ Người sửa |
+|---|---|
+| *"Nghìn giờ video ngắn **không có nổi một** clip dạy được cái nghề mình đang cần"* | *"Nghìn giờ video giải trí ngắn **không giúp ta giỏi lên thực sự bằng** một video giá trị dài một tiếng"* |
+
+Phủ định tuyệt đối dễ bị bắt bẻ bằng **đúng một** phản ví dụ, và người đọc luôn tìm được một cái. So sánh thì không bắt bẻ được.
+
+Cùng họ với việc **tự thêm vế cân bằng trước khi phê phán**: *"tôi sống bằng A.I, ngày nào cũng dùng, và tôi tin nó là thứ tốt nhất rơi vào tay thế hệ mình"* — rồi mới chê. Chê mà không có vế đó thì người đọc xếp bạn vào nhóm ghét-sẵn và ngừng nghe.
+
+⚙️ **Máy soi bắt được lỗi này** — cờ `phu_dinh_tuyet_doi` trong `may/soi-may.mjs`.
+
+**2 · Cụ thể hoá phải áp cả ở tầng LÝ LẼ, không chỉ ở số và tên.**
+
+`B1` nói *"thay mọi thứ mơ hồ bằng thứ nhìn thấy được"*, nhưng cả ba ví dụ của nó đều là **số, tên, kết quả** — nên nó bị thi hành hẹp: soi dữ kiện mà bỏ qua lập luận.
+
+| ❌ Nói nguyên tắc | ✅ Thay bằng ba ca cụ thể |
+|---|---|
+| *"Tám món của năm 1284 thì lính của ông còn phải bước ra khỏi nhà mới có."* | *"muốn chọi gà thì còn phải nuôi được con gà đã, muốn đánh bạc thì phải có tiền trong túi mà cũng phải có sòng, muốn nghe hát thì phải có chỗ, có người hát cho mình nghe."* |
 
 ## Tầng 4 — Đặc trưng hình mẫu
 
