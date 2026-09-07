@@ -1,6 +1,6 @@
 ---
 name: onboard
-description: Dựng bộ não thứ 2 lần đầu — thu tài liệu có sẵn, đọc và rút draft, phỏng vấn lấp chỗ trống, rồi dựng đúng 10 trang nền: chân dung người dùng cộng dữ liệu từ hai vai trở lên cùng đọc. KHÔNG dựng kho của vai nào khác, kể cả file rỗng — mỗi vai tự dựng kho của nó lúc cài. Dùng khi người dùng vừa cài bộ khung và nói "bắt đầu", "start", "tạo bộ não thứ 2", hoặc gõ /onboard.
+description: Dựng bộ não thứ 2 lần đầu — thu tài liệu có sẵn, đọc và rút draft, phỏng vấn lấp chỗ trống, rồi dựng đúng 11 trang nền: chân dung người dùng cộng dữ liệu từ hai vai trở lên cùng đọc. KHÔNG dựng kho của vai nào khác, kể cả file rỗng — mỗi vai tự dựng kho của nó lúc cài. Dùng khi người dùng vừa cài bộ khung và nói "bắt đầu", "start", "tạo bộ não thứ 2", hoặc gõ /onboard.
 ---
 
 # Dựng bộ não thứ 2 — 4 giai đoạn

@@ -105,6 +105,7 @@ Gõ: `/kiem-chung`. Hoặc tự làm theo `.claude/skills/kiem-chung/SKILL.md`.
 - [ ] Đã mở **đoạn chat MỚI trên project MỚI** (không dùng lại đoạn chat vừa nãy)
 - [ ] Đã cắm bộ não vào
 - [ ] Đã hỏi đủ **5 câu kiểm chứng** và **tất cả đều trả lời đúng**
+  - *(Mới cài nền, chưa cài vai Content thì **Câu 5 — giọng văn — bỏ qua**, chấm trên 4 câu. `voice-profile` là kho của vai Content, nền cố ý không dựng.)*
 
 > ⚠️ **Đây là việc quan trọng nhất trong cả 7 việc.** Nó bắt đúng cái bẫy phổ biến nhất: *tưởng đã lưu vào bộ não, thật ra chỉ nằm trong trí nhớ của đoạn chat — hết phiên là mất sạch.*
 >

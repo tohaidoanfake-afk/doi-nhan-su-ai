@@ -4,6 +4,23 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v3.7 — 2026-09-07
+
+**Bốn con số tự cãi nhau, và một bài test không bao giờ đạt được điểm tối đa.**
+
+Không thêm tính năng nào. Bản này chỉ sửa những chỗ bộ khung nói hai điều khác nhau về cùng một thứ — kiểu hỏng không làm gì gãy, chỉ làm người đọc tin nhầm rồi đi sai.
+
+- 🔴 **`/kiem-chung`: chỉ cài nền thì không ai đạt nổi 5/5.** Câu 5 hỏi giọng văn, mà `voice-profile` là kho của **vai Content** — nền cố ý không dựng. File có ghi *"chưa dựng thì bỏ qua câu này"*, nhưng bảng chấm ngay dưới lại chỉ cho một đường đạt duy nhất là **5/5**, còn 4 câu đúng thì rơi vào ô *"3–4/5 — thiếu nội dung, chạy lại từ đầu"*. Người mới cài nền làm đúng hết vẫn bị bảo là chưa đạt, và cách "chữa" hiển nhiên nhất là **dựng đại một `voice-profile` từ hỏi suông** — đúng thứ vai Content cấm, vì bản đó là giọng người ta *nghĩ* mình có, không phải giọng họ *thật sự* viết.
+  - Bảng chấm nay tính theo **số câu có chạy**: 5/5, hoặc 4/4 khi bỏ qua Câu 5.
+  - Thêm cảnh báo cấm dựng tạm `voice-profile` để cho qua bài test.
+  - Bảng *"trượt câu nào sửa trang nào"* từng trỏ người mới cài nền sang `customers.md` và `experiences-library.md` — hai trang **của vai khác**, họ không có. Nay ghi rõ trang nào có sẵn ở nền, trang nào chỉ có khi đã cài vai.
+
+- **`/onboard` mô tả sai số trang chính nó dựng.** Frontmatter ghi *"dựng đúng **10** trang nền"*; thân skill, `CLAUDE.md`, `README.md` và checklist đều ghi **11**. Mô tả là thứ AI đọc để quyết định cách chạy, nên đây không phải lỗi chính tả.
+
+- **`README.md` tự mâu thuẫn hai chỗ:** trỏ *"lộ trình **8** việc"* sang một file có **7** việc *(và chính README ở dòng dưới ghi đúng là 7)*; và mô tả `templates/` là *"khung **10** trang nền"* trong khi thư mục có **13** khuôn — 11 cái `/onboard` dựng, cộng `positioning` và `brand-guide` do `/phong-van-dinh-vi` dựng.
+
+---
+
 ## v3.6 — 2026-09-07
 
 **Thêm lệnh thứ tư: `/phong-van-dinh-vi` — buổi phỏng vấn định vị 7 chặng.**

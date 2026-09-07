@@ -99,7 +99,9 @@ Tự chọn một chi tiết **cụ thể, không đoán được từ ngoài**.
 |---|---|
 | Dùng đúng đại từ bạn đã khai, tránh đúng những cụm bạn đã cấm | Dùng sai đại từ, hoặc dùng ngay một cụm nằm trong danh sách cấm |
 
-*(Chưa dựng `voice-profile` vì chưa đủ 10 bài thì bỏ qua câu này — nhưng phải ghi rõ là bỏ qua, không tính là đạt.)*
+⚠️ **Chỉ cài nền thì câu này KHÔNG chạy được, và đó là đúng.** `voice-profile` là kho của **vai Content**, nền cố ý không dựng. Chưa cài `/viet-content` — hoặc đã cài mà chưa đủ 5–10 bài thật — thì **bỏ qua câu này, ghi rõ là bỏ qua, và chấm trên 4 câu**. Không tính là đạt, cũng không tính là trượt.
+
+🚫 **Đừng dựng tạm một `voice-profile` để cho qua bài test.** Bản dựng từ hỏi suông là bản người ta *nghĩ* mình viết, không phải bản họ *thật sự* viết — và mọi bài sau đó sai giọng mà không ai biết vì sao.
 
 ---
 
@@ -111,9 +113,9 @@ Tự chọn một chi tiết **cụ thể, không đoán được từ ngoài**.
 
 | Số câu đạt | Kết luận | Làm gì tiếp |
 |---|---|---|
-| **5/5** | Bộ não đã lưu thật, chạy được | Sang Việc 7 |
-| **3–4/5** | Có lưu, thiếu nội dung ở vài trang | Xem câu nào trượt → mở đúng trang tương ứng → bổ sung → chạy lại **từ đầu, trên phiên mới** |
-| **0–2/5** | ⚠️ **Không phải bộ não hỏng — là bạn mới điền được rất ít.** Đây là chuyện bình thường của người vừa bắt đầu | Quay lại **Việc 4**, điền cho đủ 11 trang neo. **Đừng đụng vào cài đặt, công cụ không hỏng** — Câu 0 vừa chứng minh điều đó |
+| **đạt hết số câu có chạy** *(5/5, hoặc 4/4 khi bỏ qua Câu 5)* | Bộ não đã lưu thật, chạy được | Sang Việc 7 |
+| **trượt 1–2 câu** | Có lưu, thiếu nội dung ở vài trang | Xem câu nào trượt → mở đúng trang tương ứng → bổ sung → chạy lại **từ đầu, trên phiên mới** |
+| **trượt 3 câu trở lên** | ⚠️ **Không phải bộ não hỏng — là bạn mới điền được rất ít.** Đây là chuyện bình thường của người vừa bắt đầu | Quay lại **Việc 4**, điền cho đủ 11 trang neo. **Đừng đụng vào cài đặt, công cụ không hỏng** — Câu 0 vừa chứng minh điều đó |
 
 ### Nhánh B — Câu 0 ❌ (công cụ chưa đọc được)
 
@@ -130,8 +132,8 @@ Dừng bài test, **không cần hỏi 5 câu kia** — chúng sẽ trượt h�
 | 1 | `about-me.md` |
 | 2 | `goals.md` |
 | 3 | `ai-operating-preferences.md` |
-| 4 | trang chứa chi tiết đó (`customers.md`, `experiences-library.md`…) |
-| 5 | `voice-profile.md` |
+| 4 | trang chứa chi tiết đó — nếu mới cài nền thì là `expertise.md` · `network.md` · `offer-ladder.md`; `experiences-library.md` chỉ có khi đã cài vai Content |
+| 5 | `voice-profile.md` — **chỉ tồn tại khi đã cài vai Content**; chưa cài thì câu này lẽ ra phải bỏ qua, không trượt |
 
 ---
 
@@ -140,7 +142,7 @@ Dừng bài test, **không cần hỏi 5 câu kia** — chúng sẽ trượt h�
 Ghi một dòng vào `log.md`:
 
 ```
-## [YYYY-MM-DD] Kiểm chứng Việc 6 | 5/5 đạt — bộ não đã lưu thật
+## [YYYY-MM-DD] Kiểm chứng Việc 6 | đạt hết câu có chạy (ghi rõ 5/5 hay 4/4 bỏ qua Câu 5) — bộ não đã lưu thật
 ```
 
 Rồi nói với người dùng đúng một ý: từ giờ mỗi lần nạp một khối dữ liệu lớn, chạy lại bài này. Nó rẻ (5 phút) và nó là thứ duy nhất phân biệt được *"AI đang nhớ"* với *"bộ não đang lưu"*.
