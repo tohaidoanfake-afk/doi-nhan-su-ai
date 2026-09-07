@@ -14,7 +14,7 @@ Rõ nhất là **phép thử C5** ở Bước 5: đổi tên người viết r�
 ### ⚡ TẦNG 1 — soi bằng máy TRƯỚC, miễn phí *(bắt buộc, thêm 2026-08-19)*
 
 ```bash
-node "${CLAUDE_PLUGIN_ROOT}/skills/viet-content/may/soi-may.mjs" <đường dẫn file bài> --giong=<nghiem-tuc|dua-nhe|vui-ve> --khung=<key khung viết>
+node ".claude/skills/viet-content/may/soi-may.mjs" <đường dẫn file bài> --giong=<nghiem-tuc|dua-nhe|vui-ve> --khung=<key khung viết>
 ```
 
 **Sửa hết mục ● CHẮC rồi mới mở giám khảo AI.** Không tốn token, chạy trong một giây.
