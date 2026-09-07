@@ -1,7 +1,8 @@
 # Luật kê đơn — bản phát kèm bộ khám
 
-> ⚠️ **FILE SINH RA** từ `tinh-nang/soi-nut-that/manifest.json` của Creator OS, ngày 2026-09-06.
-> Đừng sửa tay. Sửa ở bản gốc rồi chạy lại `node owner-os/phat-bo-kham.mjs --ghi`.
+> Đây là bộ luật `/kham-benh` phải theo ở bước kê đơn. Nó đi kèm gói plugin, nên **`claude plugin update` sẽ ghi đè** — sửa tay ở đây là mất khi cập nhật.
+>
+> Muốn đổi luật kê đơn cho riêng bạn thì ghi vào `wiki/` qua `/nap-kho`, rồi nói cho `/kham-benh` biết trang đó — kho của bạn thắng bộ luật đi kèm.
 
 Đây là bộ luật mà bước phân tích phải theo sau khi khám xong. Đọc TRỌN trước khi kê.
 

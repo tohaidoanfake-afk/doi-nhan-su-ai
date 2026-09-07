@@ -12,9 +12,9 @@
 
 ## Vì sao cần lớp này
 
-Trước 2026-07-29, tool Creator OS có 13 ô nhập ở `/write` thì **11 ô lo nội dung** (viết cái gì, chứng minh bằng chuyện nào, cho ai) và chỉ **2 ô lo cách viết** — cả hai đều mặc định rỗng. Riêng Story bank được cấp ngân sách 120.000 ký tự trong prompt, còn kỹ thuật viết được cấp 0 ký tự.
+Đo trên một bộ công cụ viết thật: trong 13 ô người dùng điền trước khi viết thì **11 ô lo NỘI DUNG** (viết cái gì, chứng minh bằng chuyện nào, cho ai) và chỉ **2 ô lo CÁCH VIẾT** — cả hai đều mặc định rỗng. Riêng Story bank được cấp ngân sách 120.000 ký tự trong prompt, còn kỹ thuật viết được cấp 0 ký tự.
 
-Hệ quả: chất lượng câu chữ phó mặc cho model nền. Mà văn mặc định của model đúng là thứ lớp luật này đang cấm. Triệu chứng dễ thấy nhất trong tool: **hook sắc, thân bài nhạt** — vì lớp hook đã có 8 kiểu với hướng dẫn nghề thật (`lib/hooks.ts`), còn thân bài thì không có gì.
+Hệ quả: chất lượng câu chữ phó mặc cho model nền. Mà văn mặc định của model đúng là thứ lớp luật này đang cấm. Triệu chứng dễ thấy nhất: **hook sắc, thân bài nhạt** — vì lớp hook đã có 8 kiểu với hướng dẫn nghề thật (`lib/hooks.ts`), còn thân bài thì không có gì.
 
 ---
 
@@ -26,10 +26,10 @@ Lõi nghề  >  Khung viết  >  Giọng cá nhân  >  Đặc trưng hình mẫu
 
 | Tầng | Là gì | Ai quyết | Có mặt khi nào | Dùng ở |
 |---|---|---|---|---|
-| **1. Lõi nghề** | 10 luật bắt buộc | Tool, duyệt sẵn | Luôn luôn | `/write` + `/review` |
-| **2. Khung viết** | 7 khung, mỗi khung có mạch + hướng dẫn | User chọn, hoặc AI chọn trong 7 | Luôn có | `/write` + `/review` |
-| **3. Giọng cá nhân** | `VoiceProfile` — 7 dòng đã có sẵn | Từng user | Khi đã dựng hồ sơ | `/write` + `/review` |
-| **4. Đặc trưng hình mẫu** | `Analysis.formats[].howTo` | Bản phân tích | Chỉ khi chọn hình mẫu | `/write` |
+| **1. Lõi nghề** | 10 luật bắt buộc | Tool, duyệt sẵn | Luôn luôn | lúc viết + lúc soi lại |
+| **2. Khung viết** | 7 khung, mỗi khung có mạch + hướng dẫn | User chọn, hoặc AI chọn trong 7 | Luôn có | lúc viết + lúc soi lại |
+| **3. Giọng cá nhân** | `VoiceProfile` — 7 dòng đã có sẵn | Từng user | Khi đã dựng hồ sơ | lúc viết + lúc soi lại |
+| **4. Đặc trưng hình mẫu** | `Analysis.formats[].howTo` | Bản phân tích | Chỉ khi chọn hình mẫu | chỉ lúc viết |
 
 **Vì sao thứ tự đó:**
 - Khung thắng giọng vì khung là lựa chọn cho riêng bài này, còn giọng là hồ sơ đứng sẵn.
@@ -162,7 +162,7 @@ Không luật nào là suy đoán. Bảng này để phiên sau kiểm lại đ�
 | B1 | Masterfile PHẦN 4 *"Số liệu thật"* + *"Nhân vật phụ gọi tên"* · vế cấm bịa từ [[ai-operating-preferences]] Hard Don't số 5 |
 | B2 | [[values-and-principles]] nguyên tắc bất biến 1 *"Làm điều mình nói"*, hạ xuống cấp độ bài viết · Đoàn xác nhận 2026-07-29 là điều kiện để cho phép giật tít |
 | B3 | Guidelines nguyên tắc gốc 2 · khớp *"Định (Tĩnh tâm): tập trung sâu vào ít"* |
-| C1 | Guidelines nguyên tắc gốc 1 · Masterfile PHẦN 4 *"Nhịp câu"* — viết theo hướng cấm thay vì hướng ép, để chính nó không thành khuôn mòn · **vế câu chủ động và vế dấu phẩy** bổ sung 2026-07-29 từ [[teachings/thoi-mien-bang-ngon-tu]] ch.51, cả hai đều **soi được bằng máy** nên dùng được cho `/review` |
+| C1 | Guidelines nguyên tắc gốc 1 · Masterfile PHẦN 4 *"Nhịp câu"* — viết theo hướng cấm thay vì hướng ép, để chính nó không thành khuôn mòn · **vế câu chủ động và vế dấu phẩy** bổ sung 2026-07-29 từ [[teachings/thoi-mien-bang-ngon-tu]] ch.51, cả hai đều **soi được bằng máy** nên dùng được cho lúc soi lại |
 | C2 | Masterfile PHẦN 4 *"Ẩn dụ vật lý"* · danh sách cấm từ PHẦN 6 · khớp SOP Cậu Hai *"không dùng ngôn ngữ tâm linh sáo rỗng"* ở [[target-customer]] |
 | C3 | Guidelines mục *"Khuôn cần tránh"* · **ngoại lệ** do Đoàn phân xử 2026-07-29, vì [[contrarian-beliefs]] ghi khuôn này là *"pattern sắc bén nhất"* — hai file vốn đang cãi nhau · **vế cấm câu hỏi đóng** bổ sung từ [[teachings/thoi-mien-bang-ngon-tu]] ch.45: Guidelines vốn cấm *"câu hỏi chung chung"* nhưng chữ đó khó kiểm, còn "trả lời được bằng có/không" thì kiểm được ngay |
 | C4 | Đoàn trả lời trực tiếp 2026-07-29 · khớp [[contrarian-beliefs]] belief 6 đã làm rõ (*"vẫn cần viral, vẫn cần tương tác"*) và [[goals]] nút thắt *"thiếu Thu hút"* |
@@ -218,7 +218,7 @@ Cột `key` là chuỗi thật đi vào dòng `> Khung:` ở đầu `ket-qua.md`
 
 ⚡ **Đây mới là phần có giá trị.** Cột "Mạch" ở trên chỉ là cái tên gọi của chuỗi chặng — ai đọc cũng đoán được. Phần dưới đây là chỗ nói ra **thứ nhìn bài không tự thấy**: chặng nào chịu sức nặng, chỗ nào hay bị bỏ, và mỗi khung hỏng theo kiểu gì.
 
-Bổ sung 2026-08-04. Trước đó bảy đoạn này **chỉ tồn tại trong `creator-dna/src/lib/writing-craft.ts`**, không có trong bộ não — nên skill `viet-content` đọc file này thì chỉ nhận được nhãn và mạch, đúng thứ mà câu mở đầu mục này gọi là *"nhãn suông"*.
+Bổ sung 2026-08-04. Trước đó bảy đoạn này **chỉ tồn tại trong mã nguồn công cụ viết *(nội bộ)***, không có trong bộ não — nên skill `viet-content` đọc file này thì chỉ nhận được nhãn và mạch, đúng thứ mà câu mở đầu mục này gọi là *"nhãn suông"*.
 
 | Khung | Cách làm cho đúng |
 |---|---|
@@ -339,7 +339,7 @@ Thứ tự thắng ở đầu trang **không đổi**: khung vẫn thắng đặ
 
 ### Ba trang cùng tầng "nghề chung" — bổ sung 2026-07-29
 
-File này lo phần **thân bài**. Ba trang dưới lo ba khâu còn lại, cùng rút từ code `creator-dna` cùng ngày:
+File này lo phần **thân bài**. Ba trang dưới lo ba khâu còn lại, cùng rút ra cùng ngày:
 
 - `luat/hook.md` — **8 kiểu hook**. Giải cho câu ở mục "Triệu chứng" phía trên (*hook sắc, thân bài nhạt — vì lớp hook đã có 8 kiểu với hướng dẫn nghề thật, còn thân bài thì không có gì*): 8 kiểu đó nay đã có trong bộ não, không còn chỉ nằm trong `lib/hooks.ts`.
 - [[story-selection-protocol]] — chọn **chuyện nào** để chứng minh thông điệp. Đứng TRƯỚC file này trong quy trình: chọn sai nguyên liệu thì viết đúng luật vẫn ra bài rỗng.

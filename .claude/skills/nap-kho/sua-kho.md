@@ -14,7 +14,7 @@
 
 ## 🔒 Trang "kết luận duy nhất" — luật riêng, thêm 2026-08-27
 
-> Đoàn chốt sau khi dồn `offer-creator-vn.md` về một bản gọn: *"từ giờ tôi muốn điều này dc giữ chặt, khi tôi có thay đổi, hay bổ sung gì cũng cần làm thành một bản kết luận thôi, ko dài dòng thêm, thay gì hay bổ sung gì phải rõ."*
+> Luật này do Tô Hải Đoàn chốt sau khi dồn một trang offer dài về một bản gọn: *"từ giờ tôi muốn điều này dc giữ chặt, khi tôi có thay đổi, hay bổ sung gì cũng cần làm thành một bản kết luận thôi, ko dài dòng thêm, thay gì hay bổ sung gì phải rõ."*
 >
 > Chốt lại lần hai sau khi dồn xong cả ba trang offer: *"chốt dùng bản này là bản duy nhất, còn lại đưa vào lịch sử hết, khi tôi sửa cái gì thì cần xác nhận là bổ sung, hay là thay thế, và ko lưu bản lịch sử chung chỗ."* — hai chữ mới so với lần chốt đầu: **XÁC NHẬN** (nói thẳng với Đoàn trong câu trả lời, không chỉ ghi âm thầm trong `log.md`) và **KHÔNG CHUNG CHỖ** (lịch sử tuyệt đối không ở lẫn trong file kết luận, dù chỉ một dòng).
 

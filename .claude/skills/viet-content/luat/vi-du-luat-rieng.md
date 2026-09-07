@@ -84,7 +84,7 @@ Gom được vài luật thì chạy `/nap-kho` ghi vào `wiki/content-writing-g
 
 ## Quan hệ với lõi nghề dùng chung
 
-File này là **bản cá nhân của Đoàn**. Bản **phổ quát** — 10 luật áp cho mọi user của tool Creator OS bất kể ngách — đã tách ra `luat/loi-nghe.md` (chốt 2026-07-29), rút từ chính file này nhưng lọc bỏ phần chỉ thuộc về Đoàn (cấm "tụi mình"/"ảnh", ngôi xưng tôi/bạn, 3 trục tư tưởng).
+File này là **bản cá nhân của Đoàn**. Bản **phổ quát** — 10 luật áp cho mọi người viết bất kể ngách — nằm ở `luat/loi-nghe.md` (chốt 2026-07-29), rút từ chính file này nhưng lọc bỏ phần chỉ thuộc về Đoàn (cấm "tụi mình"/"ảnh", ngôi xưng tôi/bạn, 3 trục tư tưởng).
 
 Hai chỗ file này đang lệch với các trang khác, đã được phân xử khi chốt lõi nghề:
 

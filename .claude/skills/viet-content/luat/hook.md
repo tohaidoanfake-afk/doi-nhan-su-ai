@@ -5,7 +5,7 @@
 > Các ví dụ, con số và tên người trong file là **của Đoàn**, dùng để minh hoạ luật. 🚫 Tuyệt đối không bê chúng vào bài của bạn — đó là vi phạm chính luật cấm bịa ở đây.
 
 
-> **Nguồn:** rút từ `creator-dna/src/lib/hooks.ts` ngày 2026-07-29. Trước đó kiến thức này **chỉ tồn tại trong code** — `luat/loi-nghe.md` có nhắc "lớp hook đã có 8 kiểu với hướng dẫn nghề thật" nhưng không ai đọc được 8 kiểu đó ở đâu trong bộ não.
+> **Nguồn:** rút từ mã nguồn công cụ viết *(nội bộ)* ngày 2026-07-29. Trước đó kiến thức này **chỉ tồn tại trong code** — `luat/loi-nghe.md` có nhắc "lớp hook đã có 8 kiểu với hướng dẫn nghề thật" nhưng không ai đọc được 8 kiểu đó ở đâu trong bộ não.
 >
 > Đây là tầng **nghề chung** (học được, không đổi theo ngách), cùng hạng với 10 luật ở `luat/loi-nghe.md`. Khác với `wiki/voice-profile.md` là tầng *giọng riêng*.
 

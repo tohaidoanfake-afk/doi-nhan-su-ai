@@ -1,7 +1,7 @@
 # Bản kê — bản gộp này sinh từ đâu
 
 > ⚙️ **File này do máy sinh.** Chạy `node phat-ban-gop.mjs` để cập nhật.
-> Sinh lúc: 2026-09-07 03:47
+> Sinh lúc: 2026-09-07 04:01
 
 | Phần | Kho lẻ | Phiên bản |
 |---|---|---|

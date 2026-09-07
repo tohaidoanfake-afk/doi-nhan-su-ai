@@ -11,7 +11,7 @@
 
 ## ⚠️ Ràng buộc hai chiều với code
 
-Phần "soi được bằng máy" ở cuối trang được **chép** vào `creator-dna/src/lib/ai-tells.ts`. Sửa một bên phải sửa bên kia — cùng kiểu ràng buộc đã có với `luat/loi-nghe.md` ↔ `src/lib/writing-craft.ts`.
+Phần "soi được bằng máy" ở cuối trang được **chép** vào mã nguồn công cụ viết *(nội bộ)*. Sửa một bên phải sửa bên kia — cùng kiểu ràng buộc đã có với `luat/loi-nghe.md` ↔ `src/lib/writing-craft.ts`.
 
 ⚡ **Danh sách từ sẽ mòn, cơ chế thì không.** AI né được đúng những chữ bị cấm rồi đẻ ra bộ chữ mới trong vài tháng. Nên mục *"Vì sao AI lại thế"* ở cuối trang quan trọng hơn cả bốn tầng cộng lại — nó là thứ suy ra được dấu hiệu mới khi danh sách này hết thời.
 
@@ -182,7 +182,7 @@ C6. ĐỂ LẠI DẤU TAY. Bài quá sạch là bài không ai viết.
 
 ## Soi được bằng máy — không cần gọi AI, không tốn credit
 
-Chép vào `creator-dna/src/lib/ai-tells.ts`. Chia hai mức vì lý do thật: bật cờ đỏ cho mọi thứ thì người dùng tắt luôn tính năng.
+Chép vào mã nguồn công cụ viết *(nội bộ)*. Chia hai mức vì lý do thật: bật cờ đỏ cho mọi thứ thì người dùng tắt luôn tính năng.
 
 **Mức "chắc":** dấu hiệu gần như không xuất hiện trong văn Facebook viết tay.
 
@@ -216,7 +216,7 @@ Chép vào `creator-dna/src/lib/ai-tells.ts`. Chia hai mức vì lý do thật: 
 
 | | |
 |---|---|
-| **Trang này không còn là tài liệu tham chiếu** | nó là **prompt/tài liệu huấn luyện đang chạy** trong skill viết bài của Đoàn. Sửa nội dung ở đây là **đổi hành vi của công cụ đang sản xuất bài thật** — cùng loại ràng buộc với `creator-dna/src/lib/ai-tells.ts` ở mục ⚠️ trên, nhưng chặt hơn: bên kia là code có thể lệch, bên này Đoàn nạp **nguyên trang** |
+| **Trang này không còn là tài liệu tham chiếu** | nó là **prompt/tài liệu huấn luyện đang chạy** trong skill viết bài của Đoàn. Sửa nội dung ở đây là **đổi hành vi của công cụ đang sản xuất bài thật** — cùng loại ràng buộc với mã nguồn công cụ viết *(nội bộ)* ở mục ⚠️ trên, nhưng chặt hơn: bên kia là code có thể lệch, bên này Đoàn nạp **nguyên trang** |
 | **Cách dùng là "không được vi phạm"** | tức dùng như một **danh sách cấm**, không phải gợi ý. Đây là lý do mục *"Vì sao AI lại thế"* ở cuối trang phải giữ được — danh sách cấm mà hết thời thì skill vẫn chạy, chỉ là chạy sai |
 | **Kết quả anh tự chấm** | *"tất cả những bài mà em viết rất khó để thấy được mùi của AI… tại vì em huấn luyện nó rất là kỹ"*, và bài anh demo trong buổi là **AI viết, không sửa một chữ**: *"em không sửa chữa chữ nào."* ⬜ Chưa có ai ngoài Đoàn kiểm chứng lại — `[cần bổ sung: một lượt soi độc lập trên bài AI viết mới nhất]` |
 
