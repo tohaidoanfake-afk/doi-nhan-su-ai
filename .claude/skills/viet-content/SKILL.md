@@ -93,14 +93,18 @@ Tám kho này **không bao giờ xong** — chúng dày lên theo thời gian. L
 
 ### Ba mức, ba cách hành xử khác hẳn nhau
 
-**🔴 Kho trống — 0 hoặc 1 trên 4. KHÔNG VIẾT.**
+**🔴 Kho trống — 0 hoặc 1 trên 4. KHÔNG VIẾT NGAY — thu trước đã.**
 
 Nói thẳng: chưa viết được bài mang giọng của họ, vì chưa có gì để mang. Rồi đưa đúng **một** việc tiếp theo, không đưa danh sách:
 
 - Chưa có `voice-profile` → *"Dán vào đây 5 tới 10 bài bạn đã đăng thật. Tôi rút hồ sơ giọng, rồi mới viết được bài nghe ra bạn."*
-- Chưa có gì cả, kể cả trang nền → **xem mục 🆘 ngay dưới**, đừng chỉ nói *"chạy `/onboard` trước đã"* rồi dừng.
+- Chưa có gì cả, kể cả trang nền → **xem mục 🆘 phía dưới** *(sau mục 📥)*, đừng chỉ nói *"chạy `/onboard` trước đã"* rồi dừng.
 
 ⚡ Đây là **từ chối có đường đi tiếp**, khác hẳn từ chối cụt. Từ chối cụt làm người mới kết luận công cụ này vô dụng; câu trên làm họ biết phải làm gì trong mười phút tới.
+
+🔴 **"KHÔNG VIẾT" nghĩa là không viết TRƯỚC KHI THU, không phải không viết trong lượt này.** Họ dán bài cũ và trả lời mấy câu ngay tại đây thì chất liệu **đã nằm trong hội thoại** — đủ để viết, dù chưa có file nào trên đĩa. Cửa vào đếm file vì file là thứ **sống qua phiên sau**; còn để viết bài hôm nay thì chất liệu trong lượt dùng y hệt.
+
+Thu xong thì **viết luôn**. Đứng im chờ họ đi cài thứ khác rồi quay lại là đúng cái từ chối cụt mà mục này sinh ra để tránh.
 
 **🟡 Kho mỏng — 2 hoặc 3 trên 4. Viết được, nhưng nói trước cái gì sẽ yếu.**
 
@@ -145,13 +149,34 @@ Câu 1–2 → `target-customer`. Câu 3 → `contrarian-beliefs`. Rút xong **d
 
 🚫 **Chỉ cứu ĐÚNG hai trang này, không cứu thêm trang nền nào khác.** Vai này còn đọc `offer-ladder` · `values-and-principles` · `goals` · `network` — thiếu chúng thì **nói một dòng là bài yếu ở đâu, rồi viết tiếp**, đừng mở phỏng vấn. Cứu hết mọi trang là biến vai này thành một bản `/onboard` thứ hai, mà bản thứ hai luôn cạn hơn bản thật và không ai biết mình đang dùng bản nào.
 
-#### Không có nền gì cả → nói thẳng là KHÔNG có gì được lưu lại
+#### Không có nền gì cả → THU TRONG LƯỢT, rồi viết. Nói rõ là không lưu được.
 
-Đây là ca khác hẳn, và khác ở một điểm quyết định: **`/nap-kho` đi kèm nền.** Không có nền thì không có đường ghi nào cả — mọi thứ rút ra trong lượt này chết theo đoạn chat.
+Ca này khác ở một điểm quyết định: **`/nap-kho` đi kèm nền.** Không có nền thì không có đường ghi nào — mọi thứ rút ra chết theo đoạn chat.
 
-Nên vẫn làm được việc, nhưng phải nói đúng cái giá:
+Nhưng *không lưu được* **không phải** *không làm được*. Làm đủ ba bước, đừng dừng ở bước 1.
 
-> *"Bạn chưa có bộ não thứ 2 nên tôi không lưu được gì — dán bài cũ và trả lời vài câu thì tôi viết được ngay bài hôm nay, nhưng đóng đoạn chat này là mất hết, lần sau phải kể lại từ đầu. Muốn giữ lại thì cài nền trước: `git clone https://github.com/creator-ceo/nhan-su-thu-thu.git`"*
+**Bước 1 — nói đúng cái giá, một lần, ngắn:**
+
+> *"Bạn chưa có bộ não thứ 2 nên tôi không lưu được gì — đóng đoạn chat này là mất hết, lần sau phải kể lại từ đầu. Nhưng bài hôm nay thì viết được ngay: cho tôi xin bốn thứ, mỗi lần một thứ. Muốn giữ lại về sau thì cài nền: `git clone https://github.com/creator-ceo/nhan-su-thu-thu.git`"*
+
+**Bước 2 — thu đúng bốn thứ cửa vào đếm, HỎI MỘT CÂU MỘT LƯỢT:**
+
+| # | Hỏi gì | Thay cho |
+|---|---|---|
+| 1 | *"Dán vào đây 5–10 bài bạn đã đăng thật."* | `voice-profile` |
+| 2 | *"Kể một chuyện thật của bạn dính tới chủ đề này — chuyện gì cũng được, miễn là bạn có mặt trong đó."* | `experiences-library` |
+| 3 | *"Khách của bạn là ai — họ sợ gì, muốn gì, và hay phản đối gì trước khi mua?"* | `target-customer` |
+| 4 | *"Có niềm tin nào về ngành của bạn mà số đông không đồng ý, nhưng bạn thấy đúng?"* | `contrarian-beliefs` |
+
+⚡ **Thiếu cái nào cũng đi tiếp được — đừng chặn.** Họ bỏ qua câu 1 thì viết bằng giọng trung tính và **nói ra là bài chưa mang giọng họ**. Bỏ câu 2 thì để `[cần chuyện thật của bạn về X]`. Thu được tới đâu, bài tốt tới đó — đúng luật ba mức ở trên, chỉ khác là chất liệu nằm trong hội thoại chứ không nằm trên đĩa.
+
+🚫 **Đừng hỏi cả bốn câu một lượt.** Dán bốn câu ra là nhận về bốn câu trả lời qua loa, hoặc không câu nào. Một câu, chờ trả lời, rồi câu tiếp.
+
+**Bước 3 — viết bài, rồi đóng lại bằng một câu về cái đã mất:**
+
+> *"Bài ở trên dùng được. Nhưng bốn thứ bạn vừa kể chỉ sống trong đoạn chat này — lần sau bạn sẽ phải kể lại. Cài nền một lần là chúng thành file, và mọi bài sau đều tự đọc chúng."*
+
+📌 **Đây là chỗ bán cái nền tốt nhất trong cả skill, và bán bằng thứ họ vừa tự trải qua** — không phải bằng lời hứa. Họ vừa thấy bài ra thế nào khi có chất liệu, và vừa nghe rằng chất liệu đó sắp bốc hơi.
 
 🚫 **Đừng tự tạo thư mục `wiki/` rồi ghi file vào đó.** Nghe có vẻ giúp được, nhưng nó đẻ ra một bộ não **không có `/nap-kho` canh cửa** — không soi trùng, không nối link, không `log.md`. Ba tháng sau đó là một đống file không ai biết vì sao có, và đúng thứ luật một-đường-ghi sinh ra để chặn.
 
