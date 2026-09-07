@@ -7,7 +7,7 @@ description: Khám xem việc kinh doanh của bạn đang tắc ở khâu nào 
 
 > 🧱 **Vai này chạy TRÊN một cái nền.** Nền là bộ khung `nhan-su-thu-thu` — nó dựng `wiki/` và giữ `/nap-kho`, đường ghi duy nhất vào bộ não. Chưa có nền thì bài khám vẫn chạy được, nhưng bản đề xuất không có chỗ để ghi vào.
 >
-> 📌 **Lệnh dài vì máy khám nằm trong gói plugin, không nằm trong thư mục bạn đang đứng.** Đường dẫn tính từ gốc kho — gõ từ đúng thư mục bạn vừa clone. Câu trả lời của bạn thì ghi vào **kho của bạn** (`kham-ra/phien/`), không ghi vào gói: gói bị thay mỗi lần `claude plugin update`.
+> 📌 **Lệnh dài vì máy khám nằm trong gói plugin, không nằm trong thư mục bạn đang đứng.** Đường dẫn tính từ gốc kho — gõ từ đúng thư mục bạn vừa clone. Câu trả lời của bạn thì ghi vào **kho của bạn** (`kham-ra/phien/`), không ghi vào thư mục skill: `git pull` thay file skill mỗi lần cập nhật.
 
 ## Việc này khác việc hỏi lời khuyên ở đâu
 

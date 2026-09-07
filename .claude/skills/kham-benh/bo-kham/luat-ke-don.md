@@ -1,6 +1,6 @@
 # Luật kê đơn — bản phát kèm bộ khám
 
-> Đây là bộ luật `/kham-benh` phải theo ở bước kê đơn. Nó đi kèm gói plugin, nên **`claude plugin update` sẽ ghi đè** — sửa tay ở đây là mất khi cập nhật.
+> Đây là bộ luật `/kham-benh` phải theo ở bước kê đơn. Nó đi kèm bộ này, nên **`git pull` sẽ ghi đè** — sửa tay ở đây là mất khi cập nhật.
 >
 > Muốn đổi luật kê đơn cho riêng bạn thì ghi vào `wiki/` qua `/nap-kho`, rồi nói cho `/kham-benh` biết trang đó — kho của bạn thắng bộ luật đi kèm.
 
