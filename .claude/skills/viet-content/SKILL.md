@@ -368,6 +368,12 @@ Một bài có thể mở bằng trích dẫn của một tác giả (Loại 5),
 
 Đây là **nguồn duy nhất** cho mọi con số track record. Con số không có trong đó thì **hỏi, đừng suy ra** — kể cả khi bạn thấy nó trong một bài cũ của chính người dùng.
 
+📌 **Chưa dựng trang đó thì luật này KHÔNG được nới, chỉ đổi chỗ hỏi.** Hỏi thẳng trong lượt, trước khi viết con số nào:
+
+> *"Bài này có con số thành tích. Cho tôi biết: số nào là của bạn và bạn được phép nói ra, số nào là của người khác hoặc của một dự án chung — và số nào phải ghi kèm nhãn gì?"*
+
+Trả lời xong thì dùng, và **ghi câu trả lời vào `de-nap-vao-nao.md`** mục `## → wiki/so-lieu-chuan.md` để lần sau khỏi hỏi lại. Họ không trả lời rõ thì **bỏ con số ra khỏi bài**, đừng viết kèm phỏng đoán — đây là chỗ sai gây hậu quả thật ngoài đời, không phải chỗ sai câu chữ.
+
 ⚠️ **Trang đó không phải danh sách số. Nó là danh sách LUẬT gắn với từng số** — số này phải ghi kèm nhãn gì, số kia cấm dùng, hai số kia cấm cộng lại. Đọc lướt lấy con số rồi bỏ qua luật của nó là dùng sai theo đúng cách trang đó sinh ra để chặn.
 
 **Ba kiểu sai, xếp theo độ khó bắt:**
