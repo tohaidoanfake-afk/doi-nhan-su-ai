@@ -72,10 +72,26 @@ const NAP_DIR = coFile(HERE, 'nap') || path.join(GOC, 'kham-ra');   // Đoàn: o
    `owner-os/kham.mjs` thì bản phát cho member bảo họ gõ một lệnh không tồn tại — hỏng kiểu
    chỉ lộ ra ở máy người khác. Bản plugin thì đường dẫn tương đối xuyên qua ~/.claude/plugins
    nên vô nghĩa; ở đó in đúng dạng biến mà người ta gõ được. */
-const tuong = path.relative(process.cwd(), fileURLToPath(import.meta.url));
-const LENH = (!tuong || tuong.startsWith('..'))
-  ? 'node "${CLAUDE_PLUGIN_ROOT}/skills/kham-benh/bo-kham/kham.mjs"'   // ngoài cây thư mục đang đứng → plugin
-  : `node ${tuong}`;
+/* Đi NGƯỢC TỪ CHÍNH FILE NÀY để tìm gốc kho, không suy từ `process.cwd()`.
+   Cách cũ đoán bằng `path.relative(cwd, file).startsWith('..')` — nhưng dấu hiệu đó
+   gộp HAI cảnh khác hẳn nhau vào một: "tôi nằm trong plugin" và "người dùng đang
+   đứng ở thư mục con của kho". Bản gộp rơi vào cảnh hai thì in ra biến
+   `CLAUDE_PLUGIN_ROOT` — mà bản gộp KHÔNG phải plugin nên biến đó rỗng, lệnh thành
+   `node "/skills/..."` và chết. Đo 2026-09-08, cả bốn bố cục. */
+const GOC_KHO = (() => {
+  let d = HERE;
+  for (let i = 0; i < 4; i++) {            // gộp: bo-kham→kham-benh→skills→.claude→kho (4 nấc)
+    d = path.resolve(d, '..');             // Đoàn: owner-os→kho (1 nấc)
+    if (laKho(d)) return d;                // plugin: không có kho nào trong 4 nấc → null
+  }
+  return null;
+})();
+const tuong = GOC_KHO
+  ? path.relative(GOC_KHO, fileURLToPath(import.meta.url))
+  : path.relative(process.cwd(), fileURLToPath(import.meta.url));
+const LENH = GOC_KHO
+  ? `node ${tuong}`                                                      // ① ② ③ — luôn tính từ gốc kho
+  : 'node "${CLAUDE_PLUGIN_ROOT}/skills/kham-benh/bo-kham/kham.mjs"';    // ④ — thật sự là plugin
 const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 /* Chạy được ở HAI NƠI, tự nhận ra mình đang ở đâu — không cần bộ sinh vá chuỗi.
    • Creator OS của Đoàn: luật ở `os-map.json`, luật kê đơn ở manifest tính năng.
