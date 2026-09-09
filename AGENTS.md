@@ -36,6 +36,9 @@ Nếu vì lý do gì đó bạn chưa đọc được `CLAUDE.md`, năm điều 
 2. **Chỉ có MỘT đường ghi vào `wiki/`: skill `nap-kho`.** Không sửa thẳng file `.md`, kể cả sửa một lỗi chính tả.
 3. **Không bịa.** Không tự nghĩ ra số liệu, tên khách, câu chuyện, kết quả. Thiếu dữ liệu thì để `[trong ngoặc vuông]` hoặc dừng lại hỏi. Bộ não có chỗ trống thì sửa được; có chỗ bịa thì hỏng mà không ai biết.
 4. **Luôn ghi thêm vào `log.md`, không bao giờ viết đè lịch sử.**
+4b. **Số lấy từ kho phải kèm NGÀY** — cấm đưa số của tháng trước như số hôm nay.
+4c. **Cấm nói "đã xong" khi chưa kiểm ngay trong lượt đó.** Khuôn ba phần: `[Đã <làm gì>] [Thấy: <bằng chứng>] <kết luận>`.
+4d. **Ô trống trong kho là ô trống CỦA KHO**, không phải sự thật về người hay việc.
 5. **Luôn đọc `wiki/ai-operating-preferences.md` ở đầu mỗi phiên** và làm theo — đó là nơi người dùng khai cách xưng hô, khi nào phải hỏi trước, và những việc tuyệt đối cấm.
 
 ---

@@ -4,6 +4,31 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v4.3 — 2026-09-09
+
+**Ba bậc chống bịa đã chạy hai tháng trong kho nội bộ, chưa bậc nào được phát.**
+
+Luật sắt phát ra chỉ có bậc thấp nhất — *"không bịa"*. Ba bậc trên nó nằm ở `wiki/ai-operating-preferences.md` của tác giả, đo được: **15 file nội bộ nhắc *Luật ảnh chụp*, bản phát 0**.
+
+Ba bậc kia mới là ba bậc khó bắt, và chúng **không có gì riêng của một người** — chúng là luật vận hành của A.I, đúng với mọi bộ não:
+
+| Bậc | Cấm gì | Vì sao khó bắt hơn bậc trước |
+|---|---|---|
+| **6** | bịa số, bịa tên, bịa chuyện | dễ nhất — đối chiếu kho là ra |
+| **7** *(mới)* | đưa số cũ như số hiện tại | **con số hoàn toàn có thật**, chỉ là thật của tháng trước |
+| **8** *(mới)* | nói đã làm mà chưa kiểm | **câu nói không có gì sai**, chỉ là chưa ai kiểm |
+| **9** *(mới)* | biến ô trống của kho thành kết luận về đời thật | **suy luận nghe rất hợp lý**, không có gì trong kho phản bác được |
+
+Bậc 8 đi kèm khuôn bắt buộc điền: **`[Đã <chạy/so/mở cái gì>] [Thấy: <bằng chứng cụ thể>] <kết luận>`** — thiếu ba phần đó thì mặc định là *chưa kiểm*.
+
+🔴 **Áp cho chính A.I tự báo cáo về việc mình vừa làm**, không chỉ áp cho nội dung ghi vào kho. Câu *"đã cập nhật xong"* không kèm `[Thấy: ...]` là vi phạm, kể cả khi việc đó thật sự đã xong.
+
+📌 **Vì sao thêm bây giờ:** trong đúng phiên soi bộ này, A.I vi phạm bậc 7 và 8 **ba lần** — khẳng định cửa sổ ngữ cảnh từ trí nhớ *(sai 5 lần)*, gán một dòng luật của vai này cho vai khác, và đếm khuôn trang trên cây làm việc rồi báo cáo như số của bản phát. Cả ba đều **có chạy lệnh**, chỉ là đo thứ nằm cạnh cái đang khẳng định. Luật viết ra để chặn đúng chỗ đó.
+
+Thêm vào cả `CLAUDE.md` *(Claude Code / Cowork)* và `AGENTS.md` *(Codex CLI)*.
+
+---
+
 ## v4.2 — 2026-09-07
 
 **Lộ trình chưa bao giờ bảo người ta cài một vai — thêm Việc 8.**
