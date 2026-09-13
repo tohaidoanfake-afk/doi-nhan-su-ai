@@ -65,9 +65,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const laKho = (d) => fs.existsSync(path.join(d, 'wiki')) || fs.existsSync(path.join(d, 'CLAUDE.md'));
 const CHA = path.resolve(HERE, '..');
 const TRONG_KHO = laKho(CHA);                       // ① ② — nằm ngay trong kho người dùng
-const GOC = TRONG_KHO ? CHA : process.cwd();        // ③ ④ — đứng ngoài, lấy thư mục đang chạy
 const coFile = (...p) => { const f = path.join(...p); return fs.existsSync(f) ? f : null; };
-const NAP_DIR = coFile(HERE, 'nap') || path.join(GOC, 'kham-ra');   // Đoàn: owner-os/nap · còn lại: kho/kham-ra/
 /* Lệnh in ra cho người ta gõ lại phải là đường dẫn THẬT của chỗ đang chạy. Đóng cứng
    `owner-os/kham.mjs` thì bản phát cho member bảo họ gõ một lệnh không tồn tại — hỏng kiểu
    chỉ lộ ra ở máy người khác. Bản plugin thì đường dẫn tương đối xuyên qua ~/.claude/plugins
@@ -90,8 +88,27 @@ const tuong = GOC_KHO
   ? path.relative(GOC_KHO, fileURLToPath(import.meta.url))
   : path.relative(process.cwd(), fileURLToPath(import.meta.url));
 const LENH = GOC_KHO
-  ? `node ${tuong}`                                                      // ① ② ③ — luôn tính từ gốc kho
-  : 'node "${CLAUDE_PLUGIN_ROOT}/skills/kham-benh/bo-kham/kham.mjs"';    // ④ — thật sự là plugin
+  ? `node ${tuong}`                                                      // ① ② ④ — luôn tính từ gốc kho
+  : 'node "${CLAUDE_PLUGIN_ROOT}/skills/kham-benh/bo-kham/kham.mjs"';    // ③ — thật sự là plugin
+/* KHO CỦA NGƯỜI DÙNG — nơi ghi phiên và bản đề xuất. Hỏi theo thứ tự tin cậy giảm dần:
+   ① ② cha của file là kho · ④ đi ngược từ file gặp kho · ③ plugin thì vị trí file không nói
+   được gì, nên đi ngược từ thư mục đang đứng tìm `wiki/`, không có mới lấy chính thư mục đó.
+
+   ⚠️ Bản 1.2.1 sửa LENH mà để GOC = cwd cho cả ③ lẫn ④. Đo 2026-09-13 ở bản gộp: mở phiên ở gốc
+   kho, `cd` vào thư mục con rồi mở lại → "Không có phiên khám", vì máy tìm ở <con>/kham-ra/phien.
+   Phiên vẫn còn nguyên, chỉ là máy nhìn nhầm chỗ — người đang khám dở thì tưởng mất bài.
+
+   Plugin chỉ nhận `wiki/` làm dấu, KHÔNG nhận `CLAUDE.md`: dự án con trong kho cũng có CLAUDE.md
+   riêng (`owner-os/` là một ca), nhận nó là ghi phiên vào thư mục con. Và không hỏi
+   `CLAUDE_PROJECT_DIR` — đo 2026-09-13, biến đó RỖNG trong lệnh Bash của Claude Code. */
+const khoTuCwd = () => {
+  for (let d = process.cwd(); ; d = path.dirname(d)) {
+    if (fs.existsSync(path.join(d, 'wiki'))) return d;
+    if (path.dirname(d) === d) return null;
+  }
+};
+const GOC = TRONG_KHO ? CHA : (GOC_KHO || khoTuCwd() || process.cwd());
+const NAP_DIR = coFile(HERE, 'nap') || path.join(GOC, 'kham-ra');   // Đoàn: owner-os/nap · còn lại: kho/kham-ra/
 const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 /* Chạy được ở HAI NƠI, tự nhận ra mình đang ở đâu — không cần bộ sinh vá chuỗi.
    • Creator OS của Đoàn: luật ở `os-map.json`, luật kê đơn ở manifest tính năng.
