@@ -4,6 +4,36 @@ Bộ khung này còn tiến hoá. Trang này ghi cái gì đổi và **vì sao**
 
 ---
 
+## v4.5 — 2026-09-15
+
+**Đủ sáu vai cài được, và gỡ mấy chỗ còn nói vai "chưa phát".**
+
+| Đổi | Vì sao |
+|---|---|
+| `README.md` bảng vai: Điều phối · Bán hàng ✅, thêm Nghiên cứu · Thiết kế · Chăm sóc *(bản tạm)* | bảng cũ ghi 🟡 *đang đóng gói* cho hai vai đã phát từ 07/09, và ⬜ cho ba vai giờ đã có kho |
+| `CLAUDE.md` · `onboard`: Bánh Xe Cuộc Đời trỏ sang kho Điều phối | câu cũ *"chưa phát, đừng hứa"* làm AI né một lệnh đã cài được |
+| `BAT-DAU-TU-DAY.md` Việc 8: liệt đủ năm kho vai | |
+
+**Có đáng `git pull` không:** có, nếu bạn định cài thêm vai. Bộ não của bạn không đổi gì.
+
+---
+
+## v4.4 — 2026-09-14
+
+**Codex giờ gọi được skill bằng `$`, và bỏ một hướng dẫn chép skill vào chỗ Codex không đọc.**
+
+Bản trước bảo người dùng Codex chép skill sang `.codex/skills/`. Tài liệu OpenAI *(đối chiếu 14/09/2026)* ghi Codex tìm skill ở `.agents/skills/`. Chép theo hướng dẫn cũ thì chép xong vẫn không có skill nào, và không có lỗi nào báo.
+
+| Đổi | Vì sao |
+|---|---|
+| thêm `.agents/skills/`: bản sinh từ `.claude/skills/`, `/tên` đổi thành `$tên` | Codex thấy đủ bốn skill ngay khi mở thư mục, không phải chép tay |
+| thêm `scripts/sinh-ban-codex.mjs` *(`--kiem` để soát)* | hai bản không lệch nhau: bản Codex luôn sinh lại từ bản gốc |
+| `AGENTS.md` · `README.md` · `reference/huong-dan-cai-dat.md` · `BAT-DAU-TU-DAY.md` | bỏ hướng dẫn `.codex/skills/`; thêm Codex trên ứng dụng ChatGPT; bảng kích hoạt thêm dòng `phong-van-dinh-vi` còn thiếu |
+
+**Có đáng `git pull` không:** có, nếu bạn dùng Codex. Đã lỡ chép sang `.codex/skills/` thì xoá thư mục đó đi. Dùng Claude thì không có gì đổi.
+
+---
+
 ## v4.3 — 2026-09-09
 
 **Ba bậc chống bịa đã chạy hai tháng trong kho nội bộ, chưa bậc nào được phát.**

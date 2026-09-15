@@ -1,0 +1,183 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Kiểu: sơ đồ vàng chanh</title>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     KIỂU: SƠ ĐỒ VÀNG CHANH — nền xám nhạt, nhãn pill vàng chanh, tiêu đề
+     serif, và một chuỗi bước nối nhau bằng mũi tên, mỗi bước có chú thích
+     serif nghiêng treo bằng đường kẻ chấm.
+
+     Học từ: mẫu tác giả skill đưa 2026-08-08 (attention → trust → belief → action).
+
+     Kiểu này KHÔNG dùng chung bộ máy với các kiểu quote: nội dung của nó là
+     một CHUỖI BƯỚC, không phải một câu. Vì vậy nó có JSON riêng và JS riêng.
+     Hợp với: quy trình, phễu, mô hình mấy bước, trước→sau.
+     Không hợp với: câu nói cảm xúc — không có bước thì không có gì để vẽ.
+
+     Đẹp nhất ở 3–5 bước. Quá 5 bước thì chữ trong pill bé lại như chú thích
+     chân trang; lúc đó tách làm hai tấm.
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<script type="application/json" id="noi-dung">
+{
+  "nhan": "Phần 2",
+  "tieuDe": "Dùng kể chuyện làm cỗ máy tăng trưởng",
+  "phuDe": "Người ta nhớ câu chuyện gấp nhiều lần con số.\nKể chuyện là đường ngắn nhất dẫn tới doanh thu.",
+  "cacBuoc": [
+    { "ten": "chú ý", "chuThich": "Sự chú ý khiến người ta dừng lướt", "phia": "tren" },
+    { "ten": "tin cậy", "chuThich": "Tin cậy khiến họ chịu nghe", "phia": "duoi" },
+    { "ten": "niềm tin", "chuThich": "Niềm tin khiến họ nghĩ \"cái này hợp với mình\"", "phia": "tren" },
+    { "ten": "hành động", "chuThich": "Hành động là lúc họ mua", "phia": "duoi" }
+  ]
+}
+</script>
+
+<style>
+  @font-face { font-family: 'Be Vietnam Pro'; font-weight: 400; src: url('__THU_MUC_FONT__/BeVietnamPro-Regular.ttf'); }
+  @font-face { font-family: 'Be Vietnam Pro'; font-weight: 500; src: url('__THU_MUC_FONT__/BeVietnamPro-Medium.ttf'); }
+  @font-face { font-family: 'Be Vietnam Pro'; font-weight: 600; src: url('__THU_MUC_FONT__/BeVietnamPro-SemiBold.ttf'); }
+  @font-face { font-family: 'Be Vietnam Pro'; font-weight: 700; src: url('__THU_MUC_FONT__/BeVietnamPro-Bold.ttf'); }
+  @font-face { font-family: 'Lora'; font-weight: 400 700; src: url('__THU_MUC_FONT__/Lora.ttf'); }
+  @font-face { font-family: 'Lora'; font-weight: 400 700; font-style: italic; src: url('__THU_MUC_FONT__/Lora-Italic.ttf'); }
+
+  :root {
+    --nen: #e7e7e4;
+    --muc: #111111;
+    --chanh: #dcfa7a;        /* vàng chanh của nhãn và hộp */
+    --vien: #111111;
+    --le: 88px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body { background: var(--nen); color: var(--muc); font-family: 'Be Vietnam Pro', sans-serif; }
+
+  .khung { position: relative; width: 100vw; height: 100vh; padding: var(--le); display: flex; flex-direction: column; }
+  /* Phần đầu KHÔNG được co. Thiếu dòng này thì flex bóp tiêu đề lại, hàm co chữ
+     bên dưới tưởng chữ tràn nên hạ cỡ xuống — tiêu đề ra nhỏ hơn cả phụ đề.
+     Đã dính đúng lỗi đó ở lần dựng đầu. */
+  .nhan, .tieu-de, .phu-de { flex: 0 0 auto; }
+
+  /* ── Phần đầu ── */
+  .nhan {
+    align-self: flex-start;
+    background: var(--chanh);
+    border: 2px solid var(--vien);
+    border-radius: 999px;
+    padding: 13px 30px;
+    font-size: 27px; font-weight: 600;
+    margin-bottom: 26px;
+  }
+  .tieu-de {
+    font-family: 'Lora', serif; font-weight: 700;
+    line-height: 1.14; letter-spacing: -0.015em;
+    margin-bottom: 26px;
+  }
+  .phu-de {
+    font-size: 31px; font-weight: 500; line-height: 1.42;
+    white-space: pre-wrap;   /* xuống dòng tay bằng \n trong JSON */
+  }
+
+  /* ── Sơ đồ ── */
+  .so-do {
+    flex: 1 1 auto; min-height: 0;
+    display: flex; align-items: center; justify-content: center;
+    gap: 18px;
+    margin-top: 30px;
+  }
+  .cot { display: flex; flex-direction: column; align-items: center; flex: 1 1 0; min-width: 0; }
+  /* Hai ô treo chú thích, cao bằng nhau để mọi pill luôn thẳng hàng dù chú
+     thích dài ngắn khác nhau. Không có hai ô này thì sơ đồ gãy răng cưa. */
+  .o-tren, .o-duoi { height: 190px; width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .o-tren { justify-content: flex-end; }
+  .o-duoi { justify-content: flex-start; }
+
+  .chu-thich {
+    font-family: 'Lora', serif; font-style: italic;
+    text-align: center; line-height: 1.32;
+    width: 118%;             /* cho phép tràn nhẹ sang cột bên, đúng như mẫu */
+  }
+  /* Đường kẻ chấm + đầu chấm tròn, nối chú thích xuống/lên tới pill */
+  .noi { flex: 1; width: 2px; background: linear-gradient(to bottom, var(--vien) 55%, transparent 0) 0 0/2px 11px repeat-y; position: relative; margin: 9px 0; }
+  .noi::before { content: ''; position: absolute; left: -3px; width: 8px; height: 8px; border-radius: 50%; background: var(--vien); }
+  .o-tren .noi::before { bottom: -1px; }
+  .o-duoi .noi::before { top: -1px; }
+
+  .hop {
+    background: var(--chanh);
+    border: 2px solid var(--vien);
+    border-radius: 999px;
+    padding: 17px 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .mui-ten { font-size: 34px; line-height: 1; flex: 0 0 auto; align-self: center; }
+
+  [hidden] { display: none !important; }
+</style>
+
+<div class="khung">
+  <div class="nhan"></div>
+  <div class="tieu-de"></div>
+  <div class="phu-de"></div>
+  <div class="so-do"></div>
+</div>
+
+<script>
+  const nd = JSON.parse(document.getElementById('noi-dung').textContent)
+  const $ = (s) => document.querySelector(s)
+  const thoat = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  const dat = (sel, t) => { const el = $(sel); el.textContent = t || ''; el.hidden = !t }
+
+  dat('.nhan', nd.nhan)
+  dat('.tieu-de', nd.tieuDe)
+  dat('.phu-de', nd.phuDe)
+
+  const buoc = nd.cacBuoc || []
+  // Cỡ chữ theo SỐ BƯỚC, không để mỗi pill tự co: pill to nhỏ khác nhau thì
+  // sơ đồ trông như lỗi dựng chứ không như có chủ ý.
+  const coHop = buoc.length <= 3 ? 34 : buoc.length === 4 ? 27 : 21
+  const coChuThich = buoc.length <= 3 ? 28 : buoc.length === 4 ? 24 : 20
+
+  const NOI = '<div class="noi"></div>'
+
+  $('.so-do').innerHTML = buoc
+    .map((b, i) => {
+      const tren = b.phia === 'tren'
+      const ct = b.chuThich
+        ? `<div class="chu-thich" style="font-size:${coChuThich}px">${thoat(b.chuThich)}</div>`
+        : ''
+      // Thứ tự đảo nhau giữa trên và dưới: ở trên là [chữ][đường nối đi xuống],
+      // ở dưới là [đường nối đi lên][chữ] — để đầu chấm luôn chạm mép pill.
+      return (
+        (i ? '<div class="mui-ten">→</div>' : '') +
+        `<div class="cot">
+           <div class="o-tren">${tren && ct ? ct + NOI : ''}</div>
+           <div class="hop" style="font-size:${coHop}px">${thoat(b.ten)}</div>
+           <div class="o-duoi">${!tren && ct ? NOI + ct : ''}</div>
+         </div>`
+      )
+    })
+    .join('')
+
+  // Tiêu đề: to hết cỡ mà vẫn nằm trong SỐ DÒNG cho phép.
+  // Đo bằng số dòng chứ không so scrollHeight với clientHeight — tiêu đề là div
+  // tự do nên hai giá trị đó luôn bằng nhau, so kiểu ấy thì phép đo vô nghĩa.
+  const SO_DONG_TOI_DA = 3
+  function coTieuDe() {
+    const el = $('.tieu-de')
+    if (!el.textContent.trim()) return
+    let thap = 32, cao = 78, hopLe = thap
+    for (let i = 0; i < 12; i++) {
+      const giua = (thap + cao) / 2
+      el.style.fontSize = giua + 'px'
+      const soDong = Math.round(el.scrollHeight / (giua * 1.14))
+      if (soDong <= SO_DONG_TOI_DA) { hopLe = giua; thap = giua } else cao = giua
+    }
+    el.style.fontSize = hopLe + 'px'
+  }
+
+  window.saMSanSang = document.fonts.ready.then(coTieuDe)
+</script>

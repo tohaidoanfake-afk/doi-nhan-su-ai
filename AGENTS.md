@@ -14,15 +14,18 @@ Người dùng nhắn *"bắt đầu"* → làm theo mục **LẦN CHẠY ĐẦU
 
 ---
 
-## Bốn skill — kích hoạt bằng lời nói, không cần lệnh gạch chéo
+## Bốn skill — gọi bằng `$`, hoặc bằng lời
 
-Codex tìm skill ở `.codex/skills/`, còn bộ này để skill ở `.claude/skills/`. Nên **không có lệnh `/` nào** — thay vào đó, khi người dùng nói những câu dưới đây, **hãy mở đúng file SKILL.md tương ứng và làm theo trọn vẹn**:
+Codex tìm skill ở `.agents/skills/`. Bộ này có sẵn bản cho Codex ở đó, sinh từ `.claude/skills/` bằng `scripts/sinh-ban-codex.mjs`, nên gõ `$` là thấy đủ bốn skill. **Trong `CLAUDE.md` và các skill, chỗ nào ghi `/tên` thì ở Codex là `$tên`.**
+
+Người dùng nói những câu dưới đây mà không gõ `$` thì **hãy mở đúng file SKILL.md tương ứng và làm theo trọn vẹn**:
 
 | Người dùng nói gì | Đọc file này | Làm gì |
 |---|---|---|
-| *"bắt đầu"* · *"tạo bộ não thứ 2"* · *"dựng lại từ đầu"* | `.claude/skills/onboard/SKILL.md` | Dựng bộ não lần đầu |
-| *"lưu cái này vào não"* · *"nạp vào kho"* · *"ghi lại insight này"* · người dùng kể một chuyện mới hoặc đưa tài liệu | `.claude/skills/nap-kho/SKILL.md` | **Đường ghi DUY NHẤT vào `wiki/`** |
-| *"kiểm chứng"* · *"test bộ não"* · *"bộ não chạy chưa"* · *"làm việc 6"* | `.claude/skills/kiem-chung/SKILL.md` | **Việc 6** — bài test bộ não đã lưu thật chưa |
+| *"bắt đầu"* · *"tạo bộ não thứ 2"* · *"dựng lại từ đầu"* | `.agents/skills/onboard/SKILL.md` | Dựng bộ não lần đầu |
+| *"lưu cái này vào não"* · *"nạp vào kho"* · *"ghi lại insight này"* · người dùng kể một chuyện mới hoặc đưa tài liệu | `.agents/skills/nap-kho/SKILL.md` | **Đường ghi DUY NHẤT vào `wiki/`** |
+| *"kiểm chứng"* · *"test bộ não"* · *"bộ não chạy chưa"* · *"làm việc 6"* | `.agents/skills/kiem-chung/SKILL.md` | **Việc 6** — bài test bộ não đã lưu thật chưa |
+| *"phỏng vấn định vị"* · *"định vị thương hiệu"* | `.agents/skills/phong-van-dinh-vi/SKILL.md` | Buổi phỏng vấn định vị 7 chặng |
 
 Đọc **trọn file**, không đọc lướt. Mỗi file đều có phần *"vì sao skill này tồn tại"* — phần đó quyết định làm đúng hay làm hỏng.
 
@@ -43,14 +46,8 @@ Nếu vì lý do gì đó bạn chưa đọc được `CLAUDE.md`, năm điều 
 
 ---
 
-## Nếu bạn muốn có lệnh gạch chéo trong Codex
+## Người bảo trì bộ khung
 
-Chép 4 thư mục skill sang chỗ Codex tìm:
+`.agents/skills/` là **bản sinh**, không sửa tay. Sửa `.claude/skills/` rồi chạy `node scripts/sinh-ban-codex.mjs`; trước khi phát chạy thêm `--kiem`, lệch là thoát mã 1.
 
-```bash
-mkdir -p .codex/skills && cp -R .claude/skills/* .codex/skills/
-```
-
-⚠️ Làm vậy thì bạn có **hai bản** của mỗi skill. Lần `git pull` sau, bản trong `.claude/skills/` được cập nhật còn bản trong `.codex/skills/` thì không — và bạn sẽ chạy bản cũ mà không biết. Chạy lại đúng lệnh trên sau mỗi lần `git pull` nếu chọn cách này.
-
-Không làm gì cả cũng được: bảng kích hoạt bằng lời nói ở trên đủ dùng, và với người không quen gõ lệnh thì nó còn dễ hơn.
+⚠️ **Đừng chép skill sang `.codex/skills/`.** Bản cũ của file này từng hướng dẫn vậy, nhưng Codex không đọc thư mục đó: chép xong vẫn không có skill nào, và không có lỗi nào báo.

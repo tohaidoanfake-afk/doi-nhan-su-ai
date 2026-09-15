@@ -28,7 +28,7 @@ Hỏi: *"Bạn đã từng ngồi làm kế hoạch dài hạn – ngắn hạn 
 
 ⚠️ **Nói thẳng cái giá của việc chưa có.** Phỏng vấn kinh doanh nạp *dữ liệu việc*: dự án, khách hàng, sản phẩm. Một bài kế hoạch tử tế nạp *con người* — họ đang ở đâu, muốn đi đâu. Thiếu nửa sau thì bộ não sẽ nạp rất nhanh và rất đúng một mục tiêu mà **chính chủ chưa tự kiểm lại** xem có thật là mục tiêu của mình không. Nói ra một lần, rồi đi tiếp — đừng bắt họ dừng lại đi làm kế hoạch trước.
 
-📌 Bài Bánh Xe Cuộc Đời có bộ hướng dẫn riêng, nằm ở **vai Điều phối** — chưa phát. Đừng hứa một lệnh chưa có.
+📌 Bài Bánh Xe Cuộc Đời có bộ hướng dẫn riêng, nằm ở **vai Điều phối** — cài rời từ kho `creator-ceo/nhan-su-dieu-phoi`. Máy chưa cài vai đó thì đừng hứa lệnh `/banh-xe-cuoc-doi`.
 
 ---
 

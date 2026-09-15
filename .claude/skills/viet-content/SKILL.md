@@ -652,7 +652,7 @@ trang-thai: nhap            # nhap | da-soi | da-dang
 
 `/onboard` — dựng bộ não lần đầu nếu `wiki/` còn trống · `/nap-kho` — đường duy nhất ghi vào bộ não · `/kiem-chung` — soi bộ não sau mỗi lần nạp khối lớn · `/kham-benh` + `/dieu-hanh` — soi bạn đang tắc ở khâu nào rồi chốt việc của tháng.
 
-**Chưa phát — đừng gọi, gọi cũng không có:** `/anh-quote` (biến câu chốt thành ảnh đăng) và `/giai-thich-de-hieu` (biến khái niệm khó thành trang có hình) nằm ở vai Thiết kế, còn đang đóng gói. Cần chúng thì nhắn Đoàn.
+**Vai Thiết kế, cài rời** *(kho `creator-ceo/nhan-su-thiet-ke`, bản tạm)*: `/anh-quote` (biến câu chốt thành ảnh đăng) và `/giai-thich-de-hieu` (biến khái niệm khó thành trang có hình). Máy chưa cài vai đó thì đừng gọi — gọi cũng không có.
 
 ---
 

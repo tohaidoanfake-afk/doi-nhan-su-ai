@@ -181,16 +181,16 @@ Quy trình này thuộc vai nào trong năm vai còn lại:
 | Nếu quy trình thuộc về | Giao cho vai | Skill gọi | Có chưa |
 |---|---|---|---|
 | Viết bài, kịch bản, ý tưởng, hook | Content | `/viet-content` | ✅ kho `nhan-su-content` |
-| Offer, trang bán, thư bán, kịch bản chốt | Bán hàng | `/ban-hang` | ⬜ chưa phát |
-| Ảnh chữ, trang giải thích, slide | Thiết kế | — | ⬜ chưa phát |
-| Tìm hiểu khách, đối thủ, hình mẫu | Nghiên cứu thị trường | — | ⬜ chưa phát |
-| Trả lời khách trước và sau bán | Chăm sóc | — | ⬜ chưa phát |
+| Offer, trang bán, thư bán, kịch bản chốt | Bán hàng | `/ban-hang` | ✅ kho `nhan-su-ban-hang` |
+| Ảnh chữ, trang giải thích, slide | Thiết kế | `/anh-quote` · `/giai-thich-de-hieu` | 🟡 bản tạm, kho `nhan-su-thiet-ke` |
+| Tìm hiểu khách, đối thủ, hình mẫu | Nghiên cứu thị trường | `/soi-doi-thu` · `/soi-hinh-mau` | 🟡 bản tạm, kho `nhan-su-nghien-cuu` |
+| Chăm người đã mua: ai kẹt, nhắn gì, nghiệm thu | Chăm sóc | `/cham-soc` | 🟡 bản tạm, kho `nhan-su-cham-soc` |
 
-⚠️ **Vai chưa phát thì GIAO CHO NGƯỜI, đừng gọi một lệnh không tồn tại.** Nói thẳng: *"Việc này thuộc vai X, mà vai đó chưa có skill. Tháng này bạn làm tay, hoặc chọn quy trình khác."*
+⚠️ **Vai chưa CÀI thì GIAO CHO NGƯỜI, đừng gọi một lệnh không tồn tại.** Cả năm vai đều đã phát, nhưng máy người dùng chỉ có lệnh của vai họ đã cài. Không thấy lệnh thì nói thẳng: *"Việc này thuộc vai X, mà máy bạn chưa cài vai đó. Cài từ kho `creator-ceo/nhan-su-…` ở bảng trên, hoặc tháng này làm tay."*
 
 🚫 **Và đừng ép sang vai gần đúng nhất.** Nhờ `/viet-content` viết trang bán là nhận về một bài đúng giọng mà sai cấu trúc chuyển đổi — hỏng theo cách đọc vẫn xuôi tai, đúng kiểu khó bắt nhất.
 
-📌 Vai chưa phát **không chặn Việc 3.** Phần lớn quy trình tháng đầu là việc tay có quy trình rõ; cái skill đem lại là tốc độ, không phải khả năng.
+📌 Vai chưa cài **không chặn Việc 3.** Phần lớn quy trình tháng đầu là việc tay có quy trình rõ; cái skill đem lại là tốc độ, không phải khả năng.
 
 **Nhịp bốn tuần trong tháng**, mỗi tuần soi đúng bước của tuần:
 
@@ -257,7 +257,7 @@ Cách chống chỉ có một: **mỗi tháng bắt buộc ra đúng một mục
 
 **Ở nền `nhan-su-thu-thu`:** `/onboard` · `/nap-kho` · `/kiem-chung` — chạy trước vai này.
 
-**Vai nhận việc, cài rời:** `/viet-content` *(kho `nhan-su-content`)*. Các vai còn lại chưa phát — xem bảng ở Việc 3.
+**Vai nhận việc, cài rời** *(kho `creator-ceo/nhan-su-*`)*: `/viet-content` · `/ban-hang` · `/soi-doi-thu` · `/soi-hinh-mau` · `/anh-quote` · `/giai-thich-de-hieu` · `/cham-soc`. Vai nào nhận việc nào: bảng ở Việc 3.
 
 ---
 

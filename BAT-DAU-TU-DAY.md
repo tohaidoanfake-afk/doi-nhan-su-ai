@@ -9,6 +9,8 @@
 > 🎯 Xong 8 việc = bạn có một bộ não thứ 2 **chạy được thật**, đã dùng nó làm xong một việc thật, và đã có **vai A.I đầu tiên** chạy trên nó.
 >
 > 📌 Việc 1–7 là **cái nền**. Việc 8 là **vai đầu tiên**. Thứ tự này không đảo được: vai đọc bộ não, nó không dựng ra bộ não.
+>
+> 🔀 **Dùng Codex:** mọi lệnh `/tên` trong file này gõ thành `$tên`, ví dụ `$nap-kho`.
 
 ---
 
@@ -16,7 +18,7 @@
 
 Không phải chatbot. Phải là công cụ **đọc và ghi được file trên máy bạn**.
 
-- [ ] Đã cài xong một trong: Claude Code · Claude Cowork · AntiGravity
+- [ ] Đã cài xong một trong: Claude Code · Claude Cowork · Codex · AntiGravity
 - [ ] Đã đăng ký gói trả phí (bản free không đủ để chạy cả buổi)
 - [ ] Mở lên chạy được
 
@@ -140,7 +142,7 @@ Nền xong rồi thì nó **biết về bạn**, nhưng chưa **làm hộ** vi�
 
 ⚡ **Bản gộp này đã có sẵn mọi vai — bạn KHÔNG phải cài gì thêm.** Bản lẻ phải chạy hai lệnh `claude plugin install`; ở đây thì không.
 
-- [ ] Gõ `/` thấy `/viet-content` trong danh sách 9 lệnh
+- [ ] Gõ `/` thấy `/viet-content` trong danh sách 14 lệnh
 
 **Lượt chạy đầu tiên, vai tự dựng kho của nó** — hai tầng:
 
@@ -156,7 +158,7 @@ Nền xong rồi thì nó **biết về bạn**, nhưng chưa **làm hộ** vi�
 - [ ] Đã viết thử **một bài thật** bằng `/viet-content`
 - [ ] Đã chạy `/nap-kho` lưu lại thứ mới rút được
 
-*(Các vai khác — Điều phối, Bán hàng — cài y hệt, đổi tên kho. Cần vai nào lấy vai đó, không phải cài hết.)*
+*(Các vai khác cài y hệt, đổi tên kho: `nhan-su-dieu-phoi` · `nhan-su-ban-hang` · `nhan-su-nghien-cuu` · `nhan-su-thiet-ke` · `nhan-su-cham-soc`. Cần vai nào lấy vai đó, không phải cài hết.)*
 
 ---
 

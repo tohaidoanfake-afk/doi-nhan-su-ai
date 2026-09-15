@@ -10,7 +10,7 @@
 
 | | Bậc 1 — chatbot | Bậc 2 — công cụ có tay chân |
 |---|---|---|
-| Ví dụ | ChatGPT web, Gemini web, Claude.ai chat thường | Claude Code · Claude Cowork · AntiGravity |
+| Ví dụ | ChatGPT web, Gemini web, Claude.ai chat thường | Claude Code · Claude Cowork · Codex · AntiGravity |
 | Đọc được file trên máy bạn | ❌ | ✅ |
 | **Ghi được file ra máy bạn** | ❌ | ✅ |
 | Nhớ sau khi đóng chat | chỉ nhớ mờ, không kiểm chứng được | ✅ nhớ vì **nó nằm trong file thật** |
@@ -26,10 +26,13 @@ Bộ não thứ 2 là **một thư mục file trên máy bạn**. Chatbot không
 | **Claude Cowork** | người không rành kỹ thuật — **khuyên dùng nếu bạn phân vân** | Giao diện gần giống chat bình thường, kéo thả thư mục vào là chạy |
 | **Claude Code** | người quen dùng máy tính, thích gõ lệnh | Mạnh nhất, chạy trong cửa sổ dòng lệnh |
 | **AntiGravity** | ai đã dùng sẵn | Cài riêng theo hướng dẫn của họ |
+| **Codex** | người đã trả gói ChatGPT | Mở trong ứng dụng ChatGPT, chọn thư mục rồi chọn **Local**. Cần gói Plus trở lên. Gọi skill bằng `$` thay cho `/` |
 
 **Bắt buộc có gói trả phí.** Bản miễn phí hết lượt giữa buổi phỏng vấn là mất mạch, và bạn sẽ phải làm lại.
 
 ### 🪟 Máy Windows — bốn chỗ khác Mac
+
+*(Mục này cho Claude Code. Dùng Codex trên Windows thì đi theo ứng dụng ChatGPT, không phải gõ lệnh.)*
 
 Ba dòng lệnh **y hệt** trên Windows, gõ trong **PowerShell** (bấm Start, gõ "PowerShell"). Nhưng bốn chỗ sau hay vấp:
 
@@ -88,7 +91,7 @@ Nhắn vào nhóm kèm **ảnh chụp màn hình chỗ kẹt**. Đây là việc
 
 Xong đúng thì AI dựng `wiki/`, `raw/`, `index.md`, `log.md` **ngay trong thư mục đó**, cạnh `CLAUDE.md`, rồi bắt đầu hỏi bạn.
 
-**Không thấy gì xảy ra?** Kiểm tra AI có nhìn thấy file `CLAUDE.md` không — nếu không, workspace đang trỏ sai thư mục.
+**Không thấy gì xảy ra?** Kiểm tra AI có nhìn thấy file `CLAUDE.md` *(Codex: `AGENTS.md`)* không — nếu không, workspace đang trỏ sai thư mục.
 
 ---
 

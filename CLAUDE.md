@@ -97,7 +97,7 @@ Trước khi hỏi về dự án, mục tiêu, khách hàng — hỏi một câu
 
 ⚠️ **Nói thẳng cái giá một lần, rồi đi tiếp.** Phỏng vấn kinh doanh nạp *dữ liệu việc*: dự án, khách hàng, sản phẩm. Một bài kế hoạch tử tế nạp *con người* — họ đang ở đâu, muốn đi đâu. Thiếu nửa sau thì bộ não sẽ nạp rất nhanh và rất đúng một mục tiêu mà **chính chủ chưa tự kiểm lại**. Nhưng bắt họ dừng lại đi làm kế hoạch trước khi được dựng bộ não là chỗ người ta bỏ ngang.
 
-📌 Bài Bánh Xe Cuộc Đời có bộ hướng dẫn riêng, thuộc **vai Điều phối** — chưa phát. Đừng hứa một lệnh chưa có.
+📌 Bài Bánh Xe Cuộc Đời có bộ hướng dẫn riêng, thuộc **vai Điều phối** — cài rời từ kho `creator-ceo/nhan-su-dieu-phoi`. Máy chưa cài vai đó thì đừng hứa lệnh `/banh-xe-cuoc-doi`.
 
 ---
 
@@ -256,7 +256,7 @@ Dựng xong: ghi `index.md`, thêm một dòng vào `log.md`, lưu nguyên văn 
 
 **Bốn skill trên là NỀN:** dựng bộ não · ghi vào bộ não · kiểm bộ não.
 
-⚡ **Bản này là BẢN GỘP — các vai làm việc đã nằm sẵn trong `.claude/skills/`, không phải cài thêm.** Đủ 9 lệnh: `/kiem-chung` · `/nap-kho` · `/onboard` · `/phong-van-dinh-vi` · `/viet-content` · `/banh-xe-cuoc-doi` · `/dieu-hanh` · `/kham-benh` · `/ban-hang`. Xem `BAN-KE.md` để biết mỗi phần sinh từ kho lẻ nào, phiên bản nào.
+⚡ **Bản này là BẢN GỘP — các vai làm việc đã nằm sẵn trong `.claude/skills/`, không phải cài thêm.** Đủ 14 lệnh: `/kiem-chung` · `/nap-kho` · `/onboard` · `/phong-van-dinh-vi` · `/viet-content` · `/banh-xe-cuoc-doi` · `/dieu-hanh` · `/kham-benh` · `/ban-hang` · `/soi-doi-thu` · `/soi-hinh-mau` · `/anh-quote` · `/giai-thich-de-hieu` · `/cham-soc`. Xem `BAN-KE.md` để biết mỗi phần sinh từ kho lẻ nào, phiên bản nào.
 
 ---
 
