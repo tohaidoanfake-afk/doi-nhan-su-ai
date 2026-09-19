@@ -78,18 +78,22 @@ Giải phóng được thời gian rồi, người ta mới có sức quay lại
 
 ⚠️ **Nhưng đừng bê luật này sang Nhánh A.** Ở đó nó lật ngược: bắt người chưa có gì chạy đều đi tìm việc để tự động hoá là bắt họ đi tìm một thứ không tồn tại, và tháng đó trôi qua không có gì.
 
-### Bốn bước vẫn dùng chung cho cả hai nhánh
+### Sáu bước vẫn dùng chung cho cả hai nhánh: một bước chọn, năm bước chữa
 
 Khác nhau ở **đối tượng**, không ở cách làm:
 
 | Bước | Nhánh A | Nhánh B |
 |---|---|---|
-| 1 | Chọn quy trình còn thiếu ở khâu tắc | Chọn quy trình đang ăn giờ nhất |
-| 2. Tối ưu | **Làm tay vài lần cho ra hình** | Làm tay vài lần, ghi chỗ phí |
-| 3. Đơn giản | Bỏ bước thừa vừa thấy | Bỏ bước thừa vừa thấy |
-| 4. Tự động | Giao cho A.I | Giao cho A.I |
+| 1. Chọn | Chọn quy trình còn thiếu ở khâu tắc | Chọn quy trình đang ăn giờ nhất |
+| 2. Làm thật | **Làm tay vài lần cho ra hình** | Làm tay vài lần như đang làm |
+| 3. Đóng gói | Viết thứ vừa làm ra thành các bước | Viết đúng cách đang làm ra thành các bước |
+| 4. Tối ưu | Soi bản vừa viết, ghi chỗ phí | Soi bản vừa viết, ghi chỗ phí |
+| 5. Đơn giản | Bỏ bước thừa vừa thấy | Bỏ bước thừa vừa thấy |
+| 6. Tự động | Giao cho A.I | Giao cho A.I |
 
-Nói cách khác: Nhánh A **đẻ ra** một quy trình rồi mới tự động hoá nó. Nhánh B **gỡ** một quy trình đã có. Cùng bốn bước, ngược chiều xuất phát.
+Nói cách khác: Nhánh A **đẻ ra** một quy trình rồi mới tự động hoá nó. Nhánh B **gỡ** một quy trình đã có. Cùng năm bước chữa, ngược chiều xuất phát.
+
+⚠️ **Đóng gói đứng ngay sau làm thật, không dời xuống cuối.** Chưa viết ra thì không có gì để soi chỗ phí, và tối ưu một thứ còn nằm trong đầu chỉ là tối ưu bằng cảm giác.
 
 ---
 
@@ -165,7 +169,7 @@ Từ danh sách trên, chọn **đúng một** quy trình. Tiêu chí, theo th�
 | | **Nhánh A — dựng quy trình mới** | **Nhánh B — gỡ việc ăn giờ** |
 |---|---|---|
 | Số giờ | **Giờ trên mỗi đầu ra** (giờ/bài, giờ/khách…). Tổng giờ *đi lên* là đúng thiết kế, vì đang xây từ 0 | **Tổng giờ/tuần** bỏ vào việc đó. Phải *đi xuống* |
-| Số kinh doanh | Một con số của khâu đang tắc, phải *đi lên* | Một con số của mảng đó, để chắc giờ giảm mà kết quả không tụt |
+| Số kinh doanh | Một con số của khâu đang tắc, phải *đi lên* | Một con số của khâu chứa việc đó, để chắc giờ giảm mà kết quả không tụt |
 | Thêm một số dẫn đường | **Sản lượng thật/tuần** — thứ ra khỏi máy, không phải thứ làm xong | *(không cần)* |
 
 🚫 **Ở Nhánh A đừng đo bằng tổng giờ.** Người đang ở 0 giờ thì tổng giờ chắc chắn tăng, và tăng là **đúng**. Đo bằng nó rồi kết luận "tệ hơn trước" là đọc ngược hoàn toàn. Cái phải giảm là **giờ cho mỗi đầu ra**, và nó chỉ giảm được từ tuần 3 trở đi khi quy trình đã gọn lại.
@@ -192,14 +196,16 @@ Quy trình này thuộc vai nào trong năm vai còn lại:
 
 📌 Vai chưa cài **không chặn Việc 3.** Phần lớn quy trình tháng đầu là việc tay có quy trình rõ; cái skill đem lại là tốc độ, không phải khả năng.
 
-**Nhịp bốn tuần trong tháng**, mỗi tuần soi đúng bước của tuần:
+**Nhịp bốn tuần trong tháng, năm bước chữa**, mỗi tuần soi đúng việc của tuần:
 
 | Tuần | Bước | Soi gì |
 |---|---|---|
-| 1 | Chẩn đoán và chọn | Đã chốt quy trình và hai số gốc chưa |
-| 2 | Tối ưu hoá | Đã làm tay vài lần chưa, đã ghi lại chỗ tốn giờ chưa |
-| 3 | Đơn giản hoá | Bản rút gọn đã bỏ được bước nào |
+| 1 | Chọn chỗ chữa | Đã chốt quy trình và hai số gốc chưa |
+| 2 | Làm thật, rồi đóng gói | Đã làm tay vài lần chưa, đã viết ra thành các bước chưa, đã ghi lại chỗ tốn giờ chưa |
+| 3 | Tối ưu, rồi đơn giản | Đã đánh dấu chỗ phí chưa, bản rút gọn đã bỏ được bước nào |
 | 4 | Tự động hoá | Giao được cho A.I chưa, chạy không cần ngồi thao tác chưa |
+
+Thứ tự **bên trong** tuần mới là thứ giữ: viết ra trước, soi sau, cắt sau cùng.
 
 ⚠️ Tuần là ước lượng để dễ hình dung, **không phải hạn chót**. Quy trình khó tràn sang tuần sau là bình thường. Cái được đo là quy trình đã chạy không cần tay chưa, không phải đã ngồi đủ mấy tuần.
 
@@ -208,7 +214,7 @@ Quy trình này thuộc vai nào trong năm vai còn lại:
 Đo lại đúng hai số đã chốt ở Việc 2, rồi kết luận **một trong hai**, không có mức giữa:
 
 - **Đạt** — quy trình chạy không cần tay, có bằng chứng. Phép thử: *tắt máy đi ngủ thì nó còn chạy không?* Ghi thành tài sản.
-- **Chưa đạt** — nói rõ kẹt ở bước nào trong bốn bước, và tháng sau làm tiếp hay đổi quy trình khác.
+- **Chưa đạt** — nói rõ kẹt ở bước nào trong năm bước chữa *(làm thật · đóng gói · tối ưu · đơn giản · tự động)*, và tháng sau làm tiếp hay đổi quy trình khác.
 
 🚫 **Không kết luận "xong" bằng cảm giác.** Không có hai số và không có bằng chứng chạy thật thì là chưa đạt, dù người dùng thấy hài lòng.
 
