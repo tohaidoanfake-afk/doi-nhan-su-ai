@@ -19,7 +19,7 @@ Skill này đi tìm câu trả lời: **người thật, số thật, nguồn ai
 
 **Biến thiên mỗi phiên:** bạn muốn người nghe tin điều gì.
 
-**Đầu ra về:** `wiki/tam-guong-suu-tam.md`. Chưa có trang đó thì dựng theo khuôn đi kèm `${CLAUDE_PLUGIN_ROOT}/skills/tim-tam-guong/khuon/tam-guong-suu-tam.md`, ghi qua `$nap-kho`.
+**Đầu ra về:** `wiki/tam-guong-suu-tam.md`. Chưa có trang đó thì dựng theo khuôn đi kèm `.agents/skills/tim-tam-guong/khuon/tam-guong-suu-tam.md`, ghi qua `$nap-kho`.
 
 ## ⚠️ Skill này KHÁC hẳn hai lệnh kia của vai Nghiên cứu — đọc trước
 
