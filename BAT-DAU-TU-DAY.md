@@ -142,7 +142,7 @@ Nền xong rồi thì nó **biết về bạn**, nhưng chưa **làm hộ** vi�
 
 ⚡ **Bản gộp này đã có sẵn mọi vai — bạn KHÔNG phải cài gì thêm.** Bản lẻ phải chạy hai lệnh `claude plugin install`; ở đây thì không.
 
-- [ ] Gõ `/` thấy `/viet-content` trong danh sách 14 lệnh
+- [ ] Gõ `/` thấy `/viet-content` trong danh sách 15 lệnh
 
 **Lượt chạy đầu tiên, vai tự dựng kho của nó** — hai tầng:
 

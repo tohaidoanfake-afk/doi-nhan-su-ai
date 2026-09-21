@@ -12,7 +12,7 @@
 git clone https://github.com/tohaidoanfake-afk/doi-nhan-su-ai.git
 ```
 
-Mở công cụ AI **ngay trong thư mục vừa clone**, nhắn `bắt đầu`. Gõ `/` sẽ thấy đủ 14 lệnh.
+Mở công cụ AI **ngay trong thư mục vừa clone**, nhắn `bắt đầu`. Gõ `/` sẽ thấy đủ 15 lệnh.
 
 ⚠️ **Mở đúng thư mục `doi-nhan-su-ai`, đừng mở thư mục cha.** Mở sai thì luật vẫn nạp nhưng skill thì không — hỏng mà không có dấu hiệu gì. Chi tiết ở `README` mục *Chỗ hay sai nhất* trong `BAT-DAU-TU-DAY.md`.
 
@@ -24,7 +24,7 @@ Mở công cụ AI **ngay trong thư mục vừa clone**, nhắn `bắt đầu`.
 | ✍️ Content | `/viet-content` |
 | 🎛️ Điều phối | `/banh-xe-cuoc-doi` · `/dieu-hanh` · `/kham-benh` |
 | 💰 Bán hàng | `/ban-hang` |
-| 🔍 Nghiên cứu | `/soi-doi-thu` · `/soi-hinh-mau` |
+| 🔍 Nghiên cứu | `/soi-doi-thu` · `/soi-hinh-mau` · `/tim-tam-guong` |
 | 🎨 Thiết kế | `/anh-quote` · `/giai-thich-de-hieu` |
 | 🤝 Chăm sóc | `/cham-soc` |
 

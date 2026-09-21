@@ -189,7 +189,7 @@ Quy trình này thuộc vai nào trong năm vai còn lại:
 | Viết bài, kịch bản, ý tưởng, hook | Content | `$viet-content` | ✅ kho `nhan-su-content` |
 | Offer, trang bán, thư bán, kịch bản chốt | Bán hàng | `$ban-hang` | ✅ kho `nhan-su-ban-hang` |
 | Ảnh chữ, trang giải thích, slide | Thiết kế | `$anh-quote` · `$giai-thich-de-hieu` | 🟡 bản tạm, kho `nhan-su-thiet-ke` |
-| Tìm hiểu khách, đối thủ, hình mẫu | Nghiên cứu thị trường | `$soi-doi-thu` · `$soi-hinh-mau` | 🟡 bản tạm, kho `nhan-su-nghien-cuu` |
+| Tìm hiểu khách, đối thủ, hình mẫu · tìm người thật chứng minh điều mình nói | Nghiên cứu thị trường | `$soi-doi-thu` · `$soi-hinh-mau` · `$tim-tam-guong` | 🟡 bản tạm, kho `nhan-su-nghien-cuu` |
 | Chăm người đã mua: ai kẹt, nhắn gì, nghiệm thu | Chăm sóc | `$cham-soc` | 🟡 bản tạm, kho `nhan-su-cham-soc` |
 
 ⚠️ **Vai chưa CÀI thì GIAO CHO NGƯỜI, đừng gọi một lệnh không tồn tại.** Cả năm vai đều đã phát, nhưng máy người dùng chỉ có lệnh của vai họ đã cài. Không thấy lệnh thì nói thẳng: *"Việc này thuộc vai X, mà máy bạn chưa cài vai đó. Cài từ kho `creator-ceo/nhan-su-…` ở bảng trên, hoặc tháng này làm tay."*
@@ -265,7 +265,7 @@ Cách chống chỉ có một: **mỗi tháng bắt buộc ra đúng một mục
 
 **Ở nền `nhan-su-thu-thu`:** `$onboard` · `$nap-kho` · `$kiem-chung` — chạy trước vai này.
 
-**Vai nhận việc, cài rời** *(kho `creator-ceo/nhan-su-*`)*: `$viet-content` · `$ban-hang` · `$soi-doi-thu` · `$soi-hinh-mau` · `$anh-quote` · `$giai-thich-de-hieu` · `$cham-soc`. Vai nào nhận việc nào: bảng ở Việc 3.
+**Vai nhận việc, cài rời** *(kho `creator-ceo/nhan-su-*`)*: `$viet-content` · `$ban-hang` · `$soi-doi-thu` · `$soi-hinh-mau` · `$tim-tam-guong` · `$anh-quote` · `$giai-thich-de-hieu` · `$cham-soc`. Vai nào nhận việc nào: bảng ở Việc 3.
 
 ---
 
