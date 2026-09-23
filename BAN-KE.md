@@ -1,13 +1,13 @@
 # Bản kê — bản gộp này sinh từ đâu
 
 > ⚙️ **File này do máy sinh.** Chạy `node phat-ban-gop.mjs` để cập nhật.
-> Sinh lúc: 2026-09-21 23:58
+> Sinh lúc: 2026-09-23 03:38
 
 | Phần | Kho lẻ | Phiên bản |
 |---|---|---|
 | 🧑‍🏫 Thủ thư *(nền)* | `creator-ceo/nhan-su-thu-thu` | `v4.5` |
 | ✍️ Content | `creator-ceo/nhan-su-content` | `1.12.1` |
-| 🎛️ Điều phối | `creator-ceo/nhan-su-dieu-phoi` | `1.2.5` |
+| 🎛️ Điều phối | `creator-ceo/nhan-su-dieu-phoi` | `1.6.0` |
 | 💰 Bán hàng | `creator-ceo/nhan-su-ban-hang` | `1.2.1` |
 | 🔍 Nghiên cứu | `creator-ceo/nhan-su-nghien-cuu` | `1.1.0` |
 | 🎨 Thiết kế | `creator-ceo/nhan-su-thiet-ke` | `1.0.0` |

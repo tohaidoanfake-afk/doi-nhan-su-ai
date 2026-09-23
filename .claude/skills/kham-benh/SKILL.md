@@ -92,6 +92,18 @@ Xong thì đưa đơn cho họ đọc, rồi mời lưu vào bộ não:
 
 Nói rõ là lưu bản khám và đơn vào `wiki/nut-that.md`, ghi thêm mục mới chứ **không đè lượt cũ** — để về sau nhìn thấy nút thắt di chuyển qua các giai đoạn.
 
+## Lưu xong thì sang chữa — đừng dừng ở đây
+
+Bản khám trả lời *chữa chỗ nào*. Nó **không** trả lời *tháng này làm gì*. Người cầm cái đơn mà không ai chỉ bước kế thì thường đọc xong, gật gù, rồi tháng sau vẫn y nguyên.
+
+Nên khám xong thì mời họ chạy tiếp:
+
+```
+/dieu-hanh
+```
+
+Lệnh đó đọc chính bản khám vừa lưu, hỏi con số hiện tại và chốt mục tiêu sau ba tháng, hẹn ngày tái khám, rồi mỗi tháng tập trung chữa **một quy trình** trong khâu này: cùng họ lập **việc mỗi ngày**, đi đủ năm bước **làm thật → đóng gói → tối ưu → đơn giản → tự động**, cuối tháng nghiệm thu. Hết 90 ngày, nó mời quay lại đây tái khám.
+
 ## Mục "Máy đọc" — đọc cho đúng vai
 
 Máy xếp sẵn: giờ đang chảy vào đâu so với khâu tắc · nguyên nhân nghi A hay B · bảng LỆCH · bệnh nền · red flag. Ba điều phải nhớ:
@@ -102,4 +114,4 @@ Máy xếp sẵn: giờ đang chảy vào đâu so với khâu tắc · nguyên 
 
 ## Ba tháng một lần, không phải một lần
 
-Khám một lần chỉ nói được một câu. Khám bốn lần trong mười hai tháng thì thành **đường tiến của từng khâu, đo được** — đó mới là chỗ bộ máy này đáng tiền. Lượt sau máy tự hỏi tái khám và tách ba lý do chưa đỡ: **chưa làm** · **làm rồi mà không ăn thua** · **chẩn nhầm từ đầu**. Ba thứ đó chữa khác hẳn nhau.
+Giữa hai lần khám là **ba tháng chữa** — mỗi tháng một quy trình, mỗi ngày một việc — do `/dieu-hanh` điều. Khám một lần chỉ nói được một câu. Khám bốn lần trong mười hai tháng thì thành **đường tiến của từng khâu, đo được** — đó mới là chỗ bộ máy này đáng tiền. Lượt sau máy tự hỏi tái khám và tách ba lý do chưa đỡ: **chưa làm** · **làm rồi mà không ăn thua** · **chẩn nhầm từ đầu**. Ba thứ đó chữa khác hẳn nhau.
