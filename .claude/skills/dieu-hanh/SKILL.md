@@ -151,7 +151,7 @@ Rồi chọn đúng một đường dưới đây, **nói ra là đang làm vi�
 | Tình trạng đọc được | Làm việc nào |
 |---|---|
 | **Đã tới hoặc quá ngày tái khám** | Việc 5 cho tháng cuối nếu chưa làm, rồi **Việc 6** — dừng mọi việc khác |
-| Chưa có bản khám, hoặc bản gần nhất **quá 3 tháng** | Bảo chạy `/kham-benh` trước, rồi quay lại |
+| Chưa có bản khám trong máy, hoặc bản gần nhất **quá 3 tháng** | Hỏi có kết quả khám trên web không — xem **Hai đường vào** ở Việc 1 |
 | Có bản khám còn hạn, **chưa mở hành trình** | **Việc 1 → 2 → 3 → 4**, đi liền một mạch |
 | **Tới cuối tháng** của hành trình, hoặc quy trình của tháng đã tự chạy | **Việc 5** — nghiệm thu tháng |
 | Tháng mới, **chưa chọn quy trình** | **Việc 3 → 4** |
@@ -167,11 +167,28 @@ Rồi chọn đúng một đường dưới đây, **nói ra là đang làm vi�
 
 ## Việc 1 — Đọc bản khám, chốt khâu cần chữa *(ngày 1)*
 
-🔴 **KHÔNG tự khám. Gọi `/kham-benh`.**
+🔴 **KHÔNG tự khám.** Khâu cần chữa phải đến từ một bài khám thật — vai này không đoán khâu từ vài câu chuyện.
 
 Đã có một skill làm trọn việc chẩn đoán: tiếp nhận, hỏi bệnh, khám, chẩn đoán phân biệt, kê đơn hai ngăn, rồi soạn đề xuất cho `/nap-kho` ghi vào trang soi chỗ tắc. Vai này **không dựng lại bộ câu hỏi thứ hai**.
 
 Vì sao dứt khoát: hai bộ khám là **hai kết quả khác nhau cho cùng một người**, và không có gì báo khi chúng lệch. Người dùng khám bằng đường này ra khâu tắc X, khám bằng đường kia ra khâu Y, rồi tin cái nào?
+
+### Hai đường vào — người dùng chọn
+
+Chưa có bản khám trong máy thì hỏi trước:
+
+> *"Bạn đã làm bài khám trên web (tomedia.vn) chưa? Nếu rồi, bạn dùng luôn kết quả đó được — chỉ cần cho mình biết bài khám chỉ ra khâu nào đang tắc, và bạn khám hôm nào. Còn muốn thì mình khám lại ngay trong máy bằng `/kham-benh`."*
+
+| Đường | Khi nào | Làm gì |
+|---|---|---|
+| **Dùng kết quả khám trên web** | Đã khám trên web **trong 3 tháng gần nhất**, và nhớ chắc khâu nào | Người dùng chọn khâu, trong 9 khâu của bài khám: 🧭 Định hướng · 🧲 Thu hút · 🤝 Niềm tin · 🎁 Offer · 🎣 Chuyển đổi · 🎓 Chuyển giao · 💌 Chăm sóc · 🗂️ Vận hành · ⏳ Tự động hoá. Còn giữ trang kết quả hay email đơn thuốc thì xin dán vào để lấy luôn đơn. Rồi đi tiếp như thường |
+| **Khám lại trong máy** | Chưa khám ở đâu · khám trên web đã quá 3 tháng · không nhớ chắc khâu · hoặc đơn giản là muốn khám lại | Gọi `/kham-benh`, xong quay lại đây |
+
+⚠️ **Đi đường web thì chỉ nhận khâu, không khám bù.** Đừng hỏi thêm vài câu để "kiểm lại" khâu họ khai — làm vậy chính là tự khám bằng một bộ câu hỏi thứ hai. Họ nói khâu nào thì chữa khâu đó. Không nhớ chắc thì mời khám lại trong máy, đừng đoán hộ.
+
+⚠️ **Không dán được đơn thì hành trình vẫn chạy**, chỉ thiếu ngăn giảm đau: bỏ mục *"7 ngày đầu là ngăn giảm đau"* ở Việc 4, vào thẳng quy trình của tháng.
+
+📌 Bản khám web **không nằm trong trang soi chỗ tắc** — trang đó chỉ `/kham-benh` ghi, đừng tự ghi vào. Mọi thứ về bản khám web ghi ở dòng *Bản khám dựa vào* trong trang nhịp: ngày khám, khâu, đơn nếu có, và chữ *"khám trên web, người dùng tự khai"*. Ngày 90 cần đến dòng đó (Việc 6).
 
 **Ranh giới hai skill, thuộc lòng:**
 
@@ -181,10 +198,10 @@ Vì sao dứt khoát: hai bộ khám là **hai kết quả khác nhau cho cùng 
 | Nhịp | ngày 1 và ngày 90 | suốt hành trình |
 | Ghi vào | trang soi chỗ tắc | trang nhịp |
 
-**Đọc bản khám, lấy ra ba thứ:**
+**Đọc bản khám** *(trong máy, hoặc kết quả web người dùng đưa)*, **lấy ra ba thứ:**
 
 1. **Khâu cần chữa.** Bản khám chỉ ra, người dùng chốt. Họ muốn chữa khâu khác thì được, nhưng nói rõ vì sao khác và ghi lại lý do. **Khâu giữ nguyên suốt 90 ngày.**
-2. **Đơn thuốc hai ngăn.** Ngăn 🩹 giảm đau là **một việc bảy ngày**, dựng từ thứ họ đã có. Ngăn 🌱 tận gốc rẽ theo nguyên nhân: *chưa biết cách* thì phải học, *biết mà không làm* thì phải dựng môi trường — nhịp cố định, có người đợi. Gặp ca **cấp cứu** *(không có doanh thu và tiền chỉ đủ dưới 3 tháng)* thì đơn chỉ có ngăn giảm đau: hành trình này ra tiền trước, chưa chữa gốc.
+2. **Đơn thuốc hai ngăn.** Ngăn 🩹 giảm đau là **một việc bảy ngày**, dựng từ thứ họ đã có. Ngăn 🌱 tận gốc rẽ theo nguyên nhân: *chưa biết cách* thì phải học, *biết mà không làm* thì phải dựng môi trường — nhịp cố định, có người đợi. Gặp ca **cấp cứu** *(không có doanh thu và tiền chỉ đủ dưới 3 tháng)* thì đơn chỉ có ngăn giảm đau: hành trình này ra tiền trước, chưa chữa gốc. Đi đường web mà không có đơn thì để trống mục này.
 3. **Nhánh A hay B.** Hỏi câu phân nhánh ở trên, kèm:
 
 > *"Một tuần bình thường của bạn, việc nào bạn làm đi làm lại bằng tay nhiều nhất? Kể ba đến năm việc, kèm ước lượng mỗi việc ngốn bao nhiêu giờ một tuần."*
@@ -267,7 +284,7 @@ Cùng người dùng lập ra **mỗi ngày làm gì** để chữa xong quy tr�
 
 **Thứ tự đổ việc vào các ngày:**
 
-1. **Tháng 1: 7 ngày đầu là ngăn giảm đau của đơn.** Một việc bảy ngày, dựng từ thứ họ đã có — để có kết quả sớm, có lý do đi tiếp.
+1. **Tháng 1: 7 ngày đầu là ngăn giảm đau của đơn.** Một việc bảy ngày, dựng từ thứ họ đã có — để có kết quả sớm, có lý do đi tiếp. Vào bằng kết quả web mà không có đơn thì bỏ bước này.
 2. **Sau đó: quy trình của tháng đi đủ năm bước chữa**, chia mỗi bước thành việc của từng ngày: làm thật → đóng gói → tối ưu → đơn giản → tự động. Ngăn tận gốc của đơn đi song song, xen vào khung ngày.
 3. **Quy trình xong sớm** thì sang Việc 5 ngay, không đợi hết tháng.
 
@@ -325,7 +342,7 @@ Rồi đi tiếp:
 
 Kể cả khi người dùng nói *"sắp xong rồi, cho thêm hai tuần"* — tái khám trước. Tái khám không phải thi trượt hay đỗ; nó là chỗ nhìn lại để hành trình sau chữa đúng hơn. Kéo dài vì *"sắp xong"* là cách hành trình ba tháng biến thành năm tháng mà không ai đo gì.
 
-1. **Gọi `/kham-benh`.** Máy tự thấy đơn cũ và tự hỏi phần tái khám. Vẫn **không tự khám**.
+1. **Gọi `/kham-benh`.** Máy tự thấy đơn cũ và tự hỏi phần tái khám. Vẫn **không tự khám**. Hành trình mở bằng kết quả web thì máy chưa có đơn cũ: đọc khâu và đơn ở dòng *Bản khám dựa vào* trong trang nhịp, kể lại cho `/kham-benh` trước khi khám.
 2. **Đo lại đúng những con số của khâu đã chốt ở Việc 2**, cùng cách đo. Đặt cạnh cả số đầu lẫn mục tiêu để người ta tự thấy khoảng cách.
 3. **Người dùng tự chấm** mình đạt mục tiêu tới mức nào, và hài lòng tới mức nào. Không có ngưỡng đúng/sai — vai này chỉ bày số ra cho rõ, không chấm hộ.
 4. **Đọc kết quả tái khám của máy.** Nếu chưa đỡ, máy tách sẵn lý do — **chưa làm theo đơn** · **làm rồi mà không ăn thua** · **chẩn nhầm từ đầu** — và mỗi thứ chữa khác hẳn nhau, đừng gộp thành một câu *"ba tháng tới cố hơn"*.
@@ -354,7 +371,7 @@ Khuôn một hành trình — mục tháng nằm **bên trong** mục hành trì
 | Giờ/ngày | | | |
 | <tên số kinh doanh> | | | |
 
-**Bản khám dựa vào:** <ngày khám> · **Nhánh:** A / B
+**Bản khám dựa vào:** <ngày khám> · <khám trong máy | khám trên web, người dùng tự khai — kèm đơn nếu có> · **Nhánh:** A / B
 **Đơn:** giảm đau — <việc bảy ngày> · tận gốc — <…>
 **Khung ngày:** <giờ nào, bao lâu, ở đâu> · **Lịch nhắc:** <đã thêm vào lịch nào / chưa>
 
@@ -374,7 +391,7 @@ Khuôn một hành trình — mục tháng nằm **bên trong** mục hành trì
 
 ## Sáu ranh giới, đừng gỡ
 
-1. **Không tự khám.** Gọi `/kham-benh`, ngày 1 lẫn ngày 90.
+1. **Không tự khám.** Ngày 1 lấy khâu từ `/kham-benh` hoặc từ kết quả người dùng đã khám trên web; ngày 90 gọi `/kham-benh`.
 2. **Chọn nhánh trước khi chọn việc.** Nhánh A xử thẳng chỗ tắc; Nhánh B gỡ việc ăn giờ. Áp nhầm luật của nhánh này sang nhánh kia là sai cả hành trình.
 3. **Người chốt, không phải máy chốt** — khâu, mục tiêu, quy trình. Đề xuất hai ba lựa chọn, người dùng chọn.
 4. **Khâu giữ nguyên 90 ngày, mỗi tháng tập trung một quy trình.** Dàn đều ba việc là không việc nào xong.
